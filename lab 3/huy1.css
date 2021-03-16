@@ -1,0 +1,144 @@
+/* chung chung */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: ;
+}
+
+
+
+
+ul {
+  list-style-type: disc
+  
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  
+}
+
+/* class chung chung  */
+.container {
+  width: 1164px;
+  height: 1500px;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3%;
+}
+.row {
+  word-spacing: 0.3ch;
+  
+}
+
+.item {
+  word-spacing: normal;
+  display: inline-block;
+  vertical-align: top;
+  padding: 1px;
+}
+/* Navigation */
+.nav {background-color: black;}
+.menu-link {
+  display: bloc;
+ 
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.menu-link.active {
+  background-color: rgb(216, 17, 17);
+  color: rgb(241, 238, 238);
+}
+
+/* main content */
+.main {
+  width: 50%;
+}
+.aside {
+  width: 50%;
+}
+
+/* main */
+.section .item {
+  width: 20%;
+  height: 150px;
+}
+
+ .info {position: absolute;
+    bottom: 0;
+    padding: 15px;
+    background: url(../images/shadow.png) bottom left repeat-x;
+    color: #fff;
+    left: 0;
+    right: 0;
+  right: .5%;}
+  .newstop .block_wrap, .searchbox{
+    position: relative;
+  }
+  .right_row{
+     display: inline-block;
+   }
+
+/* phan duoi cua trang */
+.blockrows{
+  box-sizing: border-box;
+  width: 800px;
+  height: 550px;
+  padding: 10x;
+  
+}
+
+/* phan tin  */
+.primary{
+  width: 1037px;
+  height: 1037px;
+  padding: 10px;
+}
+.firtpost{ display: inline;}
+.linktabs{
+  display: inline;
+}
+.widget-title .linktabs a {
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #666;
+    padding: 0 10px;
+    font-weight: 300;}
+    .widget-title span {
+    background-color: #26aec2;
+    padding: 8px 30px;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;}
+    .text {
+color: #fff;
+position: absolute;
+top: 10px
+}
+/* chan trang */
+.footer{
+  box-sizing: border-box;
+  height: 180px;
+  width: 1930x;
+  background: url(../images/bg-footer.jpg) repeat-x #101010;
+  color: #666;
+  
+}
+.item-type{
+  display: inline;
+}
+.menu-type{
+
+}
+.nav-footer li a {
+    color: #707070;
+    font-size: 13px;

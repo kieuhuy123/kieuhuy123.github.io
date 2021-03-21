@@ -1,0 +1,50 @@
+*{box-sizing: border-box;}
+
+.box{
+    width: 432px;
+    height: 509px;
+    background-color: blanchedalmond;
+}
+h1{
+    color: #1c1e21;
+    font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 0;
+}
+p{
+    border-bottom: 1px solid rgb(228, 225, 225);
+    color: #606770;
+    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.input-group{display: inline-block;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* submit button  */
+.bth {
+  background-color: #06991f;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  opacity: 0.9;
+}

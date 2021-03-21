@@ -1,0 +1,125 @@
+* {box-sizing: border-box;}
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+    height: 100%;
+    background-color: rgb(240, 242, 245)
+    
+}
+.container{
+  position: relative;
+  width: 1190px;
+   margin-left: auto;
+    margin-right: auto;
+}
+/* chỉnh ảnh  */
+.side{
+  display: block;
+  position: absolute;
+  width: 580px;
+  top: 100px;
+    left:0px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+}
+/* .bg-img{
+    background-image: url("leftfb.png");
+
+    min-height: 380px; */
+    /* căn chỉnh ảnh nền  */
+    /* background-position: center;
+     background-repeat: no-repeat;
+    background-size: cover;
+     position: relative;
+} */
+
+
+/* thêm style cho bảng đăng nhập */
+.box-sign{
+    position: absolute;
+    right: ;
+  top: 130px;
+    right: 198px;
+  margin: 20px;
+  width: 396px;
+  height: 320px;
+  padding: 16px;
+  background-color: rgb(255 255 255);;
+   border-radius: 15px
+
+}
+
+/*  */
+.form-group {
+    margin-bottom: 10px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+
+  border: none;
+  background: #f1f1f1;
+}
+/* tạo style cho submit button  */
+.btn {
+  background-color: #4789d4;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.btn:hover {
+  opacity: 0.6;
+}
+
+/* gach ngang */
+ ._8icz {
+     display: block;
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
+}
+/* submit button  */
+.bth {
+  background-color: #2de64c;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  opacity: 0.9;
+}
+/* tạo focus khi ấn vào  */
+input:focus {
+    border-color: rgb(177, 212, 21);
+    box-shadow: rgb(77, 170, 233) }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* kẻ ngang */
+.border-bottom{
+    height: 15px;
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
+}

@@ -1,0 +1,76 @@
+/* chỉnh bảng toàn bài  */
+* {
+  box-sizing: border-box;
+}
+/* chiều rộng của ô trống,định dạng font chữ và ô điền  */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+input[type="file"],
+select, textarea {
+  width: 200px;
+  font-family: inherit;
+  font-size: 14px;
+  border: 1px solid grey;
+  border-radius: 0;
+  outline: none;
+}
+/* chiều cao ô điền */
+input,
+select {
+  height: 30px;
+}
+
+/*  tạo margin cho ô điền */
+.form-group {
+    margin-bottom: 10px;
+}
+
+
+/*  ẩn viền của file */
+input[type="file"] {
+  border: 0;
+}
+
+/* tạo k.cach cho bảng label */
+.form-group > label {
+  display: inline-block;
+  width: 150px;
+  line-height: 30px;
+  vertical-align: top;
+}
+/*căn box, chữ ở input checkbox và radio  */
+.input-group input[type="checkbox"],
+.input-group input[type="radio"] {
+    vertical-align: middle;
+    margin: 0;
+    margin-bottom: 3px;
+}
+/* bảng lựa chọn  */
+.input-group {
+  display: inline-block;
+}
+
+/* tùy chọn nhận thông báo , tạo bảng cho options thành 1 hàng còn input-group riêng biệt */
+.option-group .options {
+  display: inline-block;
+}
+
+.option-group .input-group {
+  display: block;
+}
+
+/* làm cho bảng note không điều chỉnh kích thước nữa  */
+textarea {
+  resize: none;
+}
+
+/*căn giữa ô button  */
+.button-group {
+      margin-left: 154px;
+}
+/* tạo màu khi focus vào ô điền  */
+input:focus {
+    border-color: chocolate;
+    box-shadow: 0 0 0 2px chocolate;

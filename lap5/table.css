@@ -1,0 +1,26 @@
+table {
+  border-collapse: separate;
+  border-spacing: 0.5px;
+  table-layout: fixed;
+  empty-cells:hi ;
+}
+
+table,
+tr,
+th,
+td {
+  width: 100px;
+  border: 1px solid rgb(250, 224, 228);
+}
+th,
+td {
+  padding: 10px;
+  vertical-align: middle;
+}
+
+tbody tr:nth-child(2n+1) {
+    background-color: rgb(252, 232, 252);
+}
+.bg {
+    background-color: rgb(221, 174, 141);
+}

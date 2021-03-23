@@ -328,3 +328,23 @@ position: absolute;
   width: 60%;
   opacity: 0.9;
 }
+
+/* tray */
+.anime{position: relative;}
+
+.tray{
+    position: absolute;
+    left:23px;
+    bottom:81px;
+    border-radius: 70%;
+    line-height: 75px;
+ 
+    
+}
+.tray{
+    color: rgb(255, 255, 255);
+    width: 75px;
+ 
+    height: 75px;
+    background-color: rgb(252, 65, 2);
+}

@@ -1,0 +1,330 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Open Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color:black
+}
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+/* class chung chung */
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+}
+/* wrap cho box */
+.flex.wrap {
+  flex-wrap: wrap;
+}
+/* flex-direction  */
+.flex.row {
+  flex-direction: row;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
+/* justify dieu chinh theo truc main */
+.flex.j-start {
+  justify-content: flex-start;
+}
+.flex.j-center {
+  justify-content: center;
+}
+
+.flex.j-end {
+  justify-content: flex-end;
+}
+.flex.j-between {
+  justify-content: space-between;
+}
+
+/* align-items dieu chinh theo truc cross */
+.flex.a-start {
+  align-items: flex-start;
+}
+.flex.a-center {
+  align-items: center;
+}
+.flex.a-end {
+  align-items: flex-end;
+}
+.flex.a-stretch {
+  align-items: stretch;
+}
+
+/* header */
+.header {
+  box-shadow: 0 0 0 0.3px rgb(195, 185, 185);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+}
+
+.actions {
+  margin-left: auto;
+}
+
+.menu-item {
+  padding: 10px;
+  border: saddlebrown;
+}
+
+.logo {
+  width: 160px;
+  margin-right: 50px;
+}
+
+/* tao box cua tung item */
+.menu-item {
+  border: 1px solid rgb(214, 209, 205);
+  padding: 5px 13px;
+  margin-right: 15px;
+  border-radius: 20px;
+}
+.item-main{
+    position: relative;
+    
+}
+/* meta */
+.meta{color:white;
+position: absolute;
+    bottom: 25px;
+    left: 81px;
+}
+.menu-link {
+  color: black;
+}
+/* tao box cua search va button*/
+.search-form {
+  position: relative;
+}
+.search-form input {
+  padding: 10px;
+  width: 290px;
+  border-radius: 20px;
+  border: 1px solid rgb(214, 209, 205);
+  outline: none;
+}
+.search-form button {
+  position: absolute;
+  right: 14px;
+  top: 8px;
+}
+/*  Main*/
+.main {
+  margin-top: 80px;
+}
+/* chinh container phan ben trai */
+.left {
+  flex-basis: calc(75% - 10px);
+}
+/* item to */
+.item-main {
+  flex-basis: 100%;
+  height: 286.31px;
+  margin-bottom: 10px;
+}
+
+.item-main img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* item be */
+.left .item {
+  flex-basis: calc(100% / 3 - 20px / 3);
+  height: 88.77px;
+}
+.left .item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* container phan ben phai */
+.right {
+  flex-basis: 25%;
+}
+
+.right .item {
+  margin-bottom: 11px;
+}
+
+
+/* new-header */
+.new-header{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.movie{
+    position: relative;
+}
+/* meta */
+.meta{color:white;
+position: absolute;
+  bottom: 6px;
+    left: 4px;
+}
+
+/* new-content */
+.new .movie {
+  flex-basis: calc(100% / 4 - 30px / 4);
+  margin-bottom: 10px;
+}
+
+.new .movie:not(:nth-child(4n)) {
+    margin-right: 10px;
+}
+
+/* phan tin tuc-section1 */
+.header1{
+     margin-top: 10px;
+    font-size: 20px;
+}
+
+.box1 .news{
+     flex-basis: calc(100% / 4 - 30px / 4);
+  margin-bottom: 10px;
+
+}
+.box1 .news:not(:nth-child(4n)){
+     margin-right: 10px;
+}
+
+/* phan video-section2 */
+.header2{
+     margin-top: 10px;
+    font-size: 20px;
+}
+.box2 .movie{
+         flex-basis: calc(100% / 4 - 30px / 4);
+  margin-bottom: 10px;
+
+}
+.box2 .movie:not(:nth-child(4n)){
+     margin-right: 10px;
+}
+
+/* phan truyen tranh-section3 */
+.header3{
+     margin-top: 10px;
+    font-size: 20px;
+}
+
+.box3 .comic{
+       flex-basis: calc(100% / 6 - 50px / 6);
+  margin-bottom: 10px;
+}
+
+.box3 .comic:not(:nth-child(6n)){
+     margin-right: 10px;
+}
+
+/* phan tin tong hop -section4 */
+.header4{
+     margin-top: 10px;
+    font-size: 20px;
+}
+
+.box4 .news{
+         flex-basis: calc(100% / 4 - 30px / 4);
+  margin-bottom: 10px;
+
+}
+.box4 .news:not(:nth-child(4n)){
+     margin-right: 10px;
+}
+
+/* phim hoat hinh-section5 */
+.header5{
+    margin-top:10px;
+    font-size: 20px;
+}
+.box5 .anime{
+         flex-basis: calc(100% / 4 - 30px / 4);
+  margin-bottom: 10px;
+
+}
+.box5 .anime:not(:nth-child(4n)){
+     margin-right: 10px;
+}
+/* section 6 */
+.header6{
+    margin-top:10px;
+    font-size: 20px;
+}
+.box6 .anime{
+         flex-basis: calc(100% / 4 - 30px / 4);
+  margin-bottom: 10px;
+
+}
+.box6 .anime:not(:nth-child(4n)){
+     margin-right: 10px;
+}
+
+/* section9 */
+.header9{
+    margin-top:10px;
+    font-size: 20px;
+}
+.box9 .anime{
+         flex-basis: calc(100% / 4 - 30px / 4);
+  margin-bottom: 10px;
+
+}
+.box9 .anime:not(:nth-child(4n)){
+     margin-right: 10px;
+}
+
+
+.new-content{
+    position: relative;
+}
+.position{
+   height: 101px;
+    padding: 45px 73px 9px;
+    color: white;
+    position: absolute;
+    left: 5px;
+    bottom: 0px;
+    background-image: linear-gradient(transparent,rgba(0,0,0,.1),rgba(0,0,0,.3),rgba(0,0,0,.5),rgba(0,0,0,.7),rgba(0,0,0,.9));
+}
+
+/* style cho button */
+.bth {
+  background-color: #f11212;
+  color: white;
+  padding: 3px 23px;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  opacity: 0.9;
+}

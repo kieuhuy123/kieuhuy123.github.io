@@ -1,0 +1,72 @@
+.container {
+  background-color: lightcoral;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  /* phím tắt của flex-direction và flex-wrap */
+  /* flex-flow: row wrap; */
+  /* justify căn theo trục main */
+  justify-content: center;
+  /* align-items căn theo trục cross */
+  align-items: center;
+  /* wrap tùy biến  cho toàn container  */
+  flex-wrap: wrap;
+  /* căn chỉnh vị trí của cẩ container-ít dùng */
+  /* align-content: flex-start; */
+}
+
+.item {
+  background-color: mediumorchid;
+  line-height: 30px;
+  width: 200px;
+  order: 0;
+  /* vị trí cho từng item */
+  align-self: auto;
+  /* chia phần cho mỗi item khi to ra, chia theo thằng cha */
+  flex-grow: 0;
+  /* chia phần item khi co vào */
+  flex-shrink: ;
+}
+.item1 {
+  height: 200px;
+  order: 1;
+  align-self: flex-end;
+  /* flexbasic giống width */
+  flex-basis: 100px;
+}
+.item5{
+    order: -1;
+}
+item{
+  position: relative;
+}
+.item5{
+  position: relative;
+}
+  .tray-item-description {
+    height: 81px;
+    padding: 30px 15px 10px;
+}
+.tray-item-description {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+    color: #eee;
+    background: transparent;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(rgba(0,0,0,.1)),color-stop(rgba(0,0,0,.3)),color-stop(rgba(0,0,0,.5)),color-stop(rgba(0,0,0,.7)),to(rgba(0,0,0,.9)));
+    background-image: linear-gradient(transparent,rgba(0,0,0,.1),rgba(0,0,0,.3),rgba(0,0,0,.5),rgba(0,0,0,.7),rgba(0,0,0,.9));
+}
+
+item1{
+  position: relative;
+}
+
+.pos{
+  padding: 10px;
+  position: absolute;
+  left: 10px;
+}

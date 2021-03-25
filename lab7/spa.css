@@ -239,6 +239,13 @@ section {
 }
 
 
+/* header */
+.header li a:hover {
+    color: #ff817e;
+}
+:hover{
+  transition-duration: 0.5s;
+}
 
 /* banner */
 .banner {
@@ -319,6 +326,8 @@ font-size: 20px;
     transform: translateY(-50%);
     max-width: 88px;
 }
+
+
 /* section heading */
 .sec-heading img {
     max-width: 84px;

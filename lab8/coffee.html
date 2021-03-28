@@ -5,92 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>coffee shop</title>
+    <link rel="icon" href="https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a9b50ecdfc8_favicon%202.jpg">
     <link rel="stylesheet" href="coffee.css" />
   </head>
   <body>
-    <div class="menu">
-      <div class="wrap cc-menu w-nav">
-        <a href="" class="brand w-nav-brand w--current">
-          <img
-            src="https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a4ae4ecdfb2_CoffeeStyle%20Logo.png"
-            width="112"
-            class="logo-image"
-            alt=""
-          />
-        </a>
+      <header class="header">
+        <div class="container">
+            <div class="row flex">
+                <div class="col-2">
+                    <a href="#" class="logo">
+                        <img src="https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a4ae4ecdfb2_CoffeeStyle%20Logo.png"
+                        style="max-width: 70%;"
+                        alt="">
+                    </a>
+                </div>
+                <div class="col-8">
+                    <ul class="menu row">
+                        <li class="menu-item-wrap  w--current">
+                            <a href="" class="menu-link">Home</a>
+                        </li>
+                        <li class="menu-item-wrap">
+                            <a href="" class="menu-link">OUR PRODUCTS</a>
+                        </li>
+                        <li class="menu-item-wrap">
+                            <a href="" class="menu-link">BLOG</a>
+                        </li>
+                         <li class="menu-item-wrap">
+                            <a href="" class="menu-link">ABOUT</a>
+                        </li>
+                         <li class="menu-item-wrap">
+                            <a href="" class="menu-link">CONTACT</a>
+                        </li>
+                         <li class="menu-item-wrap">
+                            <a href="" class="menu-link">STYLEGUIDE</a>
+                        </li>
+                         
 
-        <nav class="nav-menu w-nav-menu">
-          <a href="" class="menu-item-wrap w-inline-block w--current">
-            <div class="menu-item">Home</div>
-          </a>
-        </nav>
-        <nav class="nav-menu w-nav-menu">
-          <a href="" class="menu-item-wrap w-inline-block w--current">
-            <div class="menu-item">Our Products</div>
-          </a>
-        </nav>
-        <nav class="nav-menu w-nav-menu">
-          <a href="" class="menu-item-wrap w-inline-block w--current">
-            <div class="menu-item">Blog</div>
-          </a>
-        </nav>
-        <nav class="nav-menu w-nav-menu">
-          <a href="" class="menu-item-wrap w-inline-block w--current">
-            <div class="menu-item">About</div>
-          </a>
-        </nav>
-        <nav class="nav-menu w-nav-menu">
-          <a href="" class="menu-item-wrap w-inline-block w--current">
-            <div class="menu-item">Contact</div>
-          </a>
-        </nav>
-        <nav class="nav-menu w-nav-menu">
-          <a href="" class="menu-item-wrap w-inline-block w--current">
-            <div class="menu-item">Styleguide</div>
-          </a>
-        </nav>
-        <div class="icon">
-          <a
-            href=""
-            class="w-commerce-commercecartopenlink cart-button w-inlien-block"
-          >
-            <img
-              src="https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a3450ecdfb5_Cart%20Icon.png"
-              alt=""
-              class="cart-icon"
-            />
-            <div class="uppercase-text w-inline-block">Cart</div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="header-section">
-      <div class="header-image container">
-        <div class="header-content row">
-          <div class="header-headline-wrap col-10">
-            <div class="label cc-cover-lebel w-inline-block">
-              Best pace to buy design
+                    </ul>
+                </div>
+                <div class="col-2">
+                    <div class="icon ">
+                        <a href="#"  class="w-commerce-commercecartopenlink cart-button w-inlien-block">
+                            <img src="https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a3450ecdfb5_Cart%20Icon.png" style="width:17px" alt="">
+                             <div class="uppercase-text w-inline-block">Cart</div>
+                             <div data-wf-bindings="%5B%7B%22innerHTML%22%3A%7B%22type%22%3A%22Number%22%2C%22filter%22%3A%7B%22type%22%3A%22numberPrecision%22%2C%22params%22%3A%5B%220%22%2C%22numberPrecision%22%5D%7D%2C%22dataPath%22%3A%22database.commerceOrder.userItemsCount%22%7D%7D%5D" class="w-commerce-commercecartopenlinkcount item-count">0</div>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="header-headline">Coffe Mugs</div>
-            <p class="big-paragrah cc-over-paragraph">
-              The most versatile furniture system ever created. Desined to fit
-              your life, made to move and grow
-            </p>
-          </div>
-          <div>
-            <a href="#" class="white-button w-inline-block">
-              <div>Explore Our Products</div>
-            </a>
-          </div>
         </div>
-      </div>
-    </div>
+    </header>
+
+    <section class="header-section">
+        <div class="header-image">
+            <div class="header-content">
+                <div class="header-text">
+                    <div class="header-headline-wrap">
+                        <div class="label cc-cover-label w-inline-block">Best place to buy design</div>
+                        <div class="header-headline">Coffee Mugs</div>
+                        <p class="big-paragraph cc-cover-paragraph">
+                        The most versatile furniture system ever created. Designed to fit your life, made to move and grow.
+                        </p>
+                    </div>
+                    <a href="/products" class="white-button w-inline-block">
+                        <div>Explore Our Products</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
 
     <section class="awe-section-2">
-      <div class="wrap">
+      <div class="container">
         <div class="row">
-          <div class="col-8 m-auto">
+          <div class="col-9 m-auto">
             <div class="sec-heading">
               <h2>
                 Even the all-powerful Pointing has no control about the blind
@@ -112,7 +103,7 @@
     </section>
 
     <div class="subheadline-wrap">
-        <div class="wrap">
+        <div class="container">
             <div class="row">
                 <div class="col-3 m-auto">
                     <div class="subheadline-deco-line"></div>
@@ -123,46 +114,75 @@
         </div>
     </div>
 
-    <section class="awe-section-3">
-        <div class="wrap">
-            <div class="row">
-                <div class="col-6">
-                    <div class="link-wrap-category">
-                        <a href="#" class="item-over-lay">
-                            <img src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a512bece011_liana-mikah-698524-unsplash.jpg" alt="">
-                            <div class="white-button cc-product-button">Explore Mug</div>
+  <!-- section-3 -->
+          <section class="awe-section-3">
+              <div class="container">
+                            <div class="featured-mugs w-dyn-list">
+                                <div class="featured-collection w-dyn-items"
+                                style="    opacity: 1;
+                                                transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(
+                                            0deg
+                                            ) rotateY(
+                                            0deg
+                                            ) rotateZ(
+                                            0deg
+                                            ) skew(
+                                            0deg
+                                            ,
+                                            0deg
+                                            );
+                                                transform-style: preserve-3d;"  >
+                                                <div class="feature-item w-dyn-item">
+                                                    <div id="link-wrap" class="link-wrap-category">
+                                                         <a href="#"
+              
+                                                            class="item-overlay w-inline-block">
+                                                                <div style="transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                                                                        transform-style: preserve-3d;"
+                                                                        class="white-button cc-product-button">
+                                                                        <div>Explore Mug</div>
+                                                                </div>
+              
+                                                        </a>
+              
+                                                        <div class="product-picture cc-featured-picture" style="background-image: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a512bece011_liana-mikah-698524-unsplash.jpg);"></div>
+                                                    </div>
+                                                    <a href="/product/pink-premium-ceramic" class="pic-description cc-product-category">Pink Premium Ceramic</a>
+                                                    <div class="categort-price-wrap">
+                                                                <p> $99.00 USD</p>
+                                                    </div>
+                                                </div>
+                                                <div class="feature-item w-dyn-item">
+                                                    <div id="link-wrap" class="link-wrap-category">
+                                                         <a href="#"
+              
+                                                            class="item-overlay w-inline-block">
+                                                                <div style="transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+                                                                        transform-style: preserve-3d;"
+                                                                        class="white-button cc-product-button">
+                                                                        <div>Explore Mug</div>
+                                                                </div>
+              
+                                                        </a>
+                                                        <div class="category-tag"><div class="category-tag-text cc-sale">On Sale.</div></div>
+                                                        <div class="category-tag w-condition-invisible"><div class="category-tag-text cc-new">New</div></div>
+              
+                                                        <div class="product-picture cc-featured-picture" style="background-image: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a25acecdfd6_jakub-dziubak-394720-unsplash.jpg);"></div>
+                                                    </div>
+                                                    <a href="/product/pink-premium-ceramic" class="pic-description cc-product-category">Golden Designers Mug</a>
+                                                    <div class="category-price-wrap row">
+                                                        <p class="discounted-price-category">$50.00</p>
+                                                        <p class="product-price-category older-price-category">$ 69.00 USD</p>
+              
+                                                    </div>
+          </section>
+        
 
-                            <a href="#" class="pic-description cc-product-category">Pink Premium Ceramic</a>
-                            <div class="categort-price-wrap">
-                                <p> $99.00 USD</p>
-                            </div>
-                            
-                        </a>
-                    </div>
-                </div>
-                <div class="col-6">
-                    <div class="link-wrap-category">
-                        <a href="#" class="item-over-lay">
-                            <img src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a25acecdfd6_jakub-dziubak-394720-unsplash.jpg" alt="">
-                            <div class="white-button cc-product-button">Explore Mug</div>
-
-                             <a href="#" class="pic-description cc-product-category">Golden Designers Mug</a>
-                            <div class="categort-price-wrap">
-                                <p> $55.00 USD</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                
-               
-            </div>
-        </div>
-    </section>
-
+                                    <!-- section-3 end -->
 
 
     <div class="subheadline-wrap">
-        <div class="wrap">
+        <div class="container">
             <div class="row">
                 <div class="col-3 m-auto">
                     <div class="subheadline-deco-line"></div>
@@ -174,185 +194,339 @@
     </div>
 
 
-    <section class="awe-section-4">
-        <div class="wrap">
-            <div class="row">
-                <div class="col-4">
-                    <div class="product">
-                        <div class="product-item">
-                            <a href="item-overlay">
-                                <img src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a6173ece01a_trent-erwin-570303-unsplash.jpg" alt="">
-                                <div class="white-button cc-product-button">Explore Mug</div>
+     <!-- section 4  start -->
 
-                             <a href="#" class="pic-description cc-product-category">Golden Designers Mug</a>
-                            <div class="categort-price-wrap">
-                                <p> $55.00 USD</p>
-                            </div>
-                            </a>
-
-                        </div>
-                    </div>
+    <section class="collection-list">
+      <div class="container">
+        <div class="collection-list-wrapper">
+          <div class="products-grid">
+            <div class="product-pic-wrap">
+              <div id="link-wrap" class="link-wrap-category">
+                <a href="#" class="item-overlay w-inline-block">
+                  <div
+                    style="
+                      transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1)
+                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                        skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                    class="white-button cc-product-button"
+                  >
+                    <div>Explore Mug</div>
+                  </div>
+                </a>
+                <div class="category-tag">
+                  <div class="category-tag-text cc-sale">On Sale.</div>
                 </div>
-                <div class="col-4">
-                    <div class="product">
-                        <div class="product-item">
-                            <a href="item-overlay">
-                                <img src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a6173ece01a_trent-erwin-570303-unsplash.jpg" alt="">
-                                <div class="white-button cc-product-button">Explore Mug</div>
-
-                             <a href="#" class="pic-description cc-product-category">Golden Designers Mug</a>
-                            <div class="categort-price-wrap">
-                                <p> $55.00 USD</p>
-                            </div>
-                            </a>
-
-                        </div>
-                    </div>
+                <div class="category-tag w-condition-invisible">
+                  <div class="category-tag-text cc-new">New</div>
                 </div>
-                <div class="col-4">
-                    <div class="product">
-                        <div class="product-item">
-                            <a href="item-overlay">
-                                <img src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a6173ece01a_trent-erwin-570303-unsplash.jpg" alt="">
-                                <div class="white-button cc-product-button">Explore Mug</div>
-
-                             <a href="#" class="pic-description cc-product-category">Golden Designers Mug</a>
-                            <div class="categort-price-wrap">
-                                <p> $55.00 USD</p>
-                            </div>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="product">
-                        <div class="product-item">
-                            <a href="item-overlay">
-                                <img src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a6173ece01a_trent-erwin-570303-unsplash.jpg" alt="">
-                                <div class="white-button cc-product-button">Explore Mug</div>
-
-                             <a href="#" class="pic-description cc-product-category">Golden Designers Mug</a>
-                            <div class="categort-price-wrap">
-                                <p> $55.00 USD</p>
-                            </div>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="product">
-                        <div class="product-item">
-                            <a href="item-overlay">
-                                <img src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a6173ece01a_trent-erwin-570303-unsplash.jpg" alt="">
-                                <div class="white-button cc-product-button">Explore Mug</div>
-
-                             <a href="#" class="pic-description cc-product-category">Golden Designers Mug</a>
-                            <div class="categort-price-wrap">
-                                <p> $55.00 USD</p>
-                            </div>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="product">
-                        <div class="product-item">
-                            <a href="item-overlay">
-                                <img src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a6173ece01a_trent-erwin-570303-unsplash.jpg" alt="">
-                                <div class="white-button cc-product-button">Explore Mug</div>
-
-                             <a href="#" class="pic-description cc-product-category">Golden Designers Mug</a>
-                            <div class="categort-price-wrap">
-                                <p> $55.00 USD</p>
-                            </div>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="product">
-                        <div class="product-item">
-                            <a href="item-overlay">
-                                <img src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a6173ece01a_trent-erwin-570303-unsplash.jpg" alt="">
-                                <div class="white-button cc-product-button">Explore Mug</div>
-
-                             <a href="#" class="pic-description cc-product-category">Golden Designers Mug</a>
-                            <div class="categort-price-wrap">
-                                <p> $55.00 USD</p>
-                            </div>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="product">
-                        <div class="product-item">
-                            <a href="item-overlay">
-                                <img src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a6173ece01a_trent-erwin-570303-unsplash.jpg" alt="">
-                                <div class="white-button cc-product-button">Explore Mug</div>
-
-                             <a href="#" class="pic-description cc-product-category">Golden Designers Mug</a>
-                            <div class="categort-price-wrap">
-                                <p> $55.00 USD</p>
-                            </div>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="product">
-                        <div class="product-item">
-                            <a href="item-overlay">
-                                <img src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a6173ece01a_trent-erwin-570303-unsplash.jpg" alt="">
-                                <div class="white-button cc-product-button">Explore Mug</div>
-
-                             <a href="#" class="pic-description cc-product-category">Golden Designers Mug</a>
-                            <div class="categort-price-wrap">
-                                <p> $55.00 USD</p>
-                            </div>
-                            </a>
-
-                        </div>
-                    </div>
-                </div>
-                
+                <div
+                  class="product-picture"
+                  style="
+                    background-image: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a6173ece01a_trent-erwin-570303-unsplash.jpg);
+                  "
+                ></div>
+              </div>
+              <a
+                href="/product/pink-premium-ceramic"
+                class="pic-description cc-product-category"
+                >Red Love Cup</a
+              >
+              <div class="category-price-wrap row">
+                <p class="discounted-price-category">$25.00</p>
+                <p class="product-price-category older-price-category">
+                  $ 37.00 USD
+                </p>
+              </div>
             </div>
+
+            <div class="product-pic-wrap">
+              <div id="link-wrap" class="link-wrap-category">
+                <a href="#" class="item-overlay w-inline-block">
+                  <div
+                    style="
+                      transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1)
+                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                        skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                    class="white-button cc-product-button"
+                  >
+                    <div>Explore Mug</div>
+                  </div>
+                </a>
+                <div class="category-tag">
+                  <div class="category-tag-text cc-sale">On Sale.</div>
+                </div>
+                <div class="category-tag w-condition-invisible">
+                  <div class="category-tag-text cc-new">New</div>
+                </div>
+                <div
+                  class="product-picture"
+                  style="
+                    background-image: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a0c09ece01c_steve-harvey-523112-unsplash.jpg);
+                  "
+                ></div>
+              </div>
+              <a
+                href="/product/pink-premium-ceramic"
+                class="pic-description cc-product-category"
+                >Black Tea Cup</a
+              >
+              <div class="category-price-wrap row">
+                <p class="discounted-price-category">$15.00</p>
+                <p class="product-price-category older-price-category">
+                  $ 29.00 USD
+                </p>
+              </div>
+            </div>
+
+            <div class="product-pic-wrap">
+              <div id="link-wrap" class="link-wrap-category">
+                <a href="#" class="item-overlay w-inline-block">
+                  <div
+                    style="
+                      transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1)
+                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                        skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                    class="white-button cc-product-button"
+                  >
+                    <div>Explore Mug</div>
+                  </div>
+                </a>
+
+                <div
+                  class="product-picture"
+                  style="
+                    background-image: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a223decdff8_ronaldo-arthur-vidal-66241-unsplash.jpg);
+                  "
+                ></div>
+              </div>
+              <a
+                href="/product/pink-premium-ceramic"
+                class="pic-description cc-product-category"
+                >B&W Essentials Mug</a
+              >
+
+              <div class="categort-price-wrap">
+                <p>$19.00 USD</p>
+              </div>
+            </div>
+
+            <div class="product-pic-wrap">
+              <div id="link-wrap" class="link-wrap-category">
+                <a href="#" class="item-overlay w-inline-block">
+                  <div
+                    style="
+                      transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1)
+                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                        skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                    class="white-button cc-product-button"
+                  >
+                    <div>Explore Mug</div>
+                  </div>
+                </a>
+
+                <div
+                  class="product-picture"
+                  style="
+                    background-image: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a6d09ece015_rocknwool-690694-unsplash.jpg);
+                  "
+                ></div>
+              </div>
+              <a
+                href="/product/pink-premium-ceramic"
+                class="pic-description cc-product-category"
+                >Winter Style Mug</a
+              >
+              <div class="categort-price-wrap">
+                <p>$25.00 USD</p>
+              </div>
+            </div>
+
+            <div class="product-pic-wrap">
+              <div id="link-wrap" class="link-wrap-category">
+                <a href="#" class="item-overlay w-inline-block">
+                  <div
+                    style="
+                      transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1)
+                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                        skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                    class="white-button cc-product-button"
+                  >
+                    <div>Explore Mug</div>
+                  </div>
+                </a>
+
+                <div
+                  class="product-picture"
+                  style="
+                    background-image: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7ae493ece012_rawpixel-645289-unsplash.jpg);
+                  "
+                ></div>
+              </div>
+              <a
+                href="/product/pink-premium-ceramic"
+                class="pic-description cc-product-category"
+                >Ceramic Tea</a
+              >
+              <div class="categort-price-wrap">
+                <p>$46.00 USD</p>
+              </div>
+            </div>
+
+            <div class="product-pic-wrap">
+              <div id="link-wrap" class="link-wrap-category">
+                <a href="#" class="item-overlay w-inline-block">
+                  <div
+                    style="
+                      transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1)
+                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                        skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                    class="white-button cc-product-button"
+                  >
+                    <div>Explore Mug</div>
+                  </div>
+                </a>
+
+                <div
+                  class="product-picture"
+                  style="
+                    background-image: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a8461ece016_nathan-dumlao-643391-unsplash.jpg);
+                  "
+                ></div>
+              </div>
+              <a
+                href="/product/pink-premium-ceramic"
+                class="pic-description cc-product-category"
+                >No Handle Bar Cup</a
+              >
+              <div class="categort-price-wrap">
+                <p>$34.00 USD</p>
+              </div>
+            </div>
+
+            <div class="product-pic-wrap">
+              <div id="link-wrap" class="link-wrap-category">
+                <a href="#" class="item-overlay w-inline-block">
+                  <div
+                    style="
+                      transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1)
+                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                        skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                    class="white-button cc-product-button"
+                  >
+                    <div>Explore Mug</div>
+                  </div>
+                </a>
+
+                <div
+                  class="product-picture"
+                  style="
+                    background-image: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a1db2ece009_natanja-grun-600152-unsplash.jpg);
+                  "
+                ></div>
+              </div>
+              <a
+                href="/product/pink-premium-ceramic"
+                class="pic-description cc-product-category"
+                >Espresso Cup by Mugs.co</a
+              >
+              <div class="categort-price-wrap">
+                <p>$25.00 USD</p>
+              </div>
+            </div>
+
+            <div class="product-pic-wrap">
+              <div id="link-wrap" class="link-wrap-category">
+                <a href="#" class="item-overlay w-inline-block">
+                  <div
+                    style="
+                      transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1)
+                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                        skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                    class="white-button cc-product-button"
+                  >
+                    <div>Explore Mug</div>
+                  </div>
+                </a>
+
+                <div
+                  class="product-picture"
+                  style="
+                    background-image: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a512bece011_liana-mikah-698524-unsplash.jpg);
+                  "
+                ></div>
+              </div>
+              <a
+                href="/product/pink-premium-ceramic"
+                class="pic-description cc-product-category"
+                >Pink Premium Ceramic</a
+              >
+              <div class="categort-price-wrap">
+                <p>$99.00 USD</p>
+              </div>
+            </div>
+
+            <div class="product-pic-wrap">
+              <div id="link-wrap" class="link-wrap-category">
+                <a href="#" class="item-overlay w-inline-block">
+                  <div
+                    style="
+                      transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1)
+                        rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                        skew(0deg, 0deg);
+                      transform-style: preserve-3d;
+                    "
+                    class="white-button cc-product-button"
+                  >
+                    <div>Explore Mug</div>
+                  </div>
+                </a>
+
+                <div
+                  class="product-picture"
+                  style="
+                    background-image: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a81a6ecdfe7_levi-guzman-1077850-unsplash.jpg);
+                  "
+                ></div>
+              </div>
+              <a
+                href="/product/pink-premium-ceramic"
+                class="pic-description cc-product-category"
+                >Summer Designer Cup</a
+              >
+              <div class="categort-price-wrap">
+                <p>$29.00 USD</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-
-
-    <div class="subheadline-wrap">
-        <div class="wrap">
-            <div class="row">
-                <div class="col-6 m-auto">
-                    <div class="subheadline-deco-line"></div>
-                    <div class="label cc-subheadline w-inline-block">BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE
-</div>
-                    <div class="subheadline-deco-line"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="parallax-section"></div>
-
-
+    <!-- section-4 end -->
 
      <div class="subheadline-wrap">
-        <div class="wrap">
+        <div class="container">
             <div class="row">
                 <div class="col-6 m-auto">
                     <div class="subheadline-deco-line"></div>
                     <div class="label cc-subheadline w-inline-block">
-BEHIND THE MUGS, LIFESTYLE STORIES
-
-</div>
+                        BUY 2 MUGS AND GET A COFFEE MAGAZINE FREE
+                    </div>
                     <div class="subheadline-deco-line"></div>
                 </div>
             </div>
@@ -361,38 +535,252 @@ BEHIND THE MUGS, LIFESTYLE STORIES
 
 
 
-    <section class="awe-section-5">
-        <div class="wrap">
+    <!-- section-5 start -->
+
+    <section class="magazine" style="margin-bottom: 80px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
             <div class="row">
-                <div class="col-4">
-                    <div class="link-wrap-category">
-                        <a href="" class="item-overlay">
-                            <img src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a5e47ece03c_Blog%20Pic%20Head%208.jpg" alt="">
-                        </a>
-                    </div>
+              <div class="magazine-image"></div>
+              <div class="magazine-small-image">
+                <div class="magazine-small-image-1"></div>
+                <div class="magazine-small-image-2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 magazine-content-wrap">
+            <div class="row">
+              <div class="magazine-text-wrap">
+                <div class="label cc-footer-section-headline w-inline-block">
+                  Premium Offer
                 </div>
-                <div class="col-4">
-                    <div class="link-wrap-category">
-                        <a href="" class="item-overlay">
-                            <img src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a4ce6ece036_bar-cafe-caffeine-1002740.jpg" alt="">
-                        </a>
+                <h2 class="magazine-headline">Get our Coffee Magazine</h2>
+                <p
+                  id="w-node-_2d2e750c-a2a7-4379-71a8-dcf95aece3c7-5cecdf68"
+                  class="paragraph"
+                >
+                  The most versatile furniture system ever created. Designed to
+                  fit your life.
+                </p>
+              </div>
+              <a href="/products" class="dark-button w-inline-block">
+                <div>Start Shopping</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section-5 end -->
+
+     <div class="parallax-section"></div>
+
+
+
+
+      <div class="subheadline-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 m-auto">
+                    <div class="subheadline-deco-line"></div>
+                    <div class="label cc-subheadline w-inline-block">
+                       
+                            BEHIND THE MUGS, LIFESTYLE STORIES
+
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="link-wrap-category">
-                        <a href="" class="item-overlay">
-                            <img src="https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a4ce6ece036_bar-cafe-caffeine-1002740.jpg" alt="">
-                        </a>
-                    </div>
+                    <div class="subheadline-deco-line"></div>
                 </div>
             </div>
         </div>
+    </div>
+
+
+
+    <!-- section-6-content start -->
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 blog-pic-wrap">
+                    <div id="link-wrap" class="link-wrap-category">
+                        <a href="#" class="item-overlay w-inline-block">
+                            <div
+                                style="
+                                transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1)
+                                    rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                                    skew(0deg, 0deg);
+                                transform-style: preserve-3d;
+                                "
+                                class="white-button cc-product-button"
+                            >
+                            <div>READ THE FULL STORY</div>
+                            </div>
+                        </a>
+                        <div 
+                        style="    background-image: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a4ce6ece036_bar-cafe-caffeine-1002740.jpg);"
+                        class="blog-picture"></div>
+
+                    </div>
+                    <a href="#" class="blog-thumbnail-subheadline">Health Check: why do I get a headache when I haven’t had my coffee?</a>
+                    <div class="paragraph">It is a paradisematic country, in which roasted parts of sentences fly into your mouth. </div>
+                    <div class="label cc-blog-post-categories-related w-inline-block">October 9, 2018</div>
+                    
+                    
+                </div>
+                 <div class="col-4 blog-pic-wrap">
+                    <div id="link-wrap" class="link-wrap-category">
+                        <a href="#" class="item-overlay w-inline-block">
+                            <div
+                                style="
+                                transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1)
+                                    rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                                    skew(0deg, 0deg);
+                                transform-style: preserve-3d;
+                                "
+                                class="white-button cc-product-button"
+                            >
+                            <div>READ THE FULL STORY</div>
+                            </div>
+                        </a>
+                        <div 
+                        style="    background-image: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a481bece02f_Blog%20Pic%20Head%201.jpg);"
+                        class="blog-picture"></div>
+
+                    </div>
+                    <a href="#" class="blog-thumbnail-subheadline">How long does a cup of coffee keep you awake?</a>
+                    <div class="paragraph">It is a paradisematic country, in which roasted parts. Vel qui et ad voluptatem. </div>
+                    <div class="label cc-blog-post-categories-related w-inline-block">October 9, 2018</div>
+                    
+                    
+                </div>
+                 <div class="col-4 blog-pic-wrap">
+                    <div id="link-wrap" class="link-wrap-category">
+                        <a href="#" class="item-overlay w-inline-block">
+                            <div
+                                style="
+                                transform: translate3d(0px, 8px, 0px) scale3d(1, 1, 1)
+                                    rotateX(0deg) rotateY(0deg) rotateZ(0deg)
+                                    skew(0deg, 0deg);
+                                transform-style: preserve-3d;
+                                "
+                                class="white-button cc-product-button"
+                            >
+                            <div>READ THE FULL STORY</div>
+                            </div>
+                        </a>
+                        <div 
+                        style="    background-image: url(https://assets.website-files.com/5be96251aaba7a84f6ecdf81/5be96251aaba7a5e47ece03c_Blog%20Pic%20Head%208.jpg);"
+                        class="blog-picture"></div>
+
+                    </div>
+                    <a href="#" class="blog-thumbnail-subheadline">Recent research suggests that heavy coffee drinkers may reap health benefits.</a>
+                    <div class="paragraph">It is a paradisematic country, in which roasted parts of sentences fly into your mouth. </div>
+                    <div class="label cc-blog-post-categories-related w-inline-block">October 9, 2018</div>
+                    
+                    
+                </div>
+               
+                
+            </div>
+        </div>
+        
+
     </section>
+    <!-- section-6 end -->
+
+    <div class="content cc-subscribe-form">
+         <div class="subscribe-wrap">
+            <div class="container cc-subcribe-form">
+                <div class="footer-subheadline">
+                    <div class="subscribe-form-deco-line"></div>
+                    <div class="label cc-subheadline w-inline-block">Sign up and get free coffee bags</div>
+                    <div class="subscribe-form-deco-line"></div>
+                </div>
+                <div class="subscribe-headline">Coffee Updates</div>
+                <div class="form-block w-form">
+                    <div class="form">
+                        <input type="text"
+                         class="text-field-dark cc-subscribe-input w-input"
+                          maxlength="256" name="Customer-s-Name" data-name="Customer's Name"
+                           placeholder="customer@coffeestyle.io" id="Customer-s-Name">
+                           <input type="submit" value="Subscribe" data-wait="Please wait..." class="white-button w-button">
+
+                    </div>
+                    <div class="success-message w-form-done"></div>
+                    <div class="error-message w-form-fail"></div>
+
+                </div>
+            </div>
+                
+                
+                
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <footer class="content">
+        <div class="container">
+            <div style="opacity: 1;
+                            transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(
+                            0deg
+                            ) rotateY(
+                            0deg
+                            ) rotateZ(
+                            0deg
+                            ) skew(
+                            0deg
+                            , 
+                            0deg
+                            );
+                                transform-style: preserve-3d;"  
+            class="footer w-layout-grid">
+                <img src="https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a4ae4ecdfb2_CoffeeStyle%20Logo.png"
+                 width="111" id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d697-50f9fcff"
+                  alt="" class="logo-image cc-footer-logo">
+                  <p id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d698-50f9fcff" 
+                  class="small-paragraph">Delivering the best coffee life since 1996. From coffee geeks to the real ones.
+                </p>
+                <p id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d69a-50f9fcff" class="small-paragraph cc-copyright-footer">CoffeeStyle Inc. © 1996</p>
+                <div id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d69c-50f9fcff" class="label cc-footer-section-headline w-inline-block">Menu</div>
+                <div id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d69e-50f9fcff" class="footer-grid-column">
+                    <a href="/" aria-current="page" class="footer-link w--current">Home</a>
+                    <a href="/products" class="footer-link">Our Products</a>
+                    <a href="/about" class="footer-link">About</a>
+                    <a href="/contact" class="footer-link">Contact</a>
+                    <a href="/styleguide" class="footer-link">Styleguide</a>
+                </div>
+                <div id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d6a9-50f9fcff" class="label cc-footer-section-headline w-inline-block">Follow Us</div>
+                <div id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d6ab-50f9fcff" class="footer-grid-column">
+                    <a href="https://www.facebook.com/" target="_blank" class="footer-link">Facebook</a>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer-link">Instagram</a>
+                    <a href="https://www.pinterest.com/" target="_blank" class="footer-link">Pinterest</a>
+                    <a href="https://twitter.com/" target="_blank" class="footer-link">Twitter</a>
+                </div>
+                <div id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d6b4-50f9fcff" class="label cc-footer-section-headline w-inline-block">Contact Us</div>
+                <div id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d6b6-50f9fcff" class="footer-grid-column">
+                    <p class="small-paragraph">We’re Always Happy to Help</p><a href="mailto:us@coffeestyle.io" class="footer-email-link">us@coffeestyle.io</a>
+                </div>
+                <a id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d6bb-50f9fcff"
+                 href="http://webflow.com" target="_blank" class="small-paragraph cc-copyright-footer">
+                 Powered by Webflow
+                </a>
+                
+            </div>
+        </div>
+    </footer>
+
+
+
+                                                
 
 
 
 
-    <div class="content"><div class="wrap"><div data-w-id="4c625f5d-597c-b93b-cc62-5e4ebf27d696" class="w-layout-grid footer" style="opacity: 1; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;"><img src="https://assets.website-files.com/5be96251aaba7a7b19ecdf69/5be96251aaba7a4ae4ecdfb2_CoffeeStyle%20Logo.png" width="111" id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d697-50f9fcff" alt="" class="logo-image cc-footer-logo"><p id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d698-50f9fcff" class="small-paragraph">Delivering the best coffee life since 1996. From coffee geeks to the real ones.</p><p id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d69a-50f9fcff" class="small-paragraph cc-copyright-footer">CoffeeStyle Inc. © 1996</p><div id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d69c-50f9fcff" class="label cc-footer-section-headline w-inline-block">Menu</div><div id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d69e-50f9fcff" class="footer-grid-column"><a href="/" aria-current="page" class="footer-link w--current">Home</a><a href="/products" class="footer-link">Our Products</a><a href="/about" class="footer-link">About</a><a href="/contact" class="footer-link">Contact</a><a href="/styleguide" class="footer-link">Styleguide</a></div><div id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d6a9-50f9fcff" class="label cc-footer-section-headline w-inline-block">Follow Us</div><div id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d6ab-50f9fcff" class="footer-grid-column"><a href="https://www.facebook.com/" target="_blank" class="footer-link">Facebook</a><a href="https://www.instagram.com/" target="_blank" class="footer-link">Instagram</a><a href="https://www.pinterest.com/" target="_blank" class="footer-link">Pinterest</a><a href="https://twitter.com/" target="_blank" class="footer-link">Twitter</a></div><div id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d6b4-50f9fcff" class="label cc-footer-section-headline w-inline-block">Contact Us</div><div id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d6b6-50f9fcff" class="footer-grid-column"><p class="small-paragraph">We’re Always Happy to Help</p><a href="mailto:us@coffeestyle.io" class="footer-email-link">us@coffeestyle.io</a></div><a id="w-node-_4c625f5d-597c-b93b-cc62-5e4ebf27d6bb-50f9fcff" href="http://webflow.com" target="_blank" class="small-paragraph cc-copyright-footer">Powered by Webflow</a></div></div></div>
+
+
+    
 
 
    

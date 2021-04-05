@@ -13,9 +13,12 @@
 // let b = Number(prompt("Nhap b"));
 // let c = Number(prompt("Nhap c"));
 
-// a > b && a > c&& console.log("so lon nhat la: " + a);
-// b > a && b > c && console.log("so lon nhat la: " + b);
-// c > a && c > b && console.log("so lon nhat la: " + c);
+// max = a;
+// b >= max && (max = b);
+// c >= max && (max = c);
+
+// console.log(max + " la so lon nhat");
+
 
 // Ex 3
 // let a = Number(prompt("Nhap a"));
@@ -25,7 +28,7 @@
 // a + b > c &&
 //   a + c > b &&
 //   b + c > a &&
-//   console.log("3 canh tao thanh 1 tam giac ");
+//   console.log("3 canh tao thanh 1 tam giac "); 
 
 // a + b <= c && console.log("3 canh khong tao thanh 1 tam giac ");
 // a + c <= b && console.log("3 canh khong tao thanh 1 tam giac ");

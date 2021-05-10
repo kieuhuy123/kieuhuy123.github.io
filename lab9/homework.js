@@ -6,7 +6,7 @@ let a = Number(prompt("Nhập độ dài cm: "));
 function mm(a) {
   return a * 10;
 }
-function m(a) {
+function met(a) {
   return a / 100;
 }
 function km(a) {
@@ -14,7 +14,7 @@ function km(a) {
 }
 
 console.log(a + "cm" + "=" + mm(a) + "mm");
-console.log(a + "cm" + "=" + m(a) + "m");
+console.log(a + "cm" + "=" + met(a) + "m");
 console.log(a + "cm" + "=" + km(a) + "km");
 
 // Ex2
@@ -35,9 +35,7 @@ console.log(c + "℃" + "=" + doK(c) + "K");
 
 let s = Number(prompt("Nhập vào số giây: "));
 // tinh ra giay
-function h(s) {
-    return s%86400
-}
+
 function m(s) {
   return s % 3600;
 }
@@ -67,6 +65,11 @@ console.log(H(s) + ":" + minute(s) + ":" + sec(s));
 
 
 
+
+
+// function h(s) {
+//   return s % 86400;
+// }
 // function Hours(s) {
 //   return H(s) % 24;
 // }

@@ -1,0 +1,66 @@
+:root {
+    --pink: #e6a7d7;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: var(--pink);
+    font-family: sans-serif;
+
+};
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 60px;
+
+}
+
+.container {
+    padding: 40px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#gameboard {
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+}
+
+.box {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--pink);
+    font-size: 150px;
+    /* background-color: rgb(231, 90, 231); */
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: var(--pink);
+    color: white;
+    border-color: var(--pink);
+    font-size: 18px;
+    transition: 200ms transform;
+
+
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+
+}

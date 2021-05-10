@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>web</title>
+    <style>
+      ul{
+          width: 0;
+      }
+      .header {
+        position: fixed;
+        transition: all 1s ;
+      }
+      body {
+        height: 5000px;
+      }
+      .imgdark{
+        display: none;
+      }
+      .imgdark.on {
+        display: block;
+      }
+      .imgwhite.off{
+        display: none;
+      }
+     
+    </style>
+    </style>
+  </head>
+  <body>
+      <header class="header">
+      
+        <nav class="nk-navbar nk-navbar-top nk-navbar-sticky nk-navbar-transparent nk-navbar-white-text-on-top nk-navbar-fixed">
+          <div class="container">
+          <div class="row">
+            <div class="col-6 col-lg-3">
+              <a href="">
+                <div class="imgwhite">
+                  <img
+                    src="http://unvab.com/snow-free-html/assets/images/logo-light.svg"
+                    alt=""
+                    width="85"
+                  />
+                </div>
+                <div class="imgdark">
+                  <img
+                    src="http://unvab.com/snow-free-html/assets/images/logo.svg"
+                  
+                    width="85"
+                    alt=""
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="hidden col-lg-9 column lg-block ">
+              <ul class="nk-nav nk-nav-right ">
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">BLOG</a></li>
+                <li><a href="">WORDPRESS THEME</a></li>
+                
+              </ul>
+            </div>
+            
+           <div class="col-6 lg-hidden">
+             <ul class="nk-nav nk-nav-right nk-nav-icons">
+               <li class="single-icon">
+                 <a href="#" class="nk-navbar-full-toggle">
+                   <sppan class="nk-icon-burger">
+                     <span class="nk-t-1"></span>
+                     <span class="nk-t-2"></span>
+                     <span class="nk-t-3"></span>
+                   </sppan>
+                 </a>
+               </li>
+             </ul>
+           </div>
+           
+            </div>
+          </div>
+          </div>
+        </nav>
+        <div style="display: block;"></div>
+      
+    </header>
+
+         <script>
+      let imgdark = document.querySelector(".imgdark");
+      let imgwhite = document.querySelector(".imgwhite")
+      let dark = false;
+      let white = false
+
+      window.addEventListener("scroll", function (ev) {
+        console.log(window.pageYOffset);
+        if (window.pageYOffset > 100) {
+          if (!dark) {
+            imgdark.classList.add("on");
+            imgwhite.classList.add("off")
+           
+            dark = true;
+          }
+        } else {
+          imgdark.classList.remove("on");
+          imgwhite.classList.remove("off")
+          dark = false;
+        }
+      });
+    </script>
+    
+  </body>
+</html>

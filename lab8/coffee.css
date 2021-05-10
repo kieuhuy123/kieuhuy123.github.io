@@ -343,6 +343,21 @@ header{
     -ms-flex: 1;
     flex: 1;
 }
+.menu-item-deco-line {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    width: 100%;
+    height: 2px;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: rgba(162, 95, 75, 0.3);
+    opacity: 0;
+}
 .menu-link{
     position: relative;
     margin-top: 2px;

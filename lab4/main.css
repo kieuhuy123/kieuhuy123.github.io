@@ -1,0 +1,49 @@
+.container{
+    max-width: 1000px;
+    margin: auto;
+}
+ul{list-style: none;
+padding: 0;}
+/* MENU CHÍNH */
+.menu{word-spacing: -1ch;}
+.item1{
+    word-spacing: normal;
+    width: 100px;
+
+}
+.link2{
+    
+    text-decoration: none;
+    display: block;
+   
+    padding: 10px;
+}
+
+.item1:hover .link2{
+    background-color: rgb(226, 221, 221);
+    color:orange;
+}
+.item1{position: relative;}
+/* menu cấp 2  */
+.menu2{
+    display: none;
+    top:100%
+    
+    
+    width:120%;
+}
+.item1:hover .menu2 {
+    display: block;
+}
+.link3{
+    text-decoration: none;
+    display: block;
+   
+    padding: 10px;
+}
+.item2:hover .link3{
+    background-color: rgb(226, 221, 221);
+    color:orange;
+}
+
+

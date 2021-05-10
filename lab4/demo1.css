@@ -1,0 +1,82 @@
+ul{
+list-style: none;
+padding: 0;
+}
+/* menu chính */
+.menu{
+    word-spacing: -1ch;
+}
+.menu-item{
+    word-spacing: normal;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu-link{
+    display: block;
+    padding: 10px;
+   background-color: blueviolet;
+   color: white;
+   text-decoration: none;
+}
+.menu-link.active,
+.menu-item:hover .menu-link{
+    background-color: tomato;
+    color: teal;
+  }
+.menu-item{position: relative;}
+
+/* menu cap 2 */
+.two-menu{
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 150%;
+}
+.menu-item:hover .two-menu{
+    display: block;
+}
+
+.two-link {
+     text-decoration: none;
+    display: block;
+    padding: 10px;
+     background-color: blueviolet;
+   color: white;
+}
+.two-item:hover .two-link{
+background-color: springgreen;
+color: rgb(10, 7, 7);
+}
+.two-item{
+    position: relative;}
+
+/* menu cap 3 */
+.third-menu{
+    display: none;
+     position: absolute;
+    left: 100%;
+    top: 0;
+    width: 100%;
+}
+   
+
+.two-item:hover .third-menu{
+    display: block;
+}
+
+.third-link{
+    text-decoration: none;
+     display: block;
+     padding: 10px;
+    background-color: blueviolet;
+   color: white;
+
+}
+.third-link:hover{
+    background-color: rgb(125, 115, 134);
+   color: white;
+}
+
+

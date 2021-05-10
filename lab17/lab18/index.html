@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      body {
+        height: 5000px;
+      }
+      .header {
+        background-color: pink;
+        height: 100px;
+        width: 100%;
+        position: fixed;
+        transition: all 0.5s ;
+      }
+      .header.bg {
+         background-color: royalblue;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="container"></div>
+      </nav>
+    </header>
+
+    <script>
+      let header = document.querySelector(".header");
+      let hasbg = false;
+
+      window.addEventListener("scroll", function(ev){
+        console.log(window.pageYOffset)
+        if (window.pageYOffset > 100) {
+          if(!hasbg) {
+            header.classList.add("bg");
+            hasbg = true;
+          }
+          
+        } else {
+          header.classList.remove("bg")
+          hasbg = false;
+        }
+      })
+    </script>
+  </body>
+</html>

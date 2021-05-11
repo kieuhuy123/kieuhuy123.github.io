@@ -51,9 +51,7 @@ section {
   text-transform: uppercase;
   position: relative;
 }
-.text-right {
-  text-align: right;
-}
+
 
 .navbar-nav li a {
   text-decoration: none;
@@ -140,7 +138,9 @@ section {
 }
 .navbar-nav li:hover .sub-menu {
   display: block;
+  
 }
+
 .navbar-nav li .sub-menu a {
   padding: 20px;
 }

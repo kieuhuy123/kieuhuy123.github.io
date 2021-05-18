@@ -24,9 +24,9 @@
   line-height: 0.8;
   color: rgb(0, 0, 0);
 }
-@media (max-width:992px) {
-  .home{
-        margin-left: 120px;
+@media (max-width: 992px) {
+  .home {
+    margin-left: 120px;
   }
 }
 .navbar {
@@ -90,27 +90,26 @@ img {
 }
 
 .second-post {
-  
   padding: 0px 80px;
 }
-.post-img{
+.post-img {
   margin-bottom: 30px;
 }
-.col-lg-6{
+.col-lg-6 {
   max-width: 420px;
   margin-bottom: 90px;
 }
 
-.letter-title{
+.letter-title {
   font-size: 30px;
   font-family: "Playfair Display";
   color: rgb(51, 51, 51);
   line-height: 1.2;
   text-align: center;
- margin-top: 70px;
- margin-bottom: 90px;
+  margin-top: 70px;
+  margin-bottom: 90px;
 }
-.container-fluid{
+.container-fluid {
   background-color: #f0f0f0;
 }
 .letter-text {
@@ -121,12 +120,11 @@ img {
   text-align: left;
 }
 
-
-.third-post{
-   padding: 100px 80px;
+.third-post {
+  padding: 100px 80px;
 }
 .btn-secondary {
-  background-color: white!important;
+  background-color: white !important;
   color: rgb(98, 98, 98);
   font-family: "Playfair Display";
   font-size: 20px;
@@ -134,8 +132,106 @@ img {
   border-radius: 0;
   padding: 20px;
 }
-.btn-secondary:hover{
+.btn-secondary:hover {
   color: purple;
   background-color: pink;
 }
+
+/* sidebar */
+
+.img-post {
+  margin-bottom: 50px;
+}
+.post-italic {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  font-style: italic;
+  line-height: 1.714;
+}
+.post-share a {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-decoration: none;
+  margin-right: 15px;
+}
+.side-bar {
+  margin-top: 100px;
+}
+.side-title {
+  font-size: 24px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 0.833;
+  margin-bottom: 20px;
+}
+.side-detail {
+  font-size: 12px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.667;
+  margin-bottom: 30px;
+}
+.side-icon a {
+  margin-right: 15px;
+}
+.side-icon{
+  margin-bottom: 70px;
+}
+.side-post{
+
+  color: rgb(180, 173, 158);
+ margin-bottom: 50px;
+}
+.top{
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: rgb(180, 173, 158)!important;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+.link-comment {
+  font-size: 12px;
+  font-family: "Ubuntu";
+  color: rgb(180, 173, 158);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-align: left;
+ 
+}
+.link-title {
+  font-size: 15px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
+
+}
+.like-text {
+  font-size: 20px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  line-height: 1.2;
+  margin-top: 25px;
+ 
+}
+.bot{
+  margin-bottom: 40px;
+}
+.name {
+  font-size: 14px;
+  font-family: "Playfair Display";
+  color: rgb(98, 98, 98);
+  font-weight: bold;
+  line-height: 1.2;
+}
+.comment-form{
+  height: 52px;
+  padding-left: 35px;
+  
+}
+
 

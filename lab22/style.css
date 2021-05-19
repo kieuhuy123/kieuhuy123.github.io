@@ -1,0 +1,90 @@
+@font-face {
+  font-family: CicularStdMedium;
+  src: url(./font/Circular\ Std\ Font.otf);
+}
+@font-face {
+  font-family: SofiaProMedium;
+  src: url(./font/Sofia\ Pro\ Medium\ Az.otf);
+}
+@font-face {
+  font-family: SofiaProBold;
+  src: url(./font/Sofia\ Pro\ Bold\ Az.otf);
+}
+.container {
+  width: 1440px;
+  max-width: 100%;
+}
+.sidebar-wraper {
+  width: 17.5%;
+}
+.main-wraper {
+  width: auto;
+}
+.help-center{
+  margin-top: 300px;
+}
+.sidebar {
+  padding: 50px 0 50px 50px;
+}
+.logo {
+  max-width: 93px;
+  margin-bottom: 57px;
+}
+.nav-header {
+  margin-bottom: 44px;
+  font-family: SofiaProBold;
+
+  font-size: 30px;
+  line-height: 47px;
+}
+img {
+  max-width: 100%;
+}
+.nav-link img {
+  width: 24px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.nav-link {
+  font-family: SofiaProMedium;
+  font-size: 16px;
+  color: #000000 !important;
+}
+.icon-wraper {
+  padding: 13px;
+  height: 47px;
+  width: 47px;
+  background-color: #f6f6f6;
+  border-radius: 50%;
+
+  margin-right: 20px;
+}
+/* main wraper */
+.bag{
+  margin-right: 32px;
+}
+.top-nav{
+  padding: 50px 0 60px 50px
+}
+.main-wraper .row{
+  --bs-gutter-x:20px;
+  --bs-gutter-y:20px;
+}
+.icon-heart{
+  text-align: center;
+  background-color: #FFFFFF;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  position: absolute;
+      top: 11px;
+    right: 32px;
+}
+.icon-heart img{
+      position: absolute;
+    top: 10px;
+    right: 9px;
+}
+.icon-heart:hover{
+  background-color: pink;
+}

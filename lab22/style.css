@@ -88,3 +88,6 @@ img {
 .icon-heart:hover{
   background-color: pink;
 }
+.seclect button{
+  font-family: 'Lato', sans-serif!important;
+}

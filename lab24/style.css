@@ -1,0 +1,34 @@
+/* table {
+  border-collapse: separate;
+  border-spacing: 0.5px;
+  table-layout: fixed;
+  empty-cells: hi;
+}
+
+table,
+tr,
+th,
+td {
+  height: 50px;
+  width: 200px;
+  border: 1px solid rgb(82, 67, 67);
+  text-align: center;
+}
+#color{
+  background-color: rgb(223, 187, 43);
+}
+
+thead {
+  background-color: pink;
+  color: rgb(65, 78, 78);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+.hover {
+  background-color: rgb(173, 108, 233);
+  color: aliceblue;
+}
+
+form {
+margin-top: 10px;
+} */

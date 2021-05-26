@@ -9,7 +9,6 @@ function rand(n) {
 // Chuyển giá trị 255 từ cơ số 10 sang 16
 // convert(255, 10, 16); // “ff”
 
-
 function convert(value, from, to) {
   let temp = parseInt(value, from);
   return temp.toString(to);
@@ -23,7 +22,6 @@ function rand(a, b) {
 }
 
 // BT ve String:
-
 
 // #### 1. Viết hàm chuyển đổi một tên thành tên viết tắt.
 
@@ -46,7 +44,6 @@ function hide(email) {
 
   let pre = email.slice(0, 2);
   return pre + "..." + an;
- 
 }
 console.log(hide("kieuphuchuy@gmail.com"));
 
@@ -65,15 +62,12 @@ console.log(hide("kieuphuchuy@gmail.com"));
 // getDateBefore(date, 4); // "2020-02-10" -> "2020-02-06"
 
 function getDateBefore(date, n) {
-  date  = new Date(date);
+  date = new Date(date);
   let nowDate = date.getDate();
   return new Date(date.setDate(nowDate - n));
 }
 
 // getDateBefore("2002-04-04", 12);
-
-
-
 
 // BT ve  Array !!!
 a = [1, 3, 5, 4, 6, 8, 11, 21];
@@ -81,9 +75,6 @@ a = [1, 3, 5, 4, 6, 8, 11, 21];
 a.sort(function sortArray(a, b) {
   return a - b;
 });
-
-
-
 
 // function sort(arr) {
 //     for (let i = 0; i < arr.length; i++){

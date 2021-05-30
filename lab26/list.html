@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resource</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <style>
+      .title-list {
+        margin-bottom: 50px;
+      }
+      .bg {
+        border: 1px solid #c2c2c2;
+      }
+      .color {
+        max-width: 100%;
+        height: 200px;
+      }
+      .code p {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mt-5">
+          <h1 class="title-list">PANTONE COLOR</h1>
+        </div>
+      </div>
+      <div class="row Resource">
+        <div class="col-2">
+          <div class="bg">
+            <div class="color" style="background-color: #98b2d1"></div>
+
+            <div class="code text-center mt-3">
+              <h5 class="pantone">PANTONE 15-4020</h5>
+
+              <p class="color-name">Name: cerulean</p>
+              <p class="color-year">Year: 2000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const xhr = new XMLHttpRequest();
+
+      let method = "GET";
+      let uri = `https://reqres.in/api/unknown `;
+
+      xhr.open(method, uri);
+
+      xhr.responseType = "json";
+      xhr.onerror = () => console.log("Cannot send request");
+      xhr.onload = (e) => {
+        let color = xhr.response.data;
+        console.log(color);
+
+        const html = color
+          .map((c) => {
+            return `
+            <div class="col-2">
+          <div class="bg">
+            <div class="color" style="background-color: ${c.color}"></div>
+
+            <div class="code text-center mt-3">
+              <h5 class="pantone">PANTONE ${c.pantone_value}</h5>
+
+              <p class="color-name">Name: ${c.name}</p>
+              <p class="color-year">Year: ${c.year}</p>
+            </div>
+          </div>
+        </div>
+
+            `;
+          })
+          .join("");
+
+        document.querySelector(".Resource").innerHTML = html;
+      };
+
+      xhr.send(null);
+    </script>
+  </body>
+</html>

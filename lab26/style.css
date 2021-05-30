@@ -1,0 +1,21 @@
+img {
+    max-width: 100%;
+}
+ a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Thực hành lại AJAX với jsonplaceholder
+
+
+Lấy và hiển thị danh sách posts 
+
+Thêm link để hiển thị nội dung từng bài viết cụ thể
+
+Thực hành lại reqres.in 
+
+Bao gồm phần user 
+
+
+Phần List <RESOURCE> */

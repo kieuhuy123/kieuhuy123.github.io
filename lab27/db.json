@@ -1,0 +1,88 @@
+{
+  "students": [
+    {
+      "first_name": "Phúc Huy",
+      "last_name": "Kiều",
+      "email": "kieuphuchuy2002@gmail.com",
+      "phone": "0927443005",
+      "id": 1
+    },
+    {
+      "first_name": "Thơ",
+      "last_name": "Khánh",
+      "email": "kt@gmail.com",
+      "phone": "0865660692",
+      "id": 2
+    },
+    {
+      "first_name": "Ba",
+      "last_name": "Nguyễn",
+      "email": "ba@techmaster.vn",
+      "phone": "0865660600",
+      "id": 3
+    },
+    {
+      "first_name": "Minh",
+      "last_name": "Phạm",
+      "email": "danhminh@gmail.com",
+      "phone": "0865660600",
+      "id": 4
+    },
+    {
+      "id": 6,
+      "first_name": "Trang",
+      "last_name": "Huyen",
+      "email": "babygirl@gmail.com",
+      "phone": "08656606xx"
+    },
+    {
+      "first_name": "Phúc Huy",
+      "last_name": "Kiều",
+      "email": "kieuphuchuy2002@gmail.com",
+      "phone": "0927443005",
+      "id": 7
+    },
+    {
+      "first_name": "Ba",
+      "last_name": "Nguyễn",
+      "email": "ba@gmail.com",
+      "phone": "0865660692",
+      "id": 8
+    },
+    {
+      "first_name": "Minh",
+      "last_name": "Phạm",
+      "email": "mp@gmail.com",
+      "phone": "0927443005",
+      "id": 9
+    },
+    {
+      "first_name": "Phúc Huy",
+      "last_name": "Kiều",
+      "email": "kieuphuchuy2002@gmail.com",
+      "phone": "0927443005",
+      "id": 10
+    },
+    {
+      "first_name": "Phúc Huy",
+      "last_name": "Kiều",
+      "email": "kieuphuchuy2002@gmail.com",
+      "phone": "0927443005",
+      "id": 11
+    },
+    {
+      "first_name": "Minh",
+      "last_name": "Phạm",
+      "email": "mp@gmail.com",
+      "phone": "0927443005",
+      "id": 12
+    },
+    {
+      "first_name": "huy",
+      "last_name": "dzzz",
+      "email": "kieuphuchuy2002@gmail.com",
+      "phone": "0927443005",
+      "id": 14
+    }
+  ]
+}

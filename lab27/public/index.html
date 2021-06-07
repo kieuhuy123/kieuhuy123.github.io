@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quan ly hoc vien</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <h1 class="text-center mt-5">App quan ly hoc vien</h1>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5 mb-3">
+        <div class="col-12 col-md-8 col-lg-6 d-flex justify-content-between">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#modal"
+          >
+            <i class="bi bi-plus-square "></i>
+            Them hoc vien
+          </button>
+
+            <form action="" id="searchStudent" >
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                      <label for="search"  class="col-form-label">Tìm kiếm</label>
+                    </div>
+                    <div class="col-auto">
+                      <input type="search" id="search" name="search" class="form-control" aria-describedby="passwordHelpInline">
+                    </div>
+                    <div class="col-auto">
+                      
+                    </div>
+              </div>
+             </form>
+          
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-8 col-lg-6">
+          <table class="table table-hover table-success">
+            <thead class="table-danger">
+              <tr>
+                <th scope="col">STT</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+                <th scope="col">Detail</th>
+              </tr>
+            </thead>
+            <tbody class="data">
+              <tr>
+                <th scope="row">1</th>
+                <td>Huy</td>
+                <td>Kieu</td>
+                <td>kieuhuy@gmail.com</td>
+                <td>08656606XX</td>
+                <td>
+                  <a href="student.html?studentId=1" class="btn"
+                    ><i class="bi bi-info-circle"></i
+                  ></a>
+                </td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <nav class="nav justify-content-center">
+            <ul class="pagination ">
+              <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true"
+                  >Previous</a
+                >
+              </li>
+              <li class="page-item active" aria-current="page">
+                <a class="page-link" href="#">1</a>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="modalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Them moi hoc vien</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+              <form name="newStudent" id="newStudent">
+                  <div class="mb-3 form-floating">
+                      
+                      <input type="text" class="form-control" name="firstname" id="firstname" placeholder="ten">
+                      <label for="firstname" class="col-form-label">ten</label>
+                      <div class="invalid-feedback">
+                        ten khong duoc de trong
+                      </div>
+                  </div>
+                  <div class="mb-3 form-floating">                   
+                    <input type="text" class="form-control" name="lastname" id="lastname" placeholder="ho">
+                    <label for="lastname" class="col-form-label">ho</label>
+                    <div class="invalid-feedback">
+                      ho khong duoc de trong
+                    </div>
+                </div>
+                <div class="mb-3 form-floating">
+                  
+                  <input type="email" class="form-control" name="email" id="email" placeholder="email">
+                  <label for=" email" class="col-form-label">email</label>
+                  <div class="invalid-feedback">
+                    Khong hop le
+                  </div>
+                </div>
+                <div class=" form-floating">
+                  
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="phone">
+                  <label for="phone" class="col-form-label">phone</label>
+                  <div class="invalid-feedback">
+                    Khong hop le
+                  </div>
+                </div>
+                
+                
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              id="close"
+            >
+              Huy bo
+            </button>
+            <button form="newStudent" type="submit" class="btn btn-primary">Luu</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="js/index.js"></script>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -44,3 +44,4 @@ document
 //   nextSlide();
 //   showSlide();
 // }, 2000);
+

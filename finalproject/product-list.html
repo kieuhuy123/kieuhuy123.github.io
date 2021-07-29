@@ -135,13 +135,13 @@
     <!-- end header -->
     <!-- banner -->
     <div class="banner-2">
-        <div class="container">
-                <div class="col-12">
-                    <div class="title-banner">
-                        Sản phẩm
-                    </div>
-                </div>
+      <div class="container">
+        <div class="col-12">
+          <div class="title-banner">
+            <h1 id="text"></h1>
+          </div>
         </div>
+      </div>
     </div>
     <!-- end banner -->
   </body>
@@ -219,6 +219,17 @@
     window.addEventListener("load", function () {
       loadingWrapper.parentElement.removeChild(loadingWrapper);
     });
+    let i = 0,
+      text;
+    text = "sản phẩm";
+    function typing() {
+      if (i < text.length) {
+        document.getElementById("text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typing, 300);
+      }
+    }
+    typing();
   </script>
   <script src="./js/index.js"></script>
   <script src="./js/app.js"></script>

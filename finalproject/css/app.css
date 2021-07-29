@@ -179,12 +179,22 @@ img {
   font-weight: 600;
   text-transform: uppercase;
 }
+.products .btn-flat {
+  background-color: black;
+  color: white;
+}
+
 .btn-hover {
   transition: all 0.3s ease-in-out;
 }
 .btn-hover:hover {
   background-color: black;
   color: white;
+}
+.products .btn-hover:hover {
+  border-color: black;
+  background-color: white;
+  color: black;
 }
 
 .info-content {
@@ -718,18 +728,190 @@ footer ul li {
 .subscribe button:hover {
   background-color: black;
 }
-/* san pham */
+/* product list */
 .banner-2 {
-  background: url(https://github.com/kieuhuy123/kieuhuy123.github.io/blob/main/finalproject/img/banner-2.jpg?raw=true)
+  background: url(https://github.com/kieuhuy123/kieuhuy123.github.io/blob/main/finalproject/img/banner-2-edit.jpg?raw=true)
     no-repeat center;
   width: 100%;
   height: 600px;
   background-size: cover;
 }
 .title-banner h1 {
+  color: #f5f6fa;
   padding: 35px;
   text-transform: uppercase;
   letter-spacing: 15px;
+}
+.box {
+  padding: 20px;
+}
+.filter-header {
+  display: block;
+  margin: 20px 0;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.filter-list > li {
+  margin-bottom: 20px;
+}
+.group-checkbox input {
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+.group-checkbox {
+  text-align: left;
+}
+.group-checkbox label {
+  cursor: pointer;
+  padding-left: 40px;
+  position: relative;
+}
+.group-checkbox label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -4px;
+  width: 26px;
+  height: 26px;
+
+  border: 2px solid #7b7979;
+}
+.group-checkbox label > i {
+  position: absolute;
+  left: 2px;
+  top: -6px;
+  color: black;
+  transform: scale(0);
+  font-size: 21px;
+  transition: transform 0.1s ease-in-out;
+}
+.group-checkbox input:checked + label i {
+  transform: scale(1);
+}
+.form {
+  border: 1px solid gainsboro;
+}
+.form-info {
+  text-align: center;
+}
+.form.active {
+  opacity: 1;
+}
+.form {
+  opacity: 0.5;
+}
+.box .col-lg-12 {
+  padding: 5px;
+}
+.filter-toggle-box {
+  display: none;
+}
+.rating i {
+  color: #ffc107;
+}
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.pagination > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+.pagination > li > a.active {
+  background-color: black;
+  color: white;
+}
+.pagination > li > a:hover {
+  border: 2px solid black;
+}
+.breadcumb {
+  font-weight: 600;
+  padding-left: 20px;
+}
+.breadcumb span {
+  margin: 0 15px;
+}
+.breadcumb a {
+  text-transform: capitalize;
+}
+/* details */
+.product-row {
+  padding-left: 45px 0;
+}
+.product-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-img > img {
+  max-width: 70%;
+}
+.product-img-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product-img-item {
+  opacity: 0.5;
+  width: 90px;
+  cursor: pointer;
+  margin: 0 10px;
+  border: 1px solid black;
+}
+.product-img-item:hover {
+  opacity: 1;
+}
+.product-info > * ~ * {
+  margin-top: 25px;
+}
+
+.product-info-detail-title {
+  font-weight: 600;
+  color: grey;
+}
+.product-description {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.product-info-price {
+  font-weight: 600;
+  font-size: 30px;
+  color: #c0392b;
+}
+.product-quantity-wrapper {
+  display: flex;
+  align-items: center;
+}
+.product-quantity {
+  margin: 0 10px;
+  font-size: 25px;
+}
+.product-quantity-btn {
+  height: 30px;
+  width: 30px;
+  background-color: grey;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.product-info .btn-flat {
+  background-color: black;
+  color: white;
+}
+.product-info .btn-hover:hover {
+  background-color: white;
+  color: black;
+  border-color: black;
 }
 
 /* loading */
@@ -935,6 +1117,26 @@ footer ul li {
   .email-box:hover > .tbox,
   .tbox:focus {
     width: 200px;
+  }
+  .banner-2 {
+    max-height: 100px;
+  }
+  .filter-toggle-box {
+    display: block;
+  }
+  .filter-col {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 98;
+    left: 100%;
+    height: 85vh;
+    overflow-y: scroll;
+    box-shadow: rgb(100 100 11 / 20%) 0px 7px 29px 0px;
+    transition: left 0.2s ease-in-out;
+  }
+  .filter-col.active {
+    left: 0;
   }
 }
 

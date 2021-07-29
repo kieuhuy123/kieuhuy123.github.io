@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>search</title>
+    <link rel="stylesheet" href="./css/search.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="middle">
+      <form action="search-box" action="search.html" method="post">
+        <input type="text" class="input" name="" value="" />
+        <button type="button" class="btn" name="button"></button>
+      </form>
+    </div>
+    <script type="text/javascript">
+      $(".btn").on("click", function () {
+        $(".input").toggleClass("inclicked");
+        $(".btn").toggleClass("close")
+      });
+    </script>
+  </body>
+</html>

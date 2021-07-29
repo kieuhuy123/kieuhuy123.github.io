@@ -43,5 +43,5 @@ document
 
 //   nextSlide();
 //   showSlide();
-// }, 2000);
+// }, 3000);
 

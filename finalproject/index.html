@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HdzzShop</title>
+    <link rel="shortcut icon" href="./img/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,96 +26,107 @@
     <link rel="stylesheet" href="./css/app.css" />
   </head>
   <body>
+    <div class="loading-screen"></div>
+    <!-- moblile menu -->
+    <div class="mobile-menu bg-second">
+      <a href="#" class="mb-logo"><img src="./img/logo.png" alt="" /></a>
+      <span class="mb-menu-toggle" id="mb-menu-toggle">
+        <i class="bi bi-list"></i>
+      </span>
+    </div>
+    <!-- end mobile menu-->
     <!-- header -->
     <header>
       <div class="header-wrapper">
+        <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+          <i class="bi bi-x-lg"></i>
+        </span>
         <!-- top header -->
         <div class="top-header container">
-          <div class="d-flex justify-content-between">
-            <a href="#" class="logo">HdzzShop</a>
-            <div class="search">
-              <input type="text" placeholder="Search" />
-              <i class="bi bi-search"></i>
-            </div>
-            <ul class="user-menu d-flex">
-              <li>
-                <a href="#"><i class="bi bi-bell"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="bi bi-person-fill"></i></a>
-              </li>
-              <li li>
-                <a href=""><i class="bi bi-bag"></i></a>
-              </li>
-            </ul>
+          <a href="#" class="logo"><img src="./img/logo.png" alt="" /></a>
+          <div class="search">
+            <input type="text" placeholder="Search" />
+            <i class="bi bi-search"></i>
           </div>
+          <ul class="user-menu d-flex">
+            <li>
+              <a href="#"><i class="bi bi-bell"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="bi bi-person-fill"></i></a>
+            </li>
+            <li li>
+              <a href=""><i class="bi bi-bag"></i></a>
+            </li>
+          </ul>
         </div>
         <!-- end top header -->
         <!-- mid header -->
-        <div class="mid-header container">
-          <ul class="main-menu d-flex justify-content-around">
-            <li class="mega-dropdown">
-              <a href="#"
-                >Sản phẩm
-                <i class="bi bi-chevron-down"></i>
-              </a>
-              <div class="mega-content">
-                <div class="row">
-                  <div class="col-lg-6 col-md-12">
-                    <div class="box">
-                      <h3>Kính râm</h3>
-                      <ul>
-                        <li><a href="#">the assembled sunglasses</a></li>
-                        <li><a href="#">the cut sunglasses</a></li>
-                        <li><a href="#">the metal</a></li>
-                        <li><a href="#">the combination</a></li>
-                      </ul>
+        <div class="bg-second">
+          <div class="mid-header container">
+            <ul class="main-menu d-flex justify-content-around">
+              <li class="mega-dropdown">
+                <a href="#"
+                  >Sản phẩm
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+                <div class="mega-content">
+                  <div class="row">
+                    <div class="col-lg-6 col-md-12">
+                      <div class="box">
+                        <h3>Kính râm</h3>
+                        <ul>
+                          <li><a href="#">the assembled sunglasses</a></li>
+                          <li><a href="#">the cut sunglasses</a></li>
+                          <li><a href="#">the metal</a></li>
+                          <li><a href="#">the combination</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <div class="box">
+                        <h3>Kính cận</h3>
+                        <ul>
+                          <li><a href="#">the assembled </a></li>
+                          <li><a href="#">the cut</a></li>
+                          <li><a href="#">the metal</a></li>
+                          <li><a href="#">the basic</a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-lg-6 col-md-12">
-                    <div class="box">
-                      <h3>Kính cận</h3>
-                      <ul>
-                        <li><a href="#">the assembled </a></li>
-                        <li><a href="#">the cut</a></li>
-                        <li><a href="#">the metal</a></li>
-                        <li><a href="#">the basic</a></li>
-                      </ul>
+                  <div class="row img-row">
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhram-removebg-preview.png"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhcan-removebg-preview.png"
+                        class="img-mega"
+                        alt=""
+                      />
                     </div>
                   </div>
                 </div>
-                <div class="row img-row">
-                  <div class="col-lg-6 col-md-12">
-                    <img
-                      src="./img/kinhram-removebg-preview.png"
-                      class="img-mega"
-                      alt=""
-                    />
-                  </div>
-                  <div class="col-lg-6 col-md-12">
-                    <img
-                      src="./img/kinhcan-removebg-preview.png"
-                      class="img-mega"
-                      alt=""
-                    />
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li>
-              <a href="#">dịch vụ</a>
-            </li>
-            <li>
-              <a href="#">bộ sưu tập</a>
-            </li>
-            <li>
-              <a href="#">cửa hàng</a>
-            </li>
-
-            <li>
-              <a href="#">giới thiệu</a>
-            </li>
-          </ul>
+              </li>
+              <li>
+                <a href="#">dịch vụ</a>
+              </li>
+              <li>
+                <a href="#">bộ sưu tập</a>
+              </li>
+              <li>
+                <a href="#">cửa hàng</a>
+              </li>
+              <li>
+                <a href="#">giới thiệu</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <!-- end mid header -->
       </div>
@@ -122,81 +134,54 @@
     <!-- end header -->
 
     <!-- banner -->
-    <div
-      class="banner"
-      
-    >
-    
+    <div class="banner">
       <div class="slider">
         <div class="container">
           <!-- slider item -->
-          <div class="row">
-            <div class="slide active">
-              <div class="col-lg-6 info">
-                <div class="info-content">
-                  <h1 class="top-down">BST Deep into the nature</h1>
-                  <p class="top-down trans-delay-0-2 pt-3 label">
-                    Sed quis dolor nibh. In volutpat porta feugiat. Nulla at
-                    erat condimentum, volutpat nunc a, laoreet odio. Phasellus
-                    tempor, ex nec imperdiet finibus, nisi enim dignissim diam,
-                    ac molestie arcu nunc a ligula
-                  </p>
-                  <div class="top-down trans-delay-0-4 pt-5">
-                    <a href="#" class="btn-flat btn-hover"> KHÁM PHÁ THÊM </a>
-                  </div>
+
+          <div class="slide active">
+            <div class="info">
+              <div class="info-content">
+                <h1 class="top-down">BST Deep into the nature</h1>
+                <p class="top-down trans-delay-0-2 pt-3 label">
+                  Sed quis dolor nibh. In volutpat porta feugiat. Nulla at erat
+                  condimentum, volutpat nunc a, laoreet odio. Phasellus tempor,
+                  ex nec imperdiet finibus, nisi enim dignissim diam, ac
+                  molestie arcu nunc a ligula
+                </p>
+                <div class="top-down trans-delay-0-4 pt-md-5 pb-3">
+                  <a href="#" class="btn-flat btn-hover"> KHÁM PHÁ THÊM </a>
                 </div>
               </div>
-              <div class="col-lg-6 img top-down">
-                <img src="./img/nu.jpg" alt="" />
-              </div>
+            </div>
+            <div class="img top-down">
+              <img src="./img/nu-remove.png" alt="" />
             </div>
           </div>
+
           <!-- end slider item -->
           <!-- slider item -->
-          <div class="row">
-            <div class="slide">
-              <div class="col-6 info">
-                <div class="info-content">
-                  <h1 class="top-down">BST titatinum passion</h1>
-                  <p class="top-down trans-delay-0-2 pt-3 label">
-                    Sed quis dolor nibh. In volutpat porta feugiat. Nulla at
-                    erat condimentum, volutpat nunc a, laoreet odio. Phasellus
-                    tempor, ex nec imperdiet finibus, nisi enim dignissim diam,
-                    ac molestie arcu nunc a ligula
-                  </p>
-                  <div class="top-down trans-delay-0-4 pt-5">
-                    <a href="#" class="btn-flat btn-hover"> KHÁM PHÁ THÊM </a>
-                  </div>
+
+          <div class="slide">
+            <div class="info">
+              <div class="info-content">
+                <h1 class="top-down">BST titatinum passion</h1>
+                <p class="top-down trans-delay-0-2 pt-3 label">
+                  Sed quis dolor nibh. In volutpat porta feugiat. Nulla at erat
+                  condimentum, volutpat nunc a, laoreet odio. Phasellus tempor,
+                  ex nec imperdiet finibus, nisi enim dignissim diam, ac
+                  molestie arcu nunc a ligula
+                </p>
+                <div class="top-down trans-delay-0-4 pt-md-5 pb-3">
+                  <a href="#" class="btn-flat btn-hover"> KHÁM PHÁ THÊM </a>
                 </div>
               </div>
-              <div class="col-6 img top-down right-left">
-                <img src="./img/nam.jpg" alt="" />
-              </div>
+            </div>
+            <div class="img top-down right-left">
+              <img src="./img/nam-removebg.png" class="big-img" alt="" />
             </div>
           </div>
-          <!-- end slider item -->
-          <!-- slider item -->
-          <div class="row">
-            <div class="slide">
-              <div class="col-6 info">
-                <div class="info-content">
-                  <h1 class="top-down">BST What what whata</h1>
-                  <p class="top-down trans-delay-0-2 pt-3 label">
-                    Sed quis dolor nibh. In volutpat porta feugiat. Nulla at
-                    erat condimentum, volutpat nunc a, laoreet odio. Phasellus
-                    tempor, ex nec imperdiet finibus, nisi enim dignissim diam,
-                    ac molestie arcu nunc a ligula
-                  </p>
-                  <div class="top-down trans-delay-0-4 pt-5">
-                    <a href="#" class="btn-flat btn-hover"> KHÁM PHÁ THÊM </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 img left-right">
-                <!-- <img src="./img/DOYLE_rebranding_21.jpg" alt="" /> -->
-              </div>
-            </div>
-          </div>
+
           <!-- end slider item -->
         </div>
         <!--slider controller -->
@@ -339,9 +324,16 @@
                     <div class="collection-title">
                       <h2>Theo dõi bản tin của chúng tôi</h2>
                     </div>
-                    <div class="enter">
-                      <input type="email" placeholder="NHẬP EMAIL" />
-                      <div class="sign-up subtitle">ĐĂNG KÝ</div>
+                    <div class="email-box justify-content-xl-start">
+                      <i class="bi bi-envelope-fill"></i>
+                      <input
+                        class="tbox"
+                        type="email"
+                        placeholder="Nhập địa chỉ email"
+                      />
+                      <button class="btn-email" type="button" name="button">
+                        đăng ký
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -477,9 +469,12 @@
                 <h2>10 cửa hàng tại hà nội</h2>
               </div>
               <h3 class="mb-3">Tìm địa chỉ gần nhất</h3>
-              <div class="enter">
-                <input type="email" placeholder="NHẬP EMAIL" />
-                <div class="sign-up subtitle">ĐĂNG KÝ</div>
+              <div class="email-box">
+                <i class="bi bi-geo-alt-fill"></i>
+                <input class="tbox" type="text" placeholder="Nhập địa chỉ" />
+                <button class="btn-email" type="button" name="button">
+                  tìm kiếm
+                </button>
               </div>
             </div>
           </div>
@@ -487,8 +482,6 @@
       </div>
     </section>
     <!-- end section 4 -->
-    <!-- js -->
-    <script src="./js/index.js"></script>
   </body>
 
   <!-- footer -->
@@ -540,13 +533,32 @@
               </li>
             </ul>
           </div>
-          <div class="subscribe">
-            <input type="email" placeholder="ENTER YOUR EMAIL" />
-            <button>Subscribe</button>
+          <div class="email-box">
+            <i class="bi bi-envelope-fill" style="color: white"></i>
+            <input
+              class="tbox"
+              type="email"
+              placeholder="Nhập địa chỉ email"
+              style="color: black"
+            />
+            <button class="btn-email" type="button" name="button">
+              đăng ký
+            </button>
           </div>
         </div>
       </div>
     </div>
   </footer>
   <!-- end footer -->
+
+  <!-- js -->
+  <script>
+    let loadingWrapper = document.querySelector(".loading-screen");
+
+    window.addEventListener("load", function () {
+      loadingWrapper.parentElement.removeChild(loadingWrapper);
+    });
+  </script>
+  <script src="./js/index.js"></script>
+  <script src="./js/app.js"></script>
 </html>

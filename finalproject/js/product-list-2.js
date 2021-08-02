@@ -41,27 +41,27 @@ let products = [
     old_price: "1,750,000 VND",
     curr_price: "990,00 VND",
   },
-  {
-    name: "Fade",
-    image1: "./img/nodric-1.jpg",
-    image2: "./img/nodric-2.jpg",
-    old_price: "1,200,000 VND",
-    curr_price: "990,00 VND",
-  },
-  {
-    name: "Arthur",
-    image1: "./img/stor-1.jpg",
-    image2: "./img/stor-2.jpg",
-    old_price: "1,750,000 VND",
-    curr_price: "1,200,000 VND",
-  },
-  {
-    name: "Ben",
-    image1: "./img/woo-1.jpg",
-    image2: "./img/woo-2.jpg",
-    old_price: "1,200,000 VND",
-    curr_price: "990,000 VND",
-  },
+  // {
+  //   name: "Fade",
+  //   image1: "./img/nodric-1.jpg",
+  //   image2: "./img/nodric-2.jpg",
+  //   old_price: "1,200,000 VND",
+  //   curr_price: "990,00 VND",
+  // },
+  // {
+  //   name: "Arthur",
+  //   image1: "./img/stor-1.jpg",
+  //   image2: "./img/stor-2.jpg",
+  //   old_price: "1,750,000 VND",
+  //   curr_price: "1,200,000 VND",
+  // },
+  // {
+  //   name: "Ben",
+  //   image1: "./img/woo-1.jpg",
+  //   image2: "./img/woo-2.jpg",
+  //   old_price: "1,200,000 VND",
+  //   curr_price: "990,000 VND",
+  // },
 ];
 let product_list = document.querySelector("#products");
 
@@ -76,9 +76,9 @@ renderProducts = (products) => {
               </div>
               <div class="product-card-info">
                 <div class="product-btn">
-                  <a href="product-detail.html" class="btn-flat btn-hover">Mua ngay</a>
+                  <a href="product-detail.html" class="btn-flat-reverse btn-hover-reverse">Mua ngay</a>
                 </div>
-                <div class="product-card-name subtitle">${e.name}</div>
+                <div class="product-card-name "><h4>${e.name}</h4></div>
                 <div class="product-price">
                   <span><del>${e.old_price}</del></span>
                   <span class="curr-price">${e.curr_price}</span>

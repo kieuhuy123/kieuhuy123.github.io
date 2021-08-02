@@ -148,7 +148,7 @@
       <div class="container">
         <div class="col-12">
           <div class="title-banner">
-            <h1 id="text"></h1>
+            <h1 id="text">Kính cận</h1>
           </div>
         </div>
       </div>
@@ -202,7 +202,7 @@
               </li>
             </ul>
           </div>
-          <div class="box d-md-none d-xl-block">
+          <div class="box d-sm-none d-xl-block">
             <span class="filter-header">Hình dạng</span>
             <div class="row">
               <div class="col-lg-12 col-xl-6">
@@ -239,7 +239,7 @@
               </div>
             </div>
           </div>
-          <div class="box d-md-block d-xl-none">
+          <div class="box d-sm-block d-xl-none">
             <span class="filter-header">Hình dạng</span>
             <ul class="filter-list">
               <li>
@@ -510,17 +510,7 @@
       window.addEventListener("load", function () {
         loadingWrapper.parentElement.removeChild(loadingWrapper);
       });
-      let i = 0,
-        text;
-      text = "Kính cận";
-      function typing() {
-        if (i < text.length) {
-          document.getElementById("text").innerHTML += text.charAt(i);
-          i++;
-          setTimeout(typing, 300);
-        }
-      }
-      typing();
+     
     </script>
     <script src="./js/product-list.js"></script>
     <script src="./js/app.js"></script>

@@ -236,28 +236,25 @@ img {
   background-image: url(../img/banner-1.jpeg);
   background-position: bottom;
 }
-.banner .clouds{
+.banner .clouds {
   position: absolute;
   top: 50px;
   left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
-
 }
-.banner .clouds img{
+.banner .clouds img {
   position: absolute;
   bottom: 0;
   max-width: 100%;
-  animation: animate calc( 8s * var(--i)) linear infinite;
-  
-  ;
+  animation: animate calc(8s * var(--i)) linear infinite;
 }
 @keyframes animate {
-  0%{
+  0% {
     transform: translateX(-100%);
   }
-  100%{
+  100% {
     transform: translateX(100%);
   }
 }
@@ -271,8 +268,7 @@ img {
   outline: 0;
   font-weight: 600;
   text-transform: uppercase;
-  z-index: 99
-  ;
+  z-index: 99;
 }
 .btn-flat-reverse {
   display: inline-block;
@@ -547,7 +543,7 @@ section {
   visibility: visible;
   transform: translateY(-50px);
 }
-.product-price span{
+.product-price span {
   padding: 5px;
 }
 .curr-price {
@@ -732,9 +728,7 @@ section {
   color: #c5c5c5;
 }
 .blog-left {
-  
-  margin:  20px 0;
- 
+  margin: 20px 0;
 }
 
 .blog-left .blog-img {
@@ -773,22 +767,16 @@ section {
 }
 .location {
   margin-bottom: 100px;
-  background: url(../img/location.png);
+
   background-size: cover;
   width: 100%;
   height: 400px;
-}
-.location img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  filter: brightness(0.8);
 }
 
 .location-info {
   color: white;
   position: absolute;
-
+  z-index: 2;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -1113,9 +1101,8 @@ footer ul li {
 }
 /* slider */
 .swiper-container {
-  
   width: 100%;
-  padding:  100px 0 ;
+  padding: 100px 0;
 
   background: #f5f5f5;
   /* box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2); */
@@ -1207,6 +1194,11 @@ footer ul li {
   border-radius: 20px;
   animation: loading 4s infinite linear;
 }
+/* scrolling */
+.parallax-slider {
+  filter: brightness(0.7);
+}
+
 @keyframes loading {
   from {
     transform: translate(-50%) rotate(0deg);
@@ -1323,8 +1315,8 @@ footer ul li {
   .banner {
     height: 500px;
   }
-  .banner .clouds{
-    top:100px
+  .banner .clouds {
+    top: 80px;
   }
   .slide {
     flex-direction: column-reverse;
@@ -1337,7 +1329,7 @@ footer ul li {
     justify-content: center;
     width: 100%;
   }
-  
+
   .slide > .img img {
     max-width: 250px;
   }
@@ -1396,7 +1388,7 @@ footer ul li {
   .sign-up {
     right: 120px;
   }
-  .blog-right { 
+  .blog-right {
     margin-bottom: 20px;
   }
   .blog-left {
@@ -1455,13 +1447,13 @@ footer ul li {
     padding-right: 20px;
     padding-left: 20px;
   } */
-  .btn-flat-reverse{
+  .btn-flat-reverse {
     padding: 5px 20px;
   }
-  .product-price{
+  .product-price {
     display: none;
   }
-  .product-card-name{
+  .product-card-name {
     margin-top: 15px;
   }
   .blog-right .blog-img {
@@ -1481,7 +1473,7 @@ footer ul li {
     height: 350px;
     width: 100%;
     object-fit: cover;
-}
+  }
 
   .slide > .img img {
     max-width: 200px;
@@ -1489,40 +1481,53 @@ footer ul li {
   .best-seller .col-12 {
     margin-bottom: 20px;
   }
-  .collection{
+  .collection {
     height: 400px;
   }
   .collection-info > p,
   .collection-right-info > p {
     display: none;
   }
+  .location {
+    height: 300px;
+  }
   .collection-right-info,
   .location-info {
     width: 100%;
   }
-  .right-1, .right-2{
+  .right-1,
+  .right-2 {
     height: 200px;
   }
-  .blog-right .blog-img{
+  .blog-right .blog-img {
     height: 400px;
   }
 }
 
 @media only screen and (max-width: 567px) {
-  .col-6{
+  .clouds {
+    display: none;
+  }
+  .col-6 {
     width: 100%;
   }
-.product-card-img img {
+  .product-card-img img {
     height: 450px;
     width: 100%;
     object-fit: cover;
+  }
+  .d-sm-none {
+    display: none;
+  }
+  .d-sm-block {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 375px) {
-  
-.product-card-img img {
+  .product-card-img img {
     height: 300px;
     width: 100%;
     object-fit: cover;
-}
+  }
 }

@@ -35,13 +35,13 @@ document
   .addEventListener("mouseover", () => (slide_play = false));
 
 // enable slide when mouse leave out slider
-// document
-//   .querySelector(".slider")
-//   .addEventListener("mouseleave", () => (slide_play = true));
-// setInterval(() => {
-//   if (!slide_play) return;
+document
+  .querySelector(".slider")
+  .addEventListener("mouseleave", () => (slide_play = true));
+setInterval(() => {
+  if (!slide_play) return;
 
-//   nextSlide();
-//   showSlide();
-// }, 3000);
+  nextSlide();
+  showSlide();
+}, 3000);
 

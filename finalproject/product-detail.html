@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HdzzShop</title>
     <link rel="shortcut icon" href="./img/logo.png" />
+    <!-- font chu -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <!-- CSS only -->
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <!-- Bootstrap only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -28,10 +34,32 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <!-- css -->
     <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/details.css" />
   </head>
   <body>
+    <!-- loading -->
     <div class="loading-screen"></div>
+    <!-- scrolling -->
+    <div class="progress-wrap active-progress">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear 0s;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 249.357;
+          "
+        ></path>
+      </svg>
+      <i class="bi bi-arrow-up arrow"></i>
+    </div>
     <!-- moblile menu -->
     <div class="mobile-menu bg-second">
       <a href="index.html" class="mb-logo"
@@ -408,8 +436,8 @@
                   </span>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Maecenas euismod eu sapien ut blandit. Morbi nec varius odio.
-                    Integer sit amet tempus arcu, non finibus erat. Nunc
+                    Maecenas euismod eu sapien ut blandit. Morbi nec varius
+                    odio. Integer sit amet tempus arcu, non finibus erat. Nunc
                     dignissim, purus id facilisis gravida, tortor leo facilisis
                     justo,
                   </p>
@@ -438,8 +466,8 @@
                   </span>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Maecenas euismod eu sapien ut blandit. Morbi nec varius odio.
-                    Integer sit amet tempus arcu, non finibus erat. Nunc
+                    Maecenas euismod eu sapien ut blandit. Morbi nec varius
+                    odio. Integer sit amet tempus arcu, non finibus erat. Nunc
                     dignissim, purus id facilisis gravida, tortor leo facilisis
                     justo,
                   </p>
@@ -467,8 +495,8 @@
                   </span>
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Maecenas euismod eu sapien ut blandit. Morbi nec varius odio.
-                    Integer sit amet tempus arcu, non finibus erat. Nunc
+                    Maecenas euismod eu sapien ut blandit. Morbi nec varius
+                    odio. Integer sit amet tempus arcu, non finibus erat. Nunc
                     dignissim, purus id facilisis gravida, tortor leo facilisis
                     justo,
                   </p>
@@ -567,6 +595,7 @@
     ></script>
     <script src="./js/product-detail.js"></script>
     <script src="./js/app.js"></script>
+    <script src="./js/scrolling.js"></script>
     <script>
       // loading
       let loadingWrapper = document.querySelector(".loading-screen");

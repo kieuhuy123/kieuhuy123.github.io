@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/details.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="accordion">
+      <div class="contentBx">
+        <div class="label">
+          List One
+          <i class="bi bi-chevron-down"></i>
+        </div>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            sit amet nisl est. Quisque sit amet mauris eget ante pharetra
+            feugiat a in libero. Ut scelerisque arcu eget erat vehicula cursus
+            non non felis. Phasellus posuere nibh mattis, egestas dui eget,
+            dapibus mauris. Vestibulum aliquet, arcu vulputate sollicitudin
+            elementum, eros turpis ullamcorper lacus, ac mattis turpis eros et
+            libero. Aliquam porta ante sed lectus venenatis congue. Nam lacinia
+            enim id diam consectetur, eget tincidunt justo faucibus. Aliquam
+            aliquam nisi bibendum fermentum ornare.
+          </p>
+        </div>
+      </div>
+      <div class="contentBx">
+        <div class="label">
+          List Two
+          <i class="bi bi-chevron-down"></i>
+        </div>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            sit amet nisl est. Quisque sit amet mauris eget ante pharetra
+            feugiat a in libero. Ut scelerisque arcu eget erat vehicula cursus
+            non non felis. Phasellus posuere nibh mattis, egestas dui eget,
+            dapibus mauris. Vestibulum aliquet, arcu vulputate sollicitudin
+            elementum, eros turpis ullamcorper lacus, ac mattis turpis eros et
+            libero. Aliquam porta ante sed lectus venenatis congue. Nam lacinia
+            enim id diam consectetur, eget tincidunt justo faucibus. Aliquam
+            aliquam nisi bibendum fermentum ornare.
+          </p>
+        </div>
+      </div>
+      <div class="contentBx">
+        <div class="label">
+          List Three
+          <i class="bi bi-chevron-down"></i>
+        </div>
+        <div class="content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+            sit amet nisl est. Quisque sit amet mauris eget ante pharetra
+            feugiat a in libero. Ut scelerisque arcu eget erat vehicula cursus
+            non non felis. Phasellus posuere nibh mattis, egestas dui eget,
+            dapibus mauris. Vestibulum aliquet, arcu vulputate sollicitudin
+            elementum, eros turpis ullamcorper lacus, ac mattis turpis eros et
+            libero. Aliquam porta ante sed lectus venenatis congue. Nam lacinia
+            enim id diam consectetur, eget tincidunt justo faucibus. Aliquam
+            aliquam nisi bibendum fermentum ornare.
+          </p>
+        </div>
+      </div>
+    </div>
+
+                <!-- <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="info-dropDown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              nội dung sản phẩm
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="info-dropDown">
+              <li><a class="dropdown-item" href="#">Thiết kế tại Hà Nội</a></li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Chất liệu: Hand-polished Stainless Steel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Kích thước: 148.4-13.7-52.7</a
+                >
+              </li>
+            </ul>
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="info-dropDown-2"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Chính sách bảo hành
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="info-dropDown-2">
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Bảo hành 2 năm đối với sản phẩm kính mắt.</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Miễn phí đổi sang sản phẩm mới nếu có bất cứ lỗi sản xuất nào
+                  trong vòng 2 năm.
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  Không áp dụng do thiệt hại bởi sử dụng sai cách, sơ xuất,
+                  thiếu cẩn trọng, oxy hoá do mồ hôi của khách hàng.</a
+                >
+              </li>
+            </ul>
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="info-dropDown-3"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Quy định đổi trả
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="info-dropDown-3">
+              <li>
+                <a class="dropdown-item" href="#"
+                  >Quý khách có thể đổi sản phẩm mới trong vòng 30 ngày sau khi
+                  nhận được hàng mà không cần lí do.
+                </a>
+              </li>
+            </ul> -->
+    <script>
+      let accordion = document.querySelectorAll(".contentBx");
+
+      for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
+      }
+    </script>
+  </body>
+</html>

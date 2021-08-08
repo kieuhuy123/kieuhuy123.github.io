@@ -192,20 +192,32 @@
         </div>
       </div>
       <div class="row product-row">
-        <div class="col-md-12 col-xl-7">
-          <div class="product-img" id="product-img">
-            <img src="./img/hd-havana-1.jpg" alt="" />
+        <div class="col-md-12 col-xl-7 position-relative overflow-hidden">
+          <div class="swiper-container-1 mySwiper2">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide img-preview">
+                <img src="./img/hd-havana-1.jpg " />
+              </div>
+              <div class="swiper-slide img-preview">
+                <img src="./img/hd-havana-2.jpg" />
+              </div>
+              <div class="swiper-slide img-preview">
+                <img src="./img/hd-havana-3.jpg" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
-          <div class="box">
-            <div class="product-img-list">
-              <div class="product-img-item">
-                <img src="./img/hd-havana-1.jpg" alt="" />
+          <div thumbsSlider="" class="swiper-container-1 mySwiper1">
+            <div class="swiper-wrapper product-img">
+              <div class="swiper-slide img-preview">
+                <img src="./img/hd-havana-1.jpg" />
               </div>
-              <div class="product-img-item">
-                <img src="./img/hd-havana-2.jpg" alt="" />
+              <div class="swiper-slide img-preview">
+                <img src="./img/hd-havana-2.jpg" />
               </div>
-              <div class="product-img-item">
-                <img src="./img/hd-havana-3.jpg" alt="" />
+              <div class="swiper-slide img-preview">
+                <img src="./img/hd-havana-3.jpg" />
               </div>
             </div>
           </div>
@@ -273,79 +285,63 @@
               <i class="bi bi-box-seam"></i>
               <i>Giao hàng miễn phí mọi lúc</i>
             </div>
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="info-dropDown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              nội dung sản phẩm
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="info-dropDown">
-              <li><a class="dropdown-item" href="#">Thiết kế tại Hà Nội</a></li>
-              <li>
-                <a class="dropdown-item" href="#"
-                  >Chất liệu: Hand-polished Stainless Steel
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  Kích thước: 148.4-13.7-52.7</a
-                >
-              </li>
-            </ul>
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="info-dropDown-2"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Chính sách bảo hành
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="info-dropDown-2">
-              <li>
-                <a class="dropdown-item" href="#"
-                  >Bảo hành 2 năm đối với sản phẩm kính mắt.</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item" href="#"
-                  >Miễn phí đổi sang sản phẩm mới nếu có bất cứ lỗi sản xuất nào
-                  trong vòng 2 năm.
-                </a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  Không áp dụng do thiệt hại bởi sử dụng sai cách, sơ xuất,
-                  thiếu cẩn trọng, oxy hoá do mồ hôi của khách hàng.</a
-                >
-              </li>
-            </ul>
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="info-dropDown-3"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Quy định đổi trả
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="info-dropDown-3">
-              <li>
-                <a class="dropdown-item" href="#"
-                  >Quý khách có thể đổi sản phẩm mới trong vòng 30 ngày sau khi
-                  nhận được hàng mà không cần lí do.
-                </a>
-              </li>
-            </ul>
+
+            <div class="accordion">
+              <div class="contentBx">
+                <div class="label">
+                  Nội dung sản phẩm
+                  <i class="bi bi-chevron-down"></i>
+                </div>
+                <ul class="content">
+                  <li>Thiết kế tại Hà Nội</li>
+                  <li>Chất liệu: Nhựa Acetate</li>
+                  <li>Kích thước: 148.4 / 13.7/ 52.7</li>
+                </ul>
+              </div>
+              <div class="contentBx">
+                <div class="label">
+                  Chính sách bảo hành
+                  <i class="bi bi-chevron-down"></i>
+                </div>
+                <ul class="content">
+                  <li>Bảo hành 2 năm đối với sản phẩm kính mắt</li>
+                  <li>
+                    Miễn phí đổi sang sản phẩm mới nếu có bất kì lỗi sản xuất
+                    nào trong vòng 2 năm
+                  </li>
+                  <li>
+                    Chính sách bảo hành không áp dụng với các sản phẩm trong
+                    chương trình giảm giá
+                  </li>
+                </ul>
+              </div>
+              <div class="contentBx">
+                <div class="label">
+                  Quy định đổi trả
+                  <i class="bi bi-chevron-down"></i>
+                </div>
+                <ul class="content">
+                  <li>
+                    Quý khách có thể đổi sản phẩm trong vòng 30 ngày sau khi
+                    nhận được hàng mà không cần lí do
+                  </li>
+                  <li>
+                    Sau khi xác nhận đổi hoặc trả sản phẩm, quý khách vui lòng
+                    gửi lại sản phẩm cho chúng tôi qua bưu điện hoặc tại cửu
+                    hàng trong vòng 7 ngày kể từ khi xác nhận đổi trả
+                  </li>
+                  <li>
+                    Quý khách có thể hủy đơn hàng trước khi sản phẩm được vận
+                    chuyển. Vui lòng thông báo cho chúng tôi qua hotline:
+                    036.8523.966
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
       <div class="box">
         <div class="product-detail-preview">
           <div class="cl">
@@ -595,6 +591,7 @@
     ></script>
     <script src="./js/product-detail.js"></script>
     <script src="./js/app.js"></script>
+
     <script src="./js/scrolling.js"></script>
     <script>
       // loading
@@ -602,6 +599,33 @@
 
       window.addEventListener("load", function () {
         loadingWrapper.parentElement.removeChild(loadingWrapper);
+      });
+      // dropdown
+      let accordion = document.querySelectorAll(".contentBx");
+
+      for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
+      }
+
+      // slider-1
+      var swiper1 = new Swiper(".mySwiper1", {
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        spaceBetween: 24,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper1,
+        },
       });
 
       //slider

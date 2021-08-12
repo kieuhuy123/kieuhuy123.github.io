@@ -75,11 +75,18 @@
   text-align: center;
   background-color: #eafaf3;
 }
+.img-detail{
+  margin-bottom:16px ;
+}
 .img-detail img {
   max-width: 50%;
-  padding: 0 25px;
 }
-
+.img-detail img:first-child {
+  padding-right: 25px;
+}
+.img-detail img:last-child {
+  padding-left: 25px;
+}
 .product-detail-content {
   margin-bottom: 100px;
   text-align: justify;
@@ -102,7 +109,7 @@
 
 .breadcumb {
   font-weight: 600;
-  padding-left: 20px;
+  padding:  20px 0;
 }
 .breadcumb span {
   margin: 0 15px;
@@ -276,4 +283,20 @@
 }
 .content li {
   list-style-type: disc;
+}
+
+@media only screen and (max-width: 768px) {
+  .img-detail img {
+    max-width: 100%;
+    padding: 0 25px;
+  }
+  .img-detail img:last-child {
+    display: none;
+  }
+  .product-info-price {
+    font-size: 24px;
+  }
+  .accordion .contentBx .label {
+    font-size: 16px;
+  }
 }

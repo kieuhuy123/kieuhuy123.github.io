@@ -7,5 +7,5 @@ document
     content.classList.toggle("active");
 
     document.querySelector("#view-all-description").innerHTML =
-      content.classList.contains("active") ? "view less" : "view all";
+      content.classList.contains("active") ? "Đọc thêm" : "Ẩn bớt";
   });

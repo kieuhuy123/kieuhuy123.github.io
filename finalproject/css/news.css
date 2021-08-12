@@ -23,3 +23,12 @@
 .news-left {
   padding-left: 100px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .news-left {
+  padding-left: 0;
+}
+.line-right {
+    border-bottom: 0;
+}
+}

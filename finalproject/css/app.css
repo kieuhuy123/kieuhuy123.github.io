@@ -1205,6 +1205,10 @@ footer ul li {
   .banner {
     height: 400px;
   }
+  .banner-parallax {
+    height: 200px;
+    margin-bottom: 50px;
+  }
   .product-card-img img {
     height: 350px;
     width: 100%;

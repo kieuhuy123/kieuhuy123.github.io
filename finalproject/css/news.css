@@ -1,0 +1,25 @@
+.news-details {
+  padding: 60px 0;
+}
+.news-info {
+  width: 350px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
+.news-title{
+    padding-top: 20px;
+}
+.news-img {
+  width: 550px;
+}
+.news-img img {
+  max-width: 100%;
+  object-fit: cover;
+}
+.news-text {
+  padding-top: 70px;
+  width: 550px;
+}
+.news-left {
+  padding-left: 100px;
+}

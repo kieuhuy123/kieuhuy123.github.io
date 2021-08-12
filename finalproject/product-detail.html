@@ -101,17 +101,32 @@
         <!-- mid header -->
         <div class="bg-second">
           <div class="mid-header container">
+            <div class="search-box mb-search">
+              <input
+                class="search-txt"
+                type="text"
+                name=""
+                placeholder="Tim kiem"
+              />
+              <a href="#" class="search-btn">
+                <i class="bi bi-search"></i>
+              </a>
+            </div>
             <ul class="main-menu d-flex justify-content-around">
+              <li>
+                <a href="index.html">Trang chủ</a>
+              </li>
               <li class="mega-dropdown">
                 <a href="#"
                   >Sản phẩm
                   <i class="bi bi-chevron-down"></i>
                 </a>
+
                 <div class="mega-content">
                   <div class="row">
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-xl-6 col-lg-12">
                       <div class="box">
-                        <h3>Kính râm</h3>
+                        <h4>Kính râm</h4>
                         <ul>
                           <li>
                             <a href="product-list-2.html"
@@ -128,9 +143,9 @@
                         </ul>
                       </div>
                     </div>
-                    <div class="col-lg-6 col-md-12">
+                    <div class="col-xl-6 col-lg-12">
                       <div class="box">
-                        <h3>Kính cận</h3>
+                        <h4>Kính cận</h4>
                         <ul>
                           <li>
                             <a href="product-list.html">the assembled </a>
@@ -161,14 +176,12 @@
                 </div>
               </li>
               <li>
-                <a href="#">dịch vụ</a>
-              </li>
-              <li>
                 <a href="#">bộ sưu tập</a>
               </li>
               <li>
-                <a href="#">cửa hàng</a>
+                <a href="news.html">Tạp chí</a>
               </li>
+
               <li>
                 <a href="#">giới thiệu</a>
               </li>
@@ -268,15 +281,6 @@
               </div>
             </div>
 
-            <!-- <div class="product-quantity-wrapper">
-              <span class="product-quantity-btn">
-                <i class="bi bi-dash-lg"></i>
-              </span>
-              <span class="product-quantity">1</span>
-              <span class="product-quantity-btn">
-                <i class="bi bi-plus-lg"></i>
-              </span>
-            </div> -->
             <button class="btn-flat-reverse btn-hover-reverse">
               Thêm vào giỏ hàng
             </button>
@@ -518,37 +522,49 @@
     <footer class="bg-second">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <h4 class="footer-head">Products</h4>
+          <div class="col-lg-3 col-md-12">
+            <h4 class="footer-head">Bạn cần trợ giúp ?</h4>
             <ul class="menu">
-              <li><a href="#">Help center</a></li>
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#">product help</a></li>
-              <li><a href="#">warranty</a></li>
-              <li><a href="#">order status</a></li>
+              <li>
+                <a href="#"
+                  ><i class="bi bi-telephone-fill"></i>hotline: 036.8523.966</a
+                >
+              </li>
+              <li style="padding-left: 37px">
+                <a href="#">Mon-Sun | 8:30 - 22:00</a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="bi bi-envelope-fill"></i>Email:
+                  contact@gmail.com</a
+                >
+              </li>
+              <li>
+                <a href="#"><i class="bi bi-geo-alt-fill"></i>Shop: Hà Nội</a>
+              </li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="footer-head">Service</h4>
+
+          <div class="col-lg-3 col-md-12">
+            <h4 class="footer-head">Dịch vụ</h4>
             <ul class="menu">
-              <li><a href="#">Help center</a></li>
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#">product help</a></li>
-              <li><a href="#">warranty</a></li>
-              <li><a href="#">order status</a></li>
+              <li><a href="#">Khám mắt miễn phí</a></li>
+              <li><a href="#">Bảo hành hai năm</a></li>
+              <li><a href="#">Thu cũ đổi mới</a></li>
+              <li><a href="#">1 đổi 1 trong 30 ngày</a></li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-6">
-            <h4 class="footer-head">Support</h4>
+          <div class="col-lg-3 col-md-12">
+            <h4 class="footer-head">Bạn cần biết</h4>
             <ul class="menu">
-              <li><a href="#">Help center</a></li>
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#">product help</a></li>
-              <li><a href="#">warranty</a></li>
-              <li><a href="#">order status</a></li>
+              <li><a href="#">Chính sách vận chuyển</a></li>
+              <li><a href="#">Chính sách bảo hành</a></li>
+
+              <li><a href="#">Vệ sinh và bảo quản kính mắt</a></li>
+              <li><a href="#">Câu hỏi thường gặp</a></li>
             </ul>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-12">
+          <div class="col-lg-3 col-md-12">
             <div class="contact">
               <h4 class="contact-header">HdzzShop</h4>
               <ul class="contact-socials">
@@ -628,7 +644,7 @@
         },
       });
 
-      //slider
+      //slider-2
       var swiper = new Swiper(".mySwiper", {
         effect: "coverflow",
         grabCursor: true,

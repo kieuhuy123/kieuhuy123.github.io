@@ -16,7 +16,7 @@
 .product-info-price {
   margin-top: 10px;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 20px;
   color: #c0392b;
   border-bottom: 1px solid gainsboro;
 }
@@ -260,8 +260,8 @@
 .accordion .contentBx .label {
   position: relative;
   padding: 10px;
-  font-size: 20px;
-  text-transform: uppercase;
+  font-size: 16px;
+  
   font-weight: 500;
   color: black;
   border-bottom: 1px solid gainsboro;
@@ -274,16 +274,18 @@
 
   background: #fff;
   height: 0;
-  overflow: hidden;
-  transition: 0.5s;
+  display: none;
 }
 .accordion .contentBx.active .content {
+  display: block;
+  width: 100%;
   height: auto;
   padding: 20px;
 }
 .content li {
   list-style-type: disc;
 }
+
 
 @media only screen and (max-width: 768px) {
   .img-detail img {
@@ -294,7 +296,7 @@
     display: none;
   }
   .product-info-price {
-    font-size: 24px;
+    font-size: 16px;
   }
   .accordion .contentBx .label {
     font-size: 16px;

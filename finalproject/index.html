@@ -68,8 +68,9 @@
             <li>
               <a href=""><i class="bi bi-person-fill"></i></a>
             </li>
-            <li li>
-              <a href=""><i class="bi bi-bag"></i></a>
+            <li class="cart__icon ">
+              <i class="bi bi-bag"></i>
+              <span class="item__total">0</span>
             </li>
           </ul>
         </div>
@@ -102,7 +103,7 @@
                   <div class="row">
                     <div class="col-xl-6 col-lg-12">
                       <div class="box">
-                        <h4>Kính râm</h4>
+                        <div class="subtitle">Kính râm</div>
                         <ul>
                           <li>
                             <a href="product-list-2.html"
@@ -171,13 +172,13 @@
 
     <!-- banner -->
     <div class="banner">
-      <div class="clouds">
+      <!-- <div class="clouds">
         <img src="./img/cloud1.png" style="--i: 1" ; alt="" />
         <img src="./img/cloud2.png" style="--i: 2" ; alt="" />
         <img src="./img/cloud3.png" style="--i: 3" ; alt="" />
         <img src="./img/cloud4.png" style="--i: 4" ; alt="" />
         <img src="./img/cloud5.png" style="--i: 5" ; alt="" />
-      </div>
+      </div> -->
       <div class="slider">
         <!--slider controller -->
         <div class="container">
@@ -185,42 +186,48 @@
           <div class="slide active">
             <div class="info">
               <div class="info-content">
-                <h1 class="top-down">BST Deep into the nature</h1>
+                <h2 class="top-down">BST Deep into the nature</h2>
                 <p class="top-down trans-delay-0-2 pt-3 label">
-                  Sed quis dolor nibh. In volutpat porta feugiat. Nulla at erat
-                  condimentum, volutpat nunc a, laoreet odio. Phasellus tempor,
-                  ex nec imperdiet finibus, nisi enim dignissim diam, ac
-                  molestie arcu nunc a ligula
+                  Một mầm non nhú xanh trước sự vẫy gọi diệu kỳ của ánh nắng mặt
+                  trời đến nguồn năng lượng toả ra mạnh mẽ từ nét trầm mặc ngàn
+                  năm của rêu phong, nằm im lìm bất chấp sự biến đổi của thời
+                  gian đều được khéo léo biến tấu, “thổi hồn” vào từng sản phẩm
+                  trong Deep Into The Nature. Hãy bước vào cuộc đối thoại với tự
+                  nhiên để tìm ra bản ngã của chính mình thông qua một lăng kính
+                  mới.
                 </p>
                 <div class="top-down trans-delay-0-4 pt-md-3 pb-3">
                   <a href="#" class="btn-flat btn-hover"> KHÁM PHÁ THÊM </a>
                 </div>
               </div>
             </div>
-            <div class="img top-down">
+            <!-- <div class="img top-down">
               <img src="./img/nu-remove.png" alt="" />
-            </div>
+            </div> -->
           </div>
           <!-- end slider item -->
           <!-- slider item -->
           <div class="slide">
             <div class="info">
               <div class="info-content">
-                <h1 class="top-down">BST titatinum passion</h1>
+                <h2 class="top-down">BST Nature Spirit</h2>
                 <p class="top-down trans-delay-0-2 pt-3 label">
-                  Sed quis dolor nibh. In volutpat porta feugiat. Nulla at erat
-                  condimentum, volutpat nunc a, laoreet odio. Phasellus tempor,
-                  ex nec imperdiet finibus, nisi enim dignissim diam, ac
-                  molestie arcu nunc a ligula
+                  Lấy cảm hứng từ Mặt Trời, từ Rừng Cây, Gió, Hoa và Biển,
+                  Nature Spirit mang những sắc độ rực rỡ và tươi vui như một món
+                  quà mà thiên nhiên ban tặng. Tươi sáng và mới lạ như thiên
+                  nhiên trong nắng hạ, Nature Spirit sẽ truyền cho bạn nguồn cảm
+                  hứng yêu đời và bay bổng trong từng chiếc kính. Không còn là
+                  những items basic, Nature Spirit mang đến sự phá cách về màu
+                  sắc và kiểu dáng, đúng với tinh thần “chill” của mùa hè.
                 </p>
                 <div class="top-down trans-delay-0-4 pt-md-3 pb-3">
                   <a href="#" class="btn-flat btn-hover"> KHÁM PHÁ THÊM </a>
                 </div>
               </div>
             </div>
-            <div class="img top-down right-left">
+            <!-- <div class="img top-down right-left">
               <img src="./img/nam-removebg.png" class="big-img" alt="" />
-            </div>
+            </div> -->
           </div>
           <!-- end slider item -->
         </div>
@@ -354,9 +361,51 @@
       </div>
     </section>
     <!-- end section 1 -->
+    <!-- cart overlay -->
+    <section class="cart__overlay">
+      <div class="cart">
+        <span class="close__cart">
+          <i class="bi bi-x-lg"></i>
+        </span>
+        <h2>Giỏ Hàng</h2>
+        <div class="cart__center">
+          <!-- Cart Item -->
+          <div class="cart__item">
+            <!-- <img src="./img/hd-havana-1.jpg" alt="" />
+            <div>
+              <h3>The Hardy</h3>
+              <h3 class="price">1,750,000 VND</h3>
+            </div>
+            <div>
+              <span>
+                <i class="bi bi-plus-lg"></i>
+              </span>
+              <p>3</p>
+              <span>
+                <i class="bi bi-dash-lg"></i>
+              </span>
+            </div>
+
+            <div>
+              <span class="remove__item">
+                <i class="bi bi-trash-fill"></i>
+              </span>
+            </div> -->
+          </div>
+        </div>
+
+        <div class="cart__footer">
+          <h3>Total: $ <span class="cart__total">0</span></h3>
+          <button class="clear__cart btn-flat-reverse btn-hover-reverse">
+            Clear Cart
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- END cart overlay -->
 
     <!-- section 2 -->
-    <section class="grid bg-sec">
+    <section class="grid">
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-xl-6 line-right">
@@ -434,7 +483,6 @@
                   Gọng kính phù hợp nhất với khuôn mặt của bạn chính là gọng
                   kính đẹp nhất. Nên lựa chọn kính mắt như thế nào?
                 </i>
-                <div class="subtitle"><a href="#">Đọc thêm</a></div>
               </div>
             </div>
           </div>
@@ -460,7 +508,6 @@
                           >Bước ra từ câu chuyện của những người trẻ khao khát
                           tìm thấy “định nghĩa”</i
                         >
-                        <div class="subtitle"><a href="#">Đọc thêm</a></div>
                       </div>
                     </div>
                   </div>
@@ -486,7 +533,6 @@
                           >Kính mắt là một loại phụ kiện không thể thiếu đối với
                           những người yêu thời trang.</i
                         >
-                        <div class="subtitle"><a href="#">Đọc thêm</a></div>
                       </div>
                     </div>
                   </div>
@@ -512,7 +558,6 @@
                           >Gọng kính nhựa tròn được biết đến là loại gọng kính
                           thời trang đẹp, mới lạ và ...</i
                         >
-                        <div class="subtitle"><a href="">Đọc thêm</a></div>
                       </div>
                     </div>
                   </div>
@@ -644,6 +689,7 @@
     <script src="./js/index.js"></script>
     <script src="./js/app.js"></script>
     <script src="./js/scrolling.js"></script>
+    <script src="./js/cart.js"></script>
     <!-- parallax -->
     <script src="./js/parallax.js"></script>
   </body>

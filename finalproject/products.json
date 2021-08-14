@@ -1,0 +1,61 @@
+{
+  "status": "success",
+  "items": [
+    {
+      "id": 1,
+      "title": "Kubo",
+      "old_price": 850,
+      "curr_price": 500,
+      "image1": "./img/ada-1.jpg",
+      "image2": "./img/ada-2.jpg",
+      "shape" : "round"
+    },
+    {
+      "id": 2,
+      "title": "The Am",
+      "old_price": 850,
+      "curr_price": 500,
+      "image1": "./img/am-1.jpg",
+      "image2": "./img/am-2.jpg",
+      "shape": "round"
+    },
+    {
+      "id": 3,
+      "title": "The Hardy",
+      "old_price": 850,
+      "curr_price": 500,
+      "image1": "./img/ocean-1.jpg",
+      "image2": "./img/ocean-2.jpg",
+      "shape" : "round"
+    },
+    {
+      "id": 4,
+      "title": "The Uno",
+      "old_price": 850,
+      "curr_price": 500,
+      "image1": "./img/wind-1.jpg",
+      "image2": "./img/wind-2.jpg",
+      "shape": "rec"
+    },
+    {
+      "id": 5,
+      "title": "The Ena",
+      "old_price": 850,
+      "curr_price": 500,
+      "image1": "./img/amber-1.jpg",
+      "image2": "./img/amber-2.jpg",
+      "shape": "cat"
+    },
+    {
+      "id": 6,
+      "title": "The Kubo",
+      "old_price": 850,
+      "curr_price": 500,
+      "image1": "./img/mossy-1.jpg",
+      "image2": "./img/mossy-2.jpg",
+      "shape": "rec"
+    }
+  ]
+}
+
+

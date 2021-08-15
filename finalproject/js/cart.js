@@ -16,8 +16,9 @@ let buttonDOM = [];
 class UI {
   displayProducts(obj) {
     let result = ``;
-    obj.forEach(({ image1, image2, id, title, old_price, curr_price, shape }) => {
-      result += `
+    obj.forEach(
+      ({ image1, image2, id, title, old_price, curr_price, shape }) => {
+        result += `
             <div class="col-12 col-md-6 col-xxl-4 ${shape} ">
               <div class="product-card">
                 <div class="product-card-img">
@@ -31,13 +32,12 @@ class UI {
                       class="btn-flat-reverse btn-hover-reverse"
                       >Mua ngay</a
                     >
+                    <button  class="btn-flat btn-hover addToCart" data-id="${id}"
+                      >Add to Cart</
+                    >
 
-                    <!-- <button class="btn-flat btn-hover addToCart">
-                      <i class="bi bi-cart-plus-fill"></i>
-                    </button> -->
-                    <button class="btn-flat btn-hover addToCart" data-id="${id}">
-                      <i class="bi bi-cart-plus-fill"></i>
-                    </button>
+                    
+                    
                   </div>
                   <div class="product-card-name"><h4>${title}</h4></div>
                   <div class="product-price">
@@ -48,7 +48,8 @@ class UI {
               </div>
             </div>
         `;
-    });
+      }
+    );
     productDOM.innerHTML = result;
   }
   getButtons() {
@@ -59,8 +60,18 @@ class UI {
     buttons.forEach((button) => {
       const id = button.dataset.id;
       // console.log(id);
+      const inCart = cart.find((item) => item.id === parseInt(id, 6));
+      console.log(inCart)
+
+      if (inCart) {
+        button.innerText = "In Cart";
+        button.disabled = true;
+      }
 
       button.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.target.innerHTML = "In Cart";
+        e.target.disabled = true;
         // Get product from products
         const cartItem = { ...Storage.getProducts(id), amount: 1 };
         console.log(cartItem);
@@ -129,9 +140,10 @@ class UI {
   }
 
   setAPP() {
-    // cart = Storage.getCart();
-    // this.setItemValues(cart);
-    // this.populate(cart);
+    cart = Storage.getCart();
+    console.log(cart);
+    this.setItemValues(cart);
+    this.populate(cart);
 
     openCart.addEventListener("click", this.show);
     closeCart.addEventListener("click", this.hide);
@@ -197,9 +209,9 @@ class UI {
     this.setItemValues(cart);
     Storage.saveCart(cart);
 
-    let button = this.singleButton(id);
-    button.disable = true;
-    button.innerText = "Add to Cart";
+    // let button = this.singleButton(id);
+    // button.disable = true;
+    // button.innerText = "Add to Cart";
   }
 
   singleButton(id) {
@@ -208,6 +220,7 @@ class UI {
 }
 
 // Storage
+
 
 class Storage {
   static saveProducts(obj) {
@@ -221,8 +234,8 @@ class Storage {
     return products.find((item) => item.id === parseInt(id));
   }
   static getCart() {
-    return localStorage.getItem("cart")
-      ? JSON.parse(localStorage.getItem("cart"))
+    return localStorage.getItem("carts")
+      ? JSON.parse(localStorage.getItem("carts"))
       : [];
   }
 }
@@ -256,11 +269,3 @@ document.addEventListener("DOMContentLoaded", async () => {
   ui.getButtons();
 });
 
-let filter_col = document.querySelector("#filter-col");
-
-document.querySelector("#filter-toggle").addEventListener("click", () => {
-  filter_col.classList.add("active");
-});
-document.querySelector("#filter-close").addEventListener("click", () => {
-  filter_col.classList.remove("active");
-});

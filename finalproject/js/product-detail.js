@@ -15,3 +15,10 @@ document
 //     maxRatio: 5,
 //   },
 // });
+
+const openCart_1 = document.querySelector(".btn-cart");
+
+openCart_1.addEventListener("click", () => {
+  cartShow.classList.add("show");
+  overlay.classList.add("show");
+});

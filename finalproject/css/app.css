@@ -56,7 +56,7 @@ button {
   cursor: pointer;
 }
 a {
-  display: inline-block;
+  display: flex;
   text-decoration: none;
   color: unset;
 }
@@ -528,6 +528,8 @@ section {
   visibility: hidden;
   transform: translateY(0);
   transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
 }
 .product-card:hover .product-btn {
   opacity: 1;
@@ -926,6 +928,9 @@ footer ul li {
   font-weight: 700;
   margin-bottom: 8px;
 }
+.cart__footer a{
+  width: 75%;
+}
 .cart svg {
   width: 1.8rem;
   height: 1.8rem;
@@ -965,6 +970,7 @@ footer ul li {
 .cart__item img {
   width: 150px;
   height: 150px;
+  object-fit: cover;
 }
 
 .cart__item h3 {

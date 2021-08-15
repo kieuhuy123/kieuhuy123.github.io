@@ -1,4 +1,5 @@
 const openCart = document.querySelector(".cart__icon");
+
 const closeCart = document.querySelector(".close__cart");
 const productDOM = document.querySelector(".product__center");
 const cartDOM = document.querySelector(".cart__center");
@@ -7,7 +8,7 @@ const cartTotal = document.querySelector(".cart__total");
 
 const overlay = document.querySelector(".cart__overlay");
 const cartShow = document.querySelector(".cart");
-const clearCartBtn = document.querySelector(".clear__cart");
+// const clearCartBtn = document.querySelector(".clear__cart");
 let cart = [];
 
 let buttonDOM = [];
@@ -20,20 +21,18 @@ class UI {
       ({ image1, image2, id, title, old_price, curr_price, shape }) => {
         result += `
             <div class="col-12 col-md-6 col-xxl-4 ${shape} ">
-              <div class="product-card">
+              <div  class="product-card">
+                
+                <a href="./product-detail.html">
                 <div class="product-card-img">
                   <img src="${image1}" alt="" />
                   <img src="${image2}" alt="" />
-                </div>
+                </div></a>
                 <div class="product-card-info">
                   <div class="product-btn">
-                    <a
-                      href="product-detail.html"
-                      class="btn-flat-reverse btn-hover-reverse"
-                      >Mua ngay</a
-                    >
-                    <button  class="btn-flat btn-hover addToCart" data-id="${id}"
-                      >Add to Cart</
+                    
+                    <button  class="btn-flat-reverse btn-hover-reverse addToCart" data-id="${id}"
+                      >Thêm vào giỏ hàng</
                     >
 
                     
@@ -41,8 +40,8 @@ class UI {
                   </div>
                   <div class="product-card-name"><h4>${title}</h4></div>
                   <div class="product-price">
-                    <span><del>${old_price} VND</del></span>
-                    <span class="curr-price">${curr_price} VND</span>
+                    <span><del>$${old_price} </del></span>
+                    <span class="curr-price">$${curr_price} </span>
                   </div>
                 </div>
               </div>
@@ -61,16 +60,16 @@ class UI {
       const id = button.dataset.id;
       // console.log(id);
       const inCart = cart.find((item) => item.id === parseInt(id, 6));
-      console.log(inCart)
+      console.log(inCart);
 
       if (inCart) {
-        button.innerText = "In Cart";
+        button.innerText = "Đã thêm";
         button.disabled = true;
       }
 
       button.addEventListener("click", (e) => {
         e.preventDefault();
-        e.target.innerHTML = "In Cart";
+        e.target.innerHTML = "Đã thêm";
         e.target.disabled = true;
         // Get product from products
         const cartItem = { ...Storage.getProducts(id), amount: 1 };
@@ -97,7 +96,7 @@ class UI {
       itemTotal += item.amount;
     });
     itemTotals.innerText = itemTotal;
-    cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
+    cartTotal.innerText = parseFloat(tempTotal.toFixed(2)); 
   }
 
   addToCart({ title, curr_price, image1, id }) {
@@ -155,10 +154,10 @@ class UI {
 
   cartLogic() {
     // clear Cart
-    clearCartBtn.addEventListener("click", () => {
-      this.clearCart();
-      this.hide();
-    });
+    // clearCartBtn.addEventListener("click", () => {
+    //   this.clearCart();
+    //   this.hide();
+    // });
     // Cart funtionality
     cartDOM.addEventListener("click", (e) => {
       const target = e.target.closest("span");
@@ -221,7 +220,6 @@ class UI {
 
 // Storage
 
-
 class Storage {
   static saveProducts(obj) {
     localStorage.setItem("products", JSON.stringify(obj));
@@ -268,4 +266,3 @@ document.addEventListener("DOMContentLoaded", async () => {
   Storage.saveProducts(productsObj);
   ui.getButtons();
 });
-

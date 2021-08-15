@@ -1182,9 +1182,7 @@ footer ul li {
   .search {
     width: 100%;
   }
-  .main-menu a {
-    padding: 10px 0;
-  }
+ 
   .mega-dropdown i {
     display: none;
   }
@@ -1421,9 +1419,9 @@ footer ul li {
   .mid-header a {
     font-size: 16px;
   }
-  .mega-content ul > li > a {
+  /* .mega-content ul > li > a {
     font-size: 13px;
-  }
+  } */
   .product-card-img img {
     height: 350px;
     width: 100%;

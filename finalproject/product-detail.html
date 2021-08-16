@@ -60,41 +60,40 @@
       </svg>
       <i class="bi bi-arrow-up arrow"></i>
     </div>
-    <!-- moblile menu -->
-    <div class="mobile-menu bg-second">
-      <a href="index.html" class="mb-logo"
-        ><img src="./img/logo.png" alt=""
-      /></a>
-      <span class="mb-menu-toggle" id="mb-menu-toggle">
-        <i class="bi bi-list"></i>
-      </span>
-    </div>
-    <!-- end mobile menu-->
+
     <!-- header -->
     <header>
       <div class="header-wrapper">
-        <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
-          <i class="bi bi-x-lg"></i>
-        </span>
         <!-- top header -->
         <div class="top-header container">
           <a href="index.html" class="logo"
             ><img src="./img/logo.png" alt=""
           /></a>
           <div class="search">
-            <input type="text" placeholder="Search" />
+            <input type="text" placeholder="Tìm kiếm" />
             <i class="bi bi-search"></i>
           </div>
+
           <ul class="user-menu d-flex">
-            <li>
+            <li class="d-sm-none d-md-block">
               <a href="#"><i class="bi bi-bell"></i></a>
             </li>
             <li>
               <a href=""><i class="bi bi-person-fill"></i></a>
             </li>
-            <li class="cart__icon ">
+            <li class="cart__icon">
               <i class="bi bi-bag"></i>
               <span class="item__total">0</span>
+            </li>
+            <li>
+              <span
+                class="mb-menu-toggle"
+                id="mb-menu-toggle"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <i class="bi bi-list"></i>
+              </span>
             </li>
           </ul>
         </div>
@@ -102,6 +101,9 @@
         <!-- mid header -->
         <div class="bg-second">
           <div class="mid-header container">
+            <!-- <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
+              <i class="bi bi-x-lg"></i>
+            </span>
             <div class="search-box mb-search">
               <input
                 class="search-txt"
@@ -112,9 +114,9 @@
               <a href="#" class="search-btn">
                 <i class="bi bi-search"></i>
               </a>
-            </div>
+            </div> -->
             <ul class="main-menu d-flex justify-content-around">
-              <li>
+              <li class="active">
                 <a href="index.html">Trang chủ</a>
               </li>
               <li class="mega-dropdown">
@@ -127,7 +129,7 @@
                   <div class="row">
                     <div class="col-xl-6 col-lg-12">
                       <div class="box">
-                        <h4>Kính râm</h4>
+                        <div class="subtitle">Kính râm</div>
                         <ul>
                           <li>
                             <a href="product-list.html"
@@ -177,7 +179,7 @@
                 </div>
               </li>
               <li>
-               <a href="service.html">dịch vụ</a>
+                <a href="service.html">dịch vụ</a>
               </li>
               <li>
                 <a href="news.html">Tạp chí</a>
@@ -193,6 +195,106 @@
       </div>
     </header>
     <!-- end header -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="main-menu d-flex justify-content-around">
+              <li class="active">
+                <a href="index.html">Trang chủ</a>
+              </li>
+              <li class="mega-dropdown">
+                <a href="#"
+                  >Sản phẩm
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+
+                <div class="mega-content">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <div class="subtitle">Kính râm</div>
+                        <ul>
+                          <li>
+                            <a href="product-list.html"
+                              >the assembled sunglasses</a
+                            >
+                          </li>
+                          <li>
+                            <a href="product-list.html">the cut sunglasses</a>
+                          </li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li>
+                            <a href="product-list.html">the combination</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <h4>Kính cận</h4>
+                        <ul>
+                          <li>
+                            <a href="product-list.html">the assembled </a>
+                          </li>
+                          <li><a href="product-list.html">the cut</a></li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li><a href="product-list.html">the basic</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row img-row">
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhram-removebg-preview.png"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhcan-removebg-preview.png"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="service.html">dịch vụ</a>
+              </li>
+              <li>
+                <a href="news.html">Tạp chí</a>
+              </li>
+
+              <li>
+                <a href="#">giới thiệu</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
     <!-- product details content -->
     <div class="container">
@@ -416,14 +518,13 @@
           </div>
         </div>
       </div>
+      
     </div>
    
         
         
         
-        </div>
-      </div>
-    </div>
+      
     <!-- Swiper -->
 
     <div class="bg-sec">

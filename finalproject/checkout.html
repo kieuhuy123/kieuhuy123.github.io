@@ -33,25 +33,14 @@
     <!-- css -->
     <link rel="stylesheet" href="./css/app.css" />
     <link rel="stylesheet" href="./css/check-out.css" />
+    <link rel="stylesheet" href="./css/details.css" />
   </head>
   <body>
     <div class="loading-screen"></div>
-    <!-- moblile menu -->
-    <div class="mobile-menu bg-second">
-      <a href="index.html" class="mb-logo"
-        ><img src="./img/logo.png" alt=""
-      /></a>
-      <span class="mb-menu-toggle" id="mb-menu-toggle">
-        <i class="bi bi-list"></i>
-      </span>
-    </div>
-    <!-- end mobile menu-->
+
     <!-- header -->
     <header>
       <div class="header-wrapper">
-        <span class="mb-menu-toggle mb-menu-close" id="mb-menu-close">
-          <i class="bi bi-x-lg"></i>
-        </span>
         <!-- top header -->
         <div class="top-header container">
           <a href="index.html" class="logo"
@@ -63,7 +52,7 @@
           </div>
 
           <ul class="user-menu d-flex">
-            <li>
+            <li class="d-sm-none d-md-block">
               <a href="#"><i class="bi bi-bell"></i></a>
             </li>
             <li>
@@ -73,12 +62,122 @@
               <i class="bi bi-bag"></i>
               <span class="item__total">0</span>
             </li>
+            <li>
+              <span
+                class="mb-menu-toggle"
+                id="mb-menu-toggle"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <i class="bi bi-list"></i>
+              </span>
+            </li>
           </ul>
         </div>
         <!-- end top header -->
+       
       </div>
     </header>
     <!-- end header -->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <ul class="main-menu d-flex justify-content-around">
+              <li class="active">
+                <a href="index.html">Trang chủ</a>
+              </li>
+              <li class="mega-dropdown">
+                <a href="#"
+                  >Sản phẩm
+                  <i class="bi bi-chevron-down"></i>
+                </a>
+
+                <div class="mega-content">
+                  <div class="row">
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <div class="subtitle">Kính râm</div>
+                        <ul>
+                          <li>
+                            <a href="product-list.html"
+                              >the assembled sunglasses</a
+                            >
+                          </li>
+                          <li>
+                            <a href="product-list.html">the cut sunglasses</a>
+                          </li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li>
+                            <a href="product-list.html">the combination</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-12">
+                      <div class="box">
+                        <h4>Kính cận</h4>
+                        <ul>
+                          <li>
+                            <a href="product-list.html">the assembled </a>
+                          </li>
+                          <li><a href="product-list.html">the cut</a></li>
+                          <li><a href="product-list.html">the metal</a></li>
+                          <li><a href="product-list.html">the basic</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row img-row">
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhram-removebg-preview.png"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                      <img
+                        src="./img/kinhcan-removebg-preview.png"
+                        class="img-mega"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="service.html">dịch vụ</a>
+              </li>
+              <li>
+                <a href="news.html">Tạp chí</a>
+              </li>
+
+              <li>
+                <a href="#">giới thiệu</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- scrolling -->
     <div class="progress-wrap active-progress">
@@ -104,13 +203,16 @@
 
     <section class="check-out">
       <div class="container">
-        <div class="breadcumb d-flex">
+        <!-- <div class="breadcumb d-flex">
           <a href="./index.html">Giỏ hàng</a>
           <span><i class="bi bi-chevron-double-right"></i></span>
           <a href="./product-list.html">Thanh toán</a>
+        </div> -->
+        <div class="form-title ">
+          <h2>Thanh toán</h2>
         </div>
-        <div class="row">
-          <div class="col-7">
+        <div class="row form-reverse">
+          <div class="col-md-12 col-xl-7">
             <div class="main-check">
               <!-- <h2>Thanh toan</h2> -->
 
@@ -144,7 +246,7 @@
 
               <div class="shipping-address">
                 <div class="form-header">
-                  <h3>Địa chỉ nhận hàng</h3>
+                  <h4>Địa chỉ nhận hàng</h4>
                 </div>
                 <div class="form-content">
                   <form
@@ -255,8 +357,8 @@
               </div>
             </div>
           </div>
-          <div class="col-5">
-            <div class="checkout-product">
+          <div class="col-md-12 col-xl-5 form-box">
+            <div class="checkout-product d-sm-none d-xl-block">
               <div class="cart__item">
                 <img src="./img/hd-havana.jpg" alt="" />
                 <div>
@@ -290,7 +392,7 @@
                   <h4>$190</h4>
                 </div>
               </div>
-              <div class="discount ">
+              <div class="discount">
                 <form
                   action=""
                   name="demo"
@@ -317,6 +419,77 @@
               <div class="total-money d-flex justify-content-between">
                 <div class="money-title"><h4>Tổng thanh toán</h4></div>
                 <div class="money-price"><h4>$708</h4></div>
+              </div>
+            </div>
+            <div class="accordion d-sm-block d-xl-none">
+              <div class="contentBx">
+                <div class="label">
+                  <div class="cart-check">
+                    <i class="bi bi-cart-check"></i> Hiện thị tóm tắt đơn hàng
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
+
+                  <div class="money-price"><h4>$708</h4></div>
+                </div>
+                <div class="checkout-product content">
+                  <div class="cart__item">
+                    <img src="./img/hd-havana.jpg" alt="" />
+                    <div>
+                      <h4>Hardy</h4>
+                      <p>brown havana</p>
+                    </div>
+
+                    <div>
+                      <h4>$269</h4>
+                    </div>
+                  </div>
+                  <div class="cart__item">
+                    <img src="./img/vuong.jpg" alt="" />
+                    <div>
+                      <h4>Uno</h4>
+                      <p>White</p>
+                    </div>
+
+                    <div>
+                      <h4>$249</h4>
+                    </div>
+                  </div>
+                  <div class="cart__item">
+                    <img src="./img/ocean-1.jpg" alt="" />
+                    <div>
+                      <h4>Ocean</h4>
+                      <p>Pink</p>
+                    </div>
+
+                    <div>
+                      <h4>$190</h4>
+                    </div>
+                  </div>
+                  <div class="discount">
+                    <form
+                      action=""
+                      name="demo"
+                      class="form-floating needs-validation row"
+                    >
+                      <div class="form-floating col-8">
+                        <input
+                          type="text"
+                          name="user"
+                          class="form-control"
+                          id="floatingInput"
+                          placeholder="h"
+                        />
+                        <label for="floatingInput">Mã giảm giá</label>
+                        <div class="invalid-feedback error-user">
+                          Please choose a username.
+                        </div>
+                      </div>
+                      <button class="col-4 btn btn-secondary" type="submit">
+                        Áp dụng
+                      </button>
+                    </form>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -466,6 +639,15 @@
       window.addEventListener("load", function () {
         loadingWrapper.parentElement.removeChild(loadingWrapper);
       });
+
+      // dropdown
+      let accordion = document.querySelectorAll(".contentBx");
+
+      for (i = 0; i < accordion.length; i++) {
+        accordion[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
+      }
     </script>
   </body>
 </html>

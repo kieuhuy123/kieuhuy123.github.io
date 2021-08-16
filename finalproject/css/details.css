@@ -17,7 +17,7 @@
   margin-top: 10px;
   font-weight: 600;
   font-size: 20px;
-  color: #c0392b;
+  color: #e55039;
   border-bottom: 1px solid gainsboro;
 }
 .color-title > span {
@@ -75,8 +75,8 @@
   text-align: center;
   background-color: #eafaf3;
 }
-.img-detail{
-  margin-bottom:16px ;
+.img-detail {
+  margin-bottom: 16px;
 }
 .img-detail img {
   max-width: 50%;
@@ -109,7 +109,7 @@
 
 .breadcumb {
   font-weight: 600;
-  padding:  20px 0;
+  padding: 20px 0;
 }
 .breadcumb span {
   margin: 0 15px;
@@ -261,7 +261,7 @@
   position: relative;
   padding: 10px;
   font-size: 16px;
-  
+
   font-weight: 500;
   color: black;
   border-bottom: 1px solid gainsboro;
@@ -285,7 +285,6 @@
 .content li {
   list-style-type: disc;
 }
-
 
 @media only screen and (max-width: 768px) {
   .img-detail img {

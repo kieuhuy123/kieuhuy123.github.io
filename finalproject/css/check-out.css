@@ -1,3 +1,8 @@
+.form-title {
+  color: #e55039;
+  text-align: center;
+}
+
 .check-out {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -26,6 +31,10 @@
 .btn-danger {
   width: 50%;
   padding: 12px 0;
+  ;
+}
+.checkout-product {
+  padding-left: 38px;
 }
 .checkout-product .cart__item {
   width: 100%;
@@ -42,7 +51,7 @@
 .checkout-product .cart__item {
   text-transform: uppercase;
 }
-.discount  {
+.discount {
   padding: 32px 0;
   border-bottom: 1px solid gainsboro;
 }
@@ -50,6 +59,34 @@
   padding-left: 25px;
 }
 .total-money {
-    padding-top: 32px;
+  padding-top: 32px;
 }
-
+.check-out .accordion .contentBx {
+  margin: 0;
+}
+.check-out .accordion .contentBx .label {
+  align-items: center;
+  border: none;
+  padding: 10px 0;
+}
+.cart-check i:first-child {
+  font-size: 30px;
+  padding-right: 20px;
+}
+@media only screen and (max-width: 1200px) {
+  .main-check {
+    padding: 0;
+    border: none;
+  }
+  .checkout-product {
+    padding-left: 0;
+  }
+  .form-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .form-box {
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+  }
+}

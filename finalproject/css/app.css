@@ -886,7 +886,7 @@ footer ul li {
   height: 80%;
   padding: 1.6rem;
   border-radius: 2rem;
-  z-index: 3;
+  z-index: 11;
   overflow-y: scroll;
   background-color: white;
   opacity: 0;
@@ -902,6 +902,7 @@ footer ul li {
 
 .cart__overlay.show {
   visibility: visible;
+  margin: 0;
 }
 .cart__icon {
   position: relative;

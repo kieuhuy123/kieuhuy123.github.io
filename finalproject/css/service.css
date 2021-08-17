@@ -1,0 +1,75 @@
+.service-content {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.service-img {
+  width: 100%;
+  height: 100%;
+}
+/* .service-img img {
+ width: 100%;
+  object-fit: cover;
+} */
+.repaire-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.repair-img {
+  padding-right: 50px;
+}
+.repaire-list li.active {
+  opacity: 1;
+}
+.repaire-list li.active .subject {
+  border-bottom: 1px solid gainsboro;
+}
+.repaire-list li {
+  opacity: 0.5;
+}
+.subject {
+  text-align: center;
+
+  text-transform: uppercase;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+.swiper-slide img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+.description {
+  text-align: center;
+  margin-top: 50px;
+}
+.description h2 {
+  margin-bottom: 20px;
+}
+.view-all {
+  display: inline;
+  border-bottom: 1px solid gainsboro;
+}
+.repair,
+.store {
+  padding-bottom: 100px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .repaire-title {
+    margin-top: 50px;
+  }
+  .repair-img {
+    padding-right: 0;
+  }
+  .repaire-list {
+    text-align: ;
+  }
+}
+@media only screen and (max-width: 567px) {
+  .service-content {
+    width: auto;
+  }
+}

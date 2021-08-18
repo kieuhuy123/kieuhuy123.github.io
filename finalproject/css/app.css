@@ -267,6 +267,9 @@ img {
     transform: translateX(100%);
   }
 }
+.bell {
+  display: block;
+}
 .btn-flat {
   display: inline-block;
   border: 2px solid #ffffff;
@@ -343,7 +346,7 @@ img {
   visibility: visible;
   top: calc(100%);
 }
-.mega-dropdown i{
+.mega-dropdown i {
   padding-left: 10px;
 }
 .mega-content ul > li > a {
@@ -1369,7 +1372,9 @@ footer ul li {
   .subtitle {
     font-size: 16px;
   }
-
+  .bell {
+    display: none;
+  }
   /* .mid-header {
     display: flex;
     flex-direction: column;

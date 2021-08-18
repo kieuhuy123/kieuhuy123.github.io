@@ -96,7 +96,7 @@ class UI {
       itemTotal += item.amount;
     });
     itemTotals.innerText = itemTotal;
-    cartTotal.innerText = parseFloat(tempTotal.toFixed(2)); 
+    cartTotal.innerText = parseFloat(tempTotal.toFixed(2));
   }
 
   addToCart({ title, curr_price, image1, id }) {
@@ -266,3 +266,4 @@ document.addEventListener("DOMContentLoaded", async () => {
   Storage.saveProducts(productsObj);
   ui.getButtons();
 });
+

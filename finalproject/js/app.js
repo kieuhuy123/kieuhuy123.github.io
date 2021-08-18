@@ -14,11 +14,4 @@ document.querySelectorAll(".mega-dropdown > a").forEach((e) => {
 
 
 // 
-let filter_col = document.querySelector("#filter-col");
 
-// document.querySelector("#filter-toggle").addEventListener("click", () => {
-//   filter_col.classList.add("active");
-// });
-// document.querySelector("#filter-close").addEventListener("click", () => {
-//   filter_col.classList.remove("active");
-// });

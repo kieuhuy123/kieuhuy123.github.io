@@ -3,7 +3,7 @@
   "items": [
     {
       "id": 1,
-      "title": "Kubo",
+      "title": "Hardy",
       "old_price": 249,
       "curr_price": 190,
       "image1": "./img/lm-black.jpg",
@@ -12,7 +12,7 @@
     },
     {
       "id": 2,
-      "title": "Hardy",
+      "title": "Kubo 01",
       "old_price": 300,
       "curr_price": 269,
       "image1": "./img/hd-havana.jpg",

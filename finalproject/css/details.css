@@ -24,15 +24,29 @@
   text-transform: uppercase;
 }
 
-.select-color > p {
+.select-color > span {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+
+  margin-right: 20px;
+  border-radius: 50%;
+  background-size: cover;
+  position: relative;
+}
+.select-color .active::after {
+  content: "";
   width: 22px;
   height: 22px;
-  background-color: brown;
-  border-radius: 50%;
   border: 2px solid gainsboro;
-  margin-right: 20px;
-
-  background-size: cover;
+  position: absolute;
+  border-radius: 50%;
+  box-sizing: border-box;
+  left: -4px;
+  top: -4px;
+}
+.img-1 {
+  src: url(./img/hd-emaral.jpg);
 }
 .product-row .btn-flat-reverse {
   width: 100%;
@@ -169,6 +183,7 @@
 .swiper-button-prev {
   color: black;
   top: 77%;
+  z-index: 3;
 }
 .product-img {
   display: flex;
@@ -197,6 +212,7 @@
   filter: blur(0px);
   background-color: #fff;
 }
+
 .tBox {
   position: relative;
   width: 100%;

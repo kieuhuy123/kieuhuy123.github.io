@@ -206,6 +206,7 @@ img {
 .main-menu .active {
   color: #e55039;
 }
+
 .mobile-menu {
   align-items: center;
   justify-content: space-between;
@@ -1391,6 +1392,9 @@ footer ul li {
   .mid-header.active {
     right: 0;
   } */
+  .hide-product {
+    display: none;
+  }
   .mega-dropdown i {
     display: none;
   }

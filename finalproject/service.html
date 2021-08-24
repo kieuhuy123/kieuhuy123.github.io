@@ -389,23 +389,23 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-xl-8">
-            <div class="repair-img"><img src="./img/repaire.jpg" alt="" /></div>
+            <div class="repair-img"><img src="./img/repair.jpg" alt="" /></div>
           </div>
           <div class="col-md-12 col-xl-4">
-            <div class="repaire-title"><h2>Sửa chữa</h2></div>
-            <ul class="repaire-list">
-              <li class="active">
+            <div class="repair-title"><h2>Sửa chữa</h2></div>
+            <ul class="repair-list">
+              <li class="active" data-pic="./img/repair.jpg"> 
                 <div class="subject subtitle">dịch vụ thay thế</div>
                 <p>
                   Sản phẩm có khuyết điểm nhỏ do sơ ý hoặc sử dụng hàng ngày có
                   thể điều chỉnh để vừa vặn cho bạn thoải mái.
                 </p>
               </li>
-              <li>
+              <li data-pic="./img/repair-2.jpg">
                 <div class="subject subtitle">dịch vụ điều chỉnh</div>
                 <p>Sản phẩm bị hư hỏng nặng và biến dạng sẽ được thay thế.</p>
               </li>
-              <li>
+              <li data-pic="./img/repair-3.jpg">
                 <div class="subject subtitle">dịch vụ phục hổi</div>
                 <p>
                   Sản phẩm axetat có vết xước và vết lõm có thể được đánh bóng
@@ -576,6 +576,13 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+      });
+      // repair list
+      $(".repair-list li").click(function () {
+        $(".repair-list li").removeClass("active");
+        $(this).addClass("active");
+        
+        $(".repair-img img").attr("src", $(this).attr("data-pic"));
       });
     </script>
   </body>

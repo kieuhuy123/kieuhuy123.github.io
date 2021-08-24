@@ -11,20 +11,20 @@
  width: 100%;
   object-fit: cover;
 } */
-.repaire-title {
+.repair-title {
   text-align: center;
   margin-bottom: 50px;
 }
 .repair-img {
   padding-right: 50px;
 }
-.repaire-list li.active {
+.repair-list li.active {
   opacity: 1;
 }
-.repaire-list li.active .subject {
+.repair-list li.active .subject {
   border-bottom: 1px solid gainsboro;
 }
-.repaire-list li {
+.repair-list li {
   opacity: 0.5;
 }
 .subject {

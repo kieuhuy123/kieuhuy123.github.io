@@ -372,7 +372,7 @@
             </ul>
           </div>
           <div class="box d-sm-none d-xl-block">
-            <span class="filter-header">Hình dạng</span>
+            <span class="filter-header list active" data-filter="all">Hình dạng</span>
             <div class="row">
               <div class="col-lg-12 col-xl-6">
                 <div class="list active" data-filter="round">
@@ -409,7 +409,7 @@
             </div>
           </div>
           <div class="box d-sm-block d-xl-none">
-            <span class="filter-header">Hình dạng</span>
+            <span class="filter-header list">Hình dạng</span>
             <ul class="filter-list">
               <li>
                 <div class="group-checkbox">
@@ -793,7 +793,10 @@
           }
         });
         $(".list").click(function () {
-          $(this).addClass("active").siblings().removeClass("active");
+          $(".list").removeClass("active");
+          $(this).addClass("active");
+
+          $(".pagination").addClass("hide")
         });
       });
     </script>

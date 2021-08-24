@@ -17,7 +17,7 @@
       "curr_price": 269,
       "image1": "./img/hd-havana.jpg",
       "image2": "./img/nam2.jpg",
-      "shape": "round"
+      "shape": "rec"
     },
     {
       "id": 3,
@@ -26,7 +26,7 @@
       "curr_price": 249,
       "image1": "./img/vuong.jpg",
       "image2": "./img/nu2.jpg",
-      "shape": "round"
+      "shape": "square"
     },
     {
       "id": 4,
@@ -44,7 +44,7 @@
       "curr_price": 190,
       "image1": "./img/marke-1.png",
       "image2": "./img/marke-3.jpg",
-      "shape": "round"
+      "shape": "cat"
     },
     {
       "id": 6,
@@ -53,7 +53,7 @@
       "curr_price": 269,
       "image1": "./img/fade-1.jpg",
       "image2": "./img/fade-3.jpg",
-      "shape": "round"
+      "shape": "square"
     },
     {
       "id": 7,
@@ -62,7 +62,7 @@
       "old_price": 249,
       "image1": "./img/ada-1.jpg",
       "image2": "./img/ada-2.jpg",
-      "shape": "round"
+      "shape": "cat"
     },
     {
       "id": 8,
@@ -71,7 +71,7 @@
       "curr_price": 190,
       "image1": "./img/am-1.jpg",
       "image2": "./img/am-2.jpg",
-      "shape": "round"
+      "shape": "rec"
     },
     {
       "id": 9,
@@ -89,7 +89,7 @@
       "curr_price": 190,
       "image1": "./img/wind-1.jpg",
       "image2": "./img/wind-2.jpg",
-      "shape": "rec"
+      "shape": "cat"
     },
     {
       "id": 11,
@@ -98,7 +98,7 @@
       "curr_price": 190,
       "image1": "./img/amber-1.jpg",
       "image2": "./img/amber-2.jpg",
-      "shape": "cat"
+      "shape": "rec"
     },
     {
       "id": 12,
@@ -107,7 +107,7 @@
       "curr_price": 190,
       "image1": "./img/mossy-1.jpg",
       "image2": "./img/mossy-2.jpg",
-      "shape": "rec"
+      "shape": "round"
     }
   ]
 }

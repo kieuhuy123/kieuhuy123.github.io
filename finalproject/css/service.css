@@ -52,8 +52,13 @@
   display: inline;
   border-bottom: 1px solid gainsboro;
 }
-.repair,
-.store {
+.repair {
+  padding-bottom: 100px;
+}
+.store .col-12 {
+  overflow: hidden;
+}
+.contact-us {
   padding-bottom: 100px;
 }
 
@@ -64,12 +69,18 @@
   .repair-img {
     padding-right: 0;
   }
-  .repaire-list {
-    text-align: ;
+  .repair-list {
+    text-align: center;
+  }
+  .swiper-slide img {
+    height: 400px;
   }
 }
 @media only screen and (max-width: 567px) {
   .service-content {
     width: auto;
+  }
+  .swiper-slide img {
+    height: 300px;
   }
 }

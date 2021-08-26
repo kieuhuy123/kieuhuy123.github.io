@@ -429,6 +429,7 @@
 
                   <div class="money-price"><h4>$708</h4></div>
                 </div>
+
                 <div class="checkout-product content">
                   <div class="cart__item">
                     <img src="./img/hd-havana.jpg" alt="" />
@@ -640,13 +641,18 @@
 
       // dropdown
       let accordion = document.querySelectorAll(".contentBx");
+      let label = document.querySelector(".label");
 
-      for (i = 0; i < accordion.length; i++) {
-        accordion[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-        });
-      }
+      // for (i = 0; i < accordion.length; i++) {
+      //   accordion[i].addEventListener("click", function () {
+      //     this.classList.toggle("active");
+      //   });
+      // }
       
+      label.addEventListener("click", function () {
+        document.querySelector(".contentBx").classList.toggle("active");
+        
+      });
     </script>
   </body>
 </html>

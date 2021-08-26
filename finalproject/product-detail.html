@@ -343,10 +343,10 @@
                 <img src="./img/dbrown-1.jpg" />
               </div>
               <div class="swiper-slide img-preview">
-                <img  src="./img/dbrown-2.jpg" />
+                <img src="./img/dbrown-2.jpg" />
               </div>
               <div class="swiper-slide img-preview">
-                <img  src="./img/dbrown-3.jpg" />
+                <img src="./img/dbrown-3.jpg" />
               </div>
             </div>
           </div>
@@ -794,12 +794,13 @@
       });
       // dropdown
       let accordion = document.querySelectorAll(".contentBx");
-
+      let label = document.querySelectorAll(".label");
       for (i = 0; i < accordion.length; i++) {
         accordion[i].addEventListener("click", function () {
           this.classList.toggle("active");
         });
       }
+     
 
       // slider-1
       var swiper1 = new Swiper(".mySwiper1", {

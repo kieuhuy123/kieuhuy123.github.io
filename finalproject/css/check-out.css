@@ -33,6 +33,7 @@
   padding: 12px 0;
 }
 .checkout-product {
+  
   padding-left: 38px;
 }
 .checkout-product .cart__item {
@@ -59,6 +60,9 @@
 }
 .total-money {
   padding-top: 32px;
+}
+.check-out .accordion {
+  display: none;
 }
 .check-out .accordion .contentBx {
   margin: 0;
@@ -93,7 +97,7 @@
   padding-top: 10px;
   padding-bottom: 60px;
 }
-.success-form h2{
+.success-form h2 {
   padding-top: 20px;
 }
 .go-back-home {
@@ -110,6 +114,7 @@
   }
   .checkout-product {
     padding-left: 0;
+    display: none;
   }
   .form-reverse {
     display: flex;
@@ -119,10 +124,16 @@
     border-top: 1px solid gainsboro;
     border-bottom: 1px solid gainsboro;
   }
+  .check-out .accordion {
+    display: block;
+  }
   .column-success {
     flex-direction: column;
   }
-  .column-success .content{
+  .column-success .content {
     padding: 10px 0;
   }
 }
+/* @media only screen and (max-width: 576px) {
+
+} */

@@ -1,9 +1,15 @@
+.news-list {
+  padding-bottom: 100px;
+}
 .news-details {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 .news-details:first-child {
   padding-top: 0;
+}
+.news-details:last-child{
+  padding-bottom: 0;
 }
 .news-info {
   padding-bottom: 50px;

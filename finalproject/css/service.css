@@ -64,7 +64,13 @@
 .map {
   padding-bottom: 100px;
 }
-
+.swiper-button-next, .swiper-button-prev{
+  z-index: 3;
+}
+.swiper-button-next::after, .swiper-button-prev::after{
+  color: #c5c5c5;
+ 
+}
 @media only screen and (max-width: 1200px) {
   .repaire-title {
     margin-top: 50px;

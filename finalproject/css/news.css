@@ -8,7 +8,7 @@
 .news-details:first-child {
   padding-top: 0;
 }
-.news-details:last-child{
+.news-details:last-child {
   padding-bottom: 0;
 }
 .news-info {
@@ -33,7 +33,9 @@
 .news-right {
   padding-left: 100px;
 }
-
+.news-list .label {
+  color: #c5c5c5;
+}
 @media only screen and (max-width: 1200px) {
   .row.reverse {
     flex-direction: column-reverse;

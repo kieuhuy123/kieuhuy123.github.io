@@ -226,7 +226,7 @@ img {
   background-size: cover;
   position: relative;
   /* background-image: url(../img/banner-1.jpeg); */
-  background-image: url(../img/banner-5-edit.jpg);
+  background-image: url(../img/banner-5-edit.webp);
   background-position: bottom;
 }
 .title-banner {
@@ -577,7 +577,7 @@ section {
   margin-right: 25px;
   height: 600px;
   overflow: hidden;
-  background-image: url(../img/nature\ spirit.jpg);
+  background-image: url(../img/nature-spirit.webp);
   background-size: cover;
   background-color: rgb(3, 3, 3);
 }
@@ -612,14 +612,14 @@ section {
 }
 .right-1 {
   height: 280px;
-  background: url(../img/right1.jpg) no-repeat center;
+  background: url(../img/right1.webp) no-repeat center;
   background-size: cover;
   margin-bottom: 20px;
 }
 .right-2 {
   margin-top: 20px;
   height: 280px;
-  background: url(../img/right2.jpg) no-repeat center;
+  background: url(../img/right2.webp) no-repeat center;
   background-size: cover;
 }
 

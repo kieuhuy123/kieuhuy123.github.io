@@ -6,8 +6,8 @@
       "title": "Hardy",
       "old_price": 249,
       "curr_price": 190,
-      "image1": "./img/lm-black.jpg",
-      "image2": "./img/nam.jpg",
+      "image1": "./img/lm-black-edit.webp",
+      "image2": "./img/nam-edit.webp",
       "shape": "round"
     },
     {
@@ -15,8 +15,8 @@
       "title": "Kubo 01",
       "old_price": 300,
       "curr_price": 269,
-      "image1": "./img/hd-havana.jpg",
-      "image2": "./img/nam2.jpg",
+      "image1": "./img/hd-havana-edit.webp",
+      "image2": "./img/nam2-edit.webp",
       "shape": "rec"
     },
     {
@@ -24,8 +24,8 @@
       "title": "Uno",
       "old_price": 269,
       "curr_price": 249,
-      "image1": "./img/vuong.jpg",
-      "image2": "./img/nu2.jpg",
+      "image1": "./img/vuong-edit.webp",
+      "image2": "./img/nu2-edit.webp",
       "shape": "square"
     },
     {
@@ -34,7 +34,7 @@
       "old_price": 300,
       "curr_price": 269,
       "image1": "./img/er-pink-edit.webp",
-      "image2": "./img/nu.jpg",
+      "image2": "./img/nu-edit.webp",
       "shape": "round"
     },
     {

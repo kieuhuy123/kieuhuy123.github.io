@@ -33,7 +33,7 @@
       "title": "Ena",
       "old_price": 300,
       "curr_price": 269,
-      "image1": "./img/er-pink.png",
+      "image1": "./img/er-pink-edit.webp",
       "image2": "./img/nu.jpg",
       "shape": "round"
     },
@@ -42,7 +42,7 @@
       "title": "Kubo",
       "old_price": 249,
       "curr_price": 190,
-      "image1": "./img/marke-1.png",
+      "image1": "./img/marke-1-edit.webp",
       "image2": "./img/marke-3.jpg",
       "shape": "cat"
     },

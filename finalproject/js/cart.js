@@ -20,7 +20,7 @@ class UI {
     obj.forEach(
       ({ image1, image2, id, title, old_price, curr_price, shape }) => {
         result += `
-            <div class=" col-sm-6 col-xxl-4 itemBox ${shape} ">
+            <div class=" col-6 col-xxl-4 itemBox ${shape} ">
               <div  class="product-card">
                 
                 <a href="./product-detail.html">

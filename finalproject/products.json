@@ -39,7 +39,7 @@
     },
     {
       "id": 5,
-      "title": "Kubo",
+      "title": "Lutto 01",
       "old_price": 249,
       "curr_price": 190,
       "image1": "./img/marke-1-edit.webp",
@@ -57,7 +57,7 @@
     },
     {
       "id": 7,
-      "title": "Kubo",
+      "title": "Linda",
       "curr_price": 269,
       "old_price": 249,
       "image1": "./img/ada-1.jpg",
@@ -66,7 +66,7 @@
     },
     {
       "id": 8,
-      "title": "The Am",
+      "title": "Deus",
       "old_price": 249,
       "curr_price": 190,
       "image1": "./img/am-1.jpg",
@@ -75,7 +75,7 @@
     },
     {
       "id": 9,
-      "title": "The Hardy",
+      "title": "Momati",
       "old_price": 300,
       "curr_price": 190,
       "image1": "./img/ocean-1.jpg",
@@ -84,7 +84,7 @@
     },
     {
       "id": 10,
-      "title": "The Uno",
+      "title": "Dreamer",
       "old_price": 249,
       "curr_price": 190,
       "image1": "./img/wind-1.jpg",
@@ -93,7 +93,7 @@
     },
     {
       "id": 11,
-      "title": "The Ena",
+      "title": "My ma",
       "old_price": 300,
       "curr_price": 190,
       "image1": "./img/amber-1.jpg",
@@ -102,7 +102,7 @@
     },
     {
       "id": 12,
-      "title": "The Kubo",
+      "title": "Frida",
       "old_price": 249,
       "curr_price": 190,
       "image1": "./img/mossy-1.jpg",

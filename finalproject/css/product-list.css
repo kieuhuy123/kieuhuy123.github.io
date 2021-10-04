@@ -76,6 +76,8 @@
 .filter-toggle-box {
   display: none;
   padding-left: 30px;
+  cursor: pointer;
+  width: 150px;
 }
 .rating i {
   color: #ffc107;

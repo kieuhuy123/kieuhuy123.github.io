@@ -18,6 +18,9 @@
 .repair-img {
   padding-right: 50px;
 }
+.repair-list{
+  transition: .3s;
+}
 .repair-list li.active {
   opacity: 1;
 }

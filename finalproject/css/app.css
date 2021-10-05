@@ -1319,13 +1319,13 @@ footer ul li {
   .blog-left .blog-img {
     height: 175px;
   }
-  .product-card:hover .product-btn,
+  /* .product-card:hover .product-btn,
   .product-btn {
     opacity: 1;
     visibility: visible;
     position: relative;
     transform: translateY(0);
-  }
+  } */
   .email-box:hover > .tbox,
   .tbox:focus {
     width: 200px;

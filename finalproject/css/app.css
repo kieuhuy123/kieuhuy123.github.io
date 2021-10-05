@@ -439,6 +439,8 @@ img {
 .slide-prev {
   left: -100px;
 }
+
+
 .banner:hover .slide-next {
   display: flex;
   right: 80px;
@@ -446,6 +448,7 @@ img {
 .banner:hover .slide-prev {
   left: 126px;
 }
+
 .img > img {
   max-width: 50%;
 }
@@ -1275,19 +1278,22 @@ footer ul li {
   .banner:hover .slide-prev {
     left: 31%;
   } */
+
+  
   .banner:hover .slide-next {
     right: 3%;
   }
   .banner:hover .slide-prev {
     left: 11%;
   }
-  */ .slide-controll {
+  .slide-controll { 
     background-color: #c5c5c5;
   }
   .slide-controll:hover {
     background-color: black;
     color: white;
-  }
+  } */
+
   .product-card-img img {
     height: 350px;
   }

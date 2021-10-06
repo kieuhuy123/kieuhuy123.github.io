@@ -186,6 +186,10 @@ img {
 .modal-header {
   border: none;
 }
+.modal-dialog{
+  max-width: 100%;
+  margin: 0 auto;
+}
 .mid-header a,
 .main-menu a {
   text-transform: uppercase;
@@ -364,6 +368,7 @@ img {
 .mega-content ul > li {
   border-bottom: 2px solid transparent;
   padding: 0;
+  
 }
 .mega-content ul > li:hover {
   border-bottom: 2px solid #e55039;
@@ -381,6 +386,7 @@ img {
 .slider .container {
   position: relative;
   height: 100%;
+  overflow: hidden;
 }
 
 .slide {
@@ -435,6 +441,7 @@ img {
 }
 .slide-next {
   right: -120px;
+ 
 }
 .slide-prev {
   left: -100px;
@@ -442,8 +449,9 @@ img {
 
 
 .banner:hover .slide-next {
-  display: flex;
+  
   right: 80px;
+  
 }
 .banner:hover .slide-prev {
   left: 126px;
@@ -836,6 +844,9 @@ footer ul li {
 }
 .contact-socials a:hover {
   color: var(--grey);
+}
+.menu li{
+  width: max-content;
 }
 .menu li a {
   transition: transform 0.3s ease-in-out;
@@ -1286,13 +1297,7 @@ footer ul li {
   .banner:hover .slide-prev {
     left: 11%;
   }
-  .slide-controll { 
-    background-color: #c5c5c5;
-  }
-  .slide-controll:hover {
-    background-color: black;
-    color: white;
-  } */
+
 
   .product-card-img img {
     height: 350px;

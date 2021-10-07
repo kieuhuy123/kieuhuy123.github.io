@@ -175,17 +175,15 @@
             ></button>
           </div>
           <div class="modal-body">
+            
             <div class="search-box mb-search">
-              <input
-                class="search-txt"
-                type="text"
-                name=""
-                placeholder="Tìm kiếm"
-              />
-              <a href="#" class="search-btn">
-                <i class="bi bi-search"></i>
-              </a>
+              <div class="icon"><i class="bi bi-search"></i></div>
+              <div class="input">
+                  <input type="text" placeholder="Tìm kiếm" id="mysearch">
+              </div>
+              <span class="clear" onclick="document.getElementById('mysearch').value = ''"><i class="bi bi-x"></i></span>
             </div>
+            
             <ul class="main-menu d-flex justify-content-around">
               <li class="active">
                 <a href="index.html">Trang chủ</a>
@@ -800,6 +798,12 @@
       window.addEventListener("load", function () {
         loadingWrapper.parentElement.removeChild(loadingWrapper);
       });
+      // search-box
+       const icon = document.querySelector(".icon");
+      const search = document.querySelector(".search-box");
+      icon.onclick = function(){
+          search.classList.toggle('active')
+      };
     </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

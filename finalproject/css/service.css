@@ -18,27 +18,35 @@
 .repair-img {
   padding-right: 50px;
 }
-.repair-list{
-  transition: .3s;
+
+.repair-list li {
+  opacity: 0.5;
 }
 .repair-list li.active {
   opacity: 1;
 }
-.repair-list li.active .subject {
-  border-bottom: 1px solid gainsboro;
-}
-.repair-list li {
-  opacity: 0.5;
-}
+
 .subject {
   text-align: center;
-
   text-transform: uppercase;
   width: 250px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 25px;
 }
+.subject::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: gainsboro;
+  transition: width 0.6s;
+}
+.repair-list li.active .subject::after {
+  width: 100%;
+  transition: width 0.6s;
+}
+
 .swiper-slide img {
   height: 500px;
   width: 100%;
@@ -85,7 +93,7 @@
     grid-template-columns: 0.8fr;
     justify-content: center;
   }
-  .repair-title{
+  .repair-title {
     margin-top: 25px;
   }
   .repair-list {
@@ -96,10 +104,8 @@
   }
 }
 @media only screen and (max-width: 992px) {
-   .repair-img {
-    
+  .repair-img {
     grid-template-columns: 1fr;
-    
   }
 }
 @media only screen and (max-width: 567px) {

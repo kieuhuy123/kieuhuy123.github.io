@@ -275,10 +275,10 @@
 .accordion {
   max-width: 800px;
 }
-.accordion .contentBx {
+.product-info .accordion .contentBx {
   position: relative;
   margin: 10px 20px;
-  
+  border-bottom: 1px solid gainsboro;
 }
 .accordion .contentBx .label {
   position: relative;

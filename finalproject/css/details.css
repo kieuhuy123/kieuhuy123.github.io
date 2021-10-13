@@ -154,6 +154,10 @@
   height: 70%;
   width: 100%;
 }
+.mySwiper2 .swiper-slide{
+  overflow: hidden;
+  cursor: zoom-in;
+}
 
 .mySwiper1 {
   height: 20%;
@@ -212,7 +216,7 @@
   width: 320px;
   background-color: #eafaf3;
   filter: blur(2px);
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .swiper-slide-active {
   filter: blur(0px);

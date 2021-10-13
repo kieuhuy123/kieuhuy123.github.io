@@ -154,6 +154,7 @@ class UI {
 
   cartLogic() {
     // clear Cart
+
     // clearCartBtn.addEventListener("click", () => {
     //   this.clearCart();
     //   this.hide();
@@ -194,14 +195,14 @@ class UI {
     });
   }
 
-  clearCart() {
-    const cartItem = cart.map((item) => item.id);
-    cartItem.forEach((id) => this.removeItem(id));
+  // clearCart() {
+  //   const cartItem = cart.map((item) => item.id);
+  //   cartItem.forEach((id) => this.removeItem(id));
 
-    while (cartDOM.children.length > 0) {
-      cartDOM.removeChild(cartDOM.children[0]);
-    }
-  }
+  //   while (cartDOM.children.length > 0) {
+  //     cartDOM.removeChild(cartDOM.children[0]);
+  //   }
+  // }
 
   removeItem(id) {
     cart = cart.filter((item) => item.id !== id);

@@ -75,13 +75,46 @@
 .map {
   padding-bottom: 100px;
 }
+/* Swiper Class */
+.swiper-container{
+  overflow: hidden;
+}
 .swiper-button-next,
 .swiper-button-prev {
   z-index: 3;
 }
+.swiper-button-next {
+  right: -26px;
+}
+.swiper-button-prev{
+  left: -26px;
+}
+
 .swiper-button-next::after,
 .swiper-button-prev::after {
   color: #c5c5c5;
+}
+
+.swiper-pagination {
+  position: initial;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+  background-color: black;
+  opacity: 1;
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 0.5rem;
+}
+.swiper-pagination-bullet-active {
+  width: 25px;
+  height: 7px;
+  border-radius: 10px;
 }
 @media only screen and (max-width: 1200px) {
   .repaire-title {
@@ -107,6 +140,13 @@
   .repair-img {
     grid-template-columns: 1fr;
   }
+  .swiper-button-next {
+  right: 10px;
+}
+.swiper-button-prev{
+  left: 10px;
+}
+
 }
 @media only screen and (max-width: 567px) {
   .service-content {

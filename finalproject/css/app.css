@@ -64,7 +64,7 @@ a {
 li {
   list-style: none;
 }
-img {
+img,video {
   max-width: 100%;
 }
 
@@ -363,6 +363,7 @@ img {
   color: black;
   border-color: black;
 }
+
 
 /* .products .btn-hover:hover {
   border-color: black;
@@ -982,7 +983,7 @@ footer ul li {
   padding: 1.6rem;
   border-radius: 2rem;
   z-index: 11;
-  overflow-y: scroll;
+  
   background-color: white;
   opacity: 0;
   visibility: hidden;
@@ -998,6 +999,10 @@ footer ul li {
 .cart__overlay.show {
   visibility: visible;
   margin: 0;
+}
+.cart__center{
+  overflow: auto;
+  height: 400px;
 }
 .cart__icon {
   position: relative;
@@ -1026,6 +1031,8 @@ footer ul li {
 
 .close__cart {
   cursor: pointer;
+  position: absolute;
+  right: 30px;
 }
 
 .close__cart i {

@@ -159,6 +159,7 @@ class UI {
     //   this.clearCart();
     //   this.hide();
     // });
+    
     // Cart funtionality
     cartDOM.addEventListener("click", (e) => {
       const target = e.target.closest("span");

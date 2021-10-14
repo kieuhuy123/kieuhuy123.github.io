@@ -331,8 +331,8 @@
         <h2>Giỏ Hàng</h2>
         <div class="cart__center">
           <!-- Cart Item -->
-          <div class="cart__item">
-            <!-- <img src="./img/hd-havana-1.jpg" alt="" />
+          <!-- <div class="cart__item">
+            <img src="./img/hd-havana-1.jpg" alt="" />
             <div>
               <h3>The Hardy</h3>
               <h3 class="price">1,750,000 VND</h3>
@@ -351,8 +351,8 @@
               <span class="remove__item">
                 <i class="bi bi-trash-fill"></i>
               </span>
-            </div> -->
-          </div>
+            </div>
+          </div> -->
         </div>
 
         <div class="cart__footer">
@@ -370,7 +370,7 @@
 
     <!-- js -->
 
-    <script src="./js/app.js"></script>
+    
     <script src="./js/cart.js"></script>
     <script src="./js/validate.js"></script>
 
@@ -379,14 +379,11 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-
+    <!-- JS MAIN -->
+    <script src="./js/main.js"></script>
     <script>
-      // loading
-      let loadingWrapper = document.querySelector(".loading-screen");
-
-      window.addEventListener("load", function () {
-        loadingWrapper.parentElement.removeChild(loadingWrapper);
-      });
+      
+      // Dang ky
       const signinBtn = document.querySelector(".signinBtn");
       const signupBtn = document.querySelector(".signupBtn");
       const formBx = document.querySelector(".formBx");
@@ -400,12 +397,7 @@
         formBx.classList.remove("active");
         body.classList.remove("active");
       };
-      // search-box
-      const icon = document.querySelector(".icon");
-      const search = document.querySelector(".search-box");
-      icon.onclick = function () {
-        search.classList.toggle("active");
-      };
+      
     </script>
   </body>
   <!-- footer -->

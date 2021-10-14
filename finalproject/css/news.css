@@ -19,10 +19,15 @@
 }
 .news-img {
   width: 100%;
+  overflow: hidden;
 }
 .news-img img {
   max-width: 100%;
   object-fit: cover;
+  transition: .5s;
+}
+.news-img img:hover{
+  transform: scale(1.1);
 }
 .news-text {
   padding-top: 46px;

@@ -36,7 +36,25 @@
   </head>
   <body>
     <div class="loading-screen"></div>
-
+    <!-- scrolling -->
+    <div class="progress-wrap active-progress">
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="
+            transition: stroke-dashoffset 10ms linear 0s;
+            stroke-dasharray: 307.919, 307.919;
+            stroke-dashoffset: 249.357;
+          "
+        ></path>
+      </svg>
+      <i class="bi bi-arrow-up arrow"></i>
+    </div>
     <!-- header -->
     <header>
       <div class="header-wrapper">
@@ -620,7 +638,8 @@
 
     <!-- JS parallax -->
     <script src="./js/parallax.js"></script>
-
+    <!-- JS scrolling -->
+    <script src="./js/scrolling.js"></script>
     <!-- JS bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

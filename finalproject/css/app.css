@@ -56,7 +56,6 @@ button {
   cursor: pointer;
 }
 a {
-  display: flex;
   text-decoration: none;
   color: unset;
 }
@@ -64,7 +63,8 @@ a {
 li {
   list-style: none;
 }
-img,video {
+img,
+video {
   max-width: 100%;
 }
 
@@ -235,6 +235,9 @@ img,video {
   max-width: 100%;
   margin: 0 auto;
 }
+.main-menu a {
+  display: flex;
+}
 .mid-header a,
 .main-menu a {
   text-transform: uppercase;
@@ -363,7 +366,6 @@ img,video {
   color: black;
   border-color: black;
 }
-
 
 /* .products .btn-hover:hover {
   border-color: black;
@@ -944,6 +946,11 @@ footer ul li {
 /* ====== SPONSORS ====== */
 .sponsor {
   margin-bottom: 100px;
+  cursor: pointer;
+}
+.sponsor-mobile{
+  display: none;
+  cursor: grab;
 }
 .sponsor__container {
   grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
@@ -983,7 +990,7 @@ footer ul li {
   padding: 1.6rem;
   border-radius: 2rem;
   z-index: 11;
-  
+
   background-color: white;
   opacity: 0;
   visibility: hidden;
@@ -1000,7 +1007,7 @@ footer ul li {
   visibility: visible;
   margin: 0;
 }
-.cart__center{
+.cart__center {
   overflow: auto;
   height: 400px;
 }
@@ -1711,6 +1718,13 @@ footer ul li {
   /* .blog .container{
     grid-template-columns: 1fr;
   } */
+  .sponsor{
+    display: none;
+  }
+  .sponsor-mobile{
+    display: block;
+  }
+
 }
 @media only screen and (max-width: 567px) {
   .clouds {

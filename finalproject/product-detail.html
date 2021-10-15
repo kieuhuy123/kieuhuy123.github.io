@@ -777,15 +777,24 @@
     <script src="./js/cart.js"></script>
     <script src="./js/product-detail.js"></script>
     <script src="./js/main.js"></script>
-    <script>
+    <script type="text/javascript">
       // dropdown
-      let accordion = document.querySelectorAll(".contentBx");
-      let label = document.querySelectorAll(".label");
-      for (i = 0; i < accordion.length; i++) {
-        accordion[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-        });
-      }
+      // let accordion = document.querySelectorAll(".contentBx");
+      // let label = document.querySelectorAll(".label");
+      // for (i = 0; i < accordion.length; i++) {
+      //   accordion[i].addEventListener("click", function () {
+
+      //     this.classList.toggle("active");
+          
+          
+      //   });
+      // }
+
+      $(".label").click(function(){
+        $(".contentBx").removeClass("active");
+        $(this).parent().addClass("active")
+      })
+      
 
       // slider-1
       var swiper1 = new Swiper(".mySwiper1", {

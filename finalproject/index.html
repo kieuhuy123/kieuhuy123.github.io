@@ -13,12 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <!-- jquery -->
-    <script
-      type="text/javascript"
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-    ></script>
-
+    <!-- CSS swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
     <!-- CSS bootsrap only -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
@@ -32,6 +31,27 @@
     />
     <!-- css -->
     <link rel="stylesheet" href="./css/app.css" />
+    <style>
+       .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        /* text-align: center; */
+        font-size: 18px;
+        background: #fff;
+        justify-content: center;
+    display: flex;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 90px;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
     <div class="loading-screen"></div>
@@ -731,6 +751,27 @@
         </div>
       </section>
 
+      <section class="sponsor section sponsor-mobile">
+        <div class="swiper mySwiper container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide sponsor__content">
+          <img src="img/sponsors1.png" alt="" class="sponsor__img" />
+        </div>
+        <div class="swiper-slide sponsor__content">
+          <img src="img/sponsors2.png" alt="" class="sponsor__img" />
+        </div>
+        <div class="swiper-slide sponsor__content">
+          <img src="img/sponsors3.png" alt="" class="sponsor__img" />
+        </div>
+        <div class="swiper-slide sponsor__content">
+          <img src="img/sponsors4.png" alt="" class="sponsor__img" />
+        </div>
+        <div class="swiper-slide sponsor__content">
+          <img src="img/sponsors5.png" alt="" class="sponsor__img" />
+        </div>
+      </div>
+    </div>
+      </section>
     <!-- footer -->
     <footer class="bg-second">
       <div class="container">
@@ -812,16 +853,20 @@
     <!-- end footer -->
 
    
-   
+    <!-- jquery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
     <!-- JS Bootstrap -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-
+    <!-- JS Cart -->
     <script src="./js/cart.js"></script>
-    
+    <!-- JS scrolling -->
     <script src="./js/scrolling.js"></script>
     
     <!-- parallax -->
@@ -829,5 +874,19 @@
     <!-- JS MAIN -->
     <script src="./js/main.js"></script>
     <script src="./js/home.js"></script>
+        <!-- JS swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
   </body>
 </html>

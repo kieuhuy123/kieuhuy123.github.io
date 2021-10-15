@@ -874,6 +874,9 @@ footer {
   border-top: 1px solid gainsboro;
   padding: 50px 0;
 }
+footer a {
+  display: flex;
+}
 .footer-head {
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -948,7 +951,7 @@ footer ul li {
   margin-bottom: 100px;
   cursor: pointer;
 }
-.sponsor-mobile{
+.sponsor-mobile {
   display: none;
   cursor: grab;
 }
@@ -1718,13 +1721,12 @@ footer ul li {
   /* .blog .container{
     grid-template-columns: 1fr;
   } */
-  .sponsor{
+  .sponsor {
     display: none;
   }
-  .sponsor-mobile{
+  .sponsor-mobile {
     display: block;
   }
-
 }
 @media only screen and (max-width: 567px) {
   .clouds {

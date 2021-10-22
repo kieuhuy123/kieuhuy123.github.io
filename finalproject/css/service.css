@@ -20,6 +20,7 @@
 }
 
 .repair-list li {
+  cursor: pointer;
   opacity: 0.5;
 }
 .repair-list li.active {

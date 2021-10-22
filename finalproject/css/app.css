@@ -476,6 +476,9 @@ video {
   text-transform: uppercase;
 }
 .info-content p {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
   margin-bottom: 100px;
 }
 
@@ -774,6 +777,9 @@ section {
 }
 
 /* section 3 */
+.blog .row a:hover{
+  color: black;
+}
 .blog-right {
   padding: 0 68px;
 }

@@ -41,6 +41,7 @@ class Hellochild extends React.Component {
 Hellochild.propTypes = {
   name: PropTypes.string,
 };
+
 class Clock extends React.Component {
   utc() {
     let now = new Date();
@@ -76,6 +77,7 @@ class Clock extends React.Component {
 //     );
 //   }
 // }
+
 class MenuItem extends React.Component {
   render() {
     return (
@@ -87,6 +89,7 @@ class MenuItem extends React.Component {
     );
   }
 }
+
 class Menu extends React.Component {
   render() {
     return (
@@ -100,6 +103,7 @@ class Menu extends React.Component {
     );
   }
 }
+
 class Logo extends React.Component {
   render() {
     return (
@@ -109,6 +113,7 @@ class Logo extends React.Component {
     );
   }
 }
+
 class Header extends React.Component {
   render() {
     return (
@@ -168,4 +173,5 @@ class App extends React.Component {
     return <Table tData={tData} />;
   }
 }
+
 ReactDOM.render(<App />, document.getElementById("App"));

@@ -29,6 +29,7 @@ const FilterItem = ({ active, label, onChange }) => {
     </li>
   );
 };
+
 const Filter = ({ onChange, showFavorite }) => {
   return (
     <ul className="nav justify-content-end">
@@ -80,6 +81,7 @@ const List = ({ images, handleLike, handleDelete }) => {
     </div>
   );
 };
+
 class Form extends React.Component {
   state = {
     url: "",

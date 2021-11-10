@@ -1,13 +1,13 @@
 class App extends React.Component {
   state = {
     todos: [
-      { id: 1, title: "react" },
+        { id: 1, title: "react" },
       { id: 2, title: "state" },
     ],
     onMouseOver: false,
   };
   submitForm = (e) => {
-    e.preventDefault();
+     e.preventDefault();
 
     const todo = e.target.elements.todo;
 
@@ -23,6 +23,7 @@ class App extends React.Component {
       this.setState({
         todos: newTodos,
       });
+
       todo.value = "";
     }
   };
@@ -60,6 +61,7 @@ const TodoForm = ({ submitForm }) => {
     </form>
   );
 };
+
 const TodoList = ({ formDelete, todos }) => (
   <ul>
     {todos.map((todo) => (

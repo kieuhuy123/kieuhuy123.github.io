@@ -42,6 +42,7 @@ const Form = ({ addTodo }) => {
 };
 
 function App() {
+
   const [todo, setTodo] = useState([
     { id: 100, title: "Learn useState", completed: false },
   ]);
@@ -54,6 +55,7 @@ function App() {
     return () => clearInterval(timmer);
   });
   const uid = () => Math.floor(Math.random() * 9000) + 1001;
+
   const addTodo = (title) => {
     setTodo([
       ...todo,
@@ -64,6 +66,7 @@ function App() {
       },
     ]);
   };
+  
   const completedTodo = (id) => {
     setTodo(
       todo.map((todos) =>

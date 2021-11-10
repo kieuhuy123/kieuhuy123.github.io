@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-
-import { Switch, Route } from "react-router-dom";
+import { Container, Row, Col } from "react-bootstrap";
+import { Switch, Route,Link } from "react-router-dom";
 
 import Home from "./page/homepage";
 import About from "./page/aboutpage";
@@ -15,8 +15,8 @@ function App() {
   useEffect(() => {
     fetch("https://fakestoreapi.com/products")
       .then((res) => res.json())
-      .then((products) => {
-        setProducts(products);
+      .then((prd) => {
+        setProducts(prd);
         setLoading(false);
       })
       .catch((error) => {

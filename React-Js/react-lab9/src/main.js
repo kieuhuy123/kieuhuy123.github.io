@@ -7,14 +7,16 @@ import {
   REMOVE_TODO,
 } from "./actions/actionType";
 
+/*=== COUNTER-SLICE ===*/
+stdore.subscribe(renderCounter);
+
 const countEl = document.getElementById("count");
 const btnIncrement = document.getElementById("increment");
 const btnDecrement = document.getElementById("decrement");
+
 console.log(store.getState());
 
-store.subscribe(renderCounter);
-store.subscribe(renderTodo);
-
+// action
 btnIncrement.onclick = () => {
   store.dispatch({ type: INCREMENT });
 };
@@ -23,34 +25,46 @@ btnDecrement.onclick = () => {
   store.dispatch({ type: DECREMENT });
 };
 
+// Render-counter
 function renderCounter() {
   const { counter } = store.getState();
+
   console.log(counter);
+
   countEl.textContent = counter.count;
 }
 
 renderCounter();
 
+/*=== TODO-SLICE ===*/
+store.subscribe(renderTodo);
+
 const todoForm = document.getElementById("todoForm");
 const list = document.getElementById("list");
 
+// action
 todoForm.onsubmit = (e) => {
   e.preventDefault();
+
   const task = todoForm.elements.task;
+
   console.log(task);
+
   store.dispatch({
     type: ADD_TODO,
     payload: task.value,
   });
+
   task.value = "";
 };
 
+// render-todo
 function renderTodo() {
   const { todos } = store.getState();
 
   list.innerHTML = "";
 
-  for (let t of todos.todos) {
+  for (let t of todos.todo) {
     const li = document.createElement("li");
 
     li.append(t.title);

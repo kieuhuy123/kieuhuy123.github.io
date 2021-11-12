@@ -1,7 +1,7 @@
 import { ADD_TODO, REMOVE_TODO } from "../actions/actionType";
 
 const initState = {
-  todos: [],
+  todo: [],
   id: 1,
 };
 
@@ -9,8 +9,8 @@ const todoReducer = (state = initState, action) => {
   switch (action.type) {
     case ADD_TODO: {
       return {
-        todos: [
-          ...state.todos,
+        todo: [
+          ...state.todo,
           {
             id: state.id,
             title: action.payload,
@@ -23,7 +23,7 @@ const todoReducer = (state = initState, action) => {
     case REMOVE_TODO: {
       return {
         ...state,
-        todos: state.todos.filter((t) => t.id != action.payload),
+        todo: state.todo.filter((t) => t.id != action.payload),
       };
     }
 

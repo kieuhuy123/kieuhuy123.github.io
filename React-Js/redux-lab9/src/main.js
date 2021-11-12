@@ -8,7 +8,7 @@ import {
 } from "./actions/actionType";
 
 /*=== COUNTER-SLICE ===*/
-stdore.subscribe(renderCounter);
+store.subscribe(renderCounter);
 
 const countEl = document.getElementById("count");
 const btnIncrement = document.getElementById("increment");

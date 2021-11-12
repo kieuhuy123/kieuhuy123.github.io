@@ -47,14 +47,12 @@ todoForm.onsubmit = (e) => {
   e.preventDefault();
 
   const task = todoForm.elements.task;
-
-  console.log(task);
-
+  
   store.dispatch({
     type: ADD_TODO,
     payload: task.value,
   });
-
+  
   task.value = "";
 };
 

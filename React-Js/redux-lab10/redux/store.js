@@ -7,6 +7,8 @@ const store = createStore(reducer, composeWithDevTools());
 const selectColors = () => {
   const state = store.getState();
 
+  console.log(state);
+
   const colors = state.showFavourite
     ? state.colors.filter((c) => c.favourite)
     : state.colors;
@@ -14,5 +16,6 @@ const selectColors = () => {
   return colors;
 };
 
+console.log(selectColors());
 export default store;
 export { selectColors };

@@ -46,6 +46,7 @@ function renderColors() {
     color.className = "color";
     color.style.backgroundColor = c.color;
     color.textContent = c.name;
+
     colorList.append(color);
 
     btn.onclick = () => store.dispatch(toggleColor(c.id));

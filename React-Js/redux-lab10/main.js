@@ -1,5 +1,15 @@
 import store, { selectColors } from "./redux/store";
-import { newColor, showFavourite, toggleColor } from "./redux/actionType";
+import {
+  newColor,
+  showFavourite,
+  toggleColor,
+  loadTodoAsync,
+  addTodoAsync,
+} from "./redux/actions/actionType";
+
+import "./server";
+
+
 
 // store.dispatch(toggleColor(3));
 
@@ -57,3 +67,7 @@ function renderColors() {
 }
 
 renderColors();
+
+store.dispatch(loadTodoAsync());
+store.dispatch(addTodoAsync("huy"));
+store.dispatch(addTodoAsync("dzz"));

@@ -10,7 +10,9 @@
     "vite": "^2.6.4"
   },
   "dependencies": {
+    "miragejs": "^0.1.42",
     "redux": "^4.1.2",
-    "redux-devtools-extension": "^2.13.9"
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.0"
   }
 }

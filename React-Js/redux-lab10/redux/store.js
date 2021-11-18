@@ -1,21 +1,25 @@
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
 import { composeWithDevTools } from "redux-devtools-extension";
-import reducer from "./reducer";
+import rootReducer from "./reducers/reducer";
+import middleware from "./middleware/middleware";
 
-const store = createStore(reducer, composeWithDevTools());
+const store = createStore(
+  rootReducer,
+  composeWithDevTools(applyMiddleware(middleware))
+);
 
 const selectColors = () => {
   const state = store.getState();
 
-  console.log(state);
+  // console.log(state.color);
 
-  const colors = state.showFavourite
-    ? state.colors.filter((c) => c.favourite)
-    : state.colors;
+  const colors = state.color.showFavourite
+    ? state.color.colors.filter((c) => c.favourite)
+    : state.color.colors;
 
   return colors;
 };
 
-console.log(selectColors());
+// console.log(selectColors());
 export default store;
 export { selectColors };

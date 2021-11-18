@@ -13,14 +13,17 @@ import {
     DELETE_FAILED,
 } from "./actionTypes";
 
+// 
 export const loadRequested = () => ({ type: LOAD_REQUESTED });
 export const loadDone = (data) => ({ type: LOAD_DONE, payload: data });
 export const loadFailed = (error) => ({ type: LOAD_FAILED, payload: error });
 
+// 
 export const addRequested = () => ({ type: ADD_REQUESTED });
 export const addDone = (data) => ({ type: ADD_DONE, payload: data });
 export const addFailed = (error) => ({ type: ADD_FAILED, payload: error });
 
+// 
 export const completeRequested = (data) => ({
     type: COMPLETE_REQUESTED,
     payload: data,
@@ -31,6 +34,7 @@ export const completeFailed = (error) => ({
     payload: error,
 });
 
+// 
 export const deleteRequested = (data) => ({
     type: DELETE_REQUESTED,
     payload: data,

@@ -39,14 +39,14 @@
 // let c = o;
 // c.name = "dep trai";
 
-let salaries = {
-  anna: 1000,
+// let salaries = {
+//   anna: 1000,
 
-  john: 1200,
-  phoebe: 2000,
-  brian: 1500,
-  diana: 1100,
-};
+//   john: 1200,
+//   phoebe: 2000,
+//   brian: 1500,
+//   diana: 1100,
+// };
 
 // Ex: viet 1 ham input(obj), tham so obj nhan vao la salaries, cho phep nguoi dung nhap ten nhan vien va luong
 

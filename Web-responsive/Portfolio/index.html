@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- === FAVICON === -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" />
+    <link rel="shortcut icon" href="assets/img/favicon-32x32.png" />
     <title>Portfolio</title>
 
     <!-- === BOXICONS === -->
@@ -28,7 +28,7 @@
         <div class="nav__menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link active-link">
+              <a href="#home" class="nav__link active-link">
                 <i class="bx bx-home-alt"></i>
               </a>
             </li>
@@ -86,19 +86,24 @@
           </div>
 
           <div class="home__handle">
-            <img src="assets/img/perfil.png" alt="" class="home__img" />
+            <!-- <img src="assets/img/perfil.png" alt="" class="home__img" /> -->
+            <img src="assets/img/hdz1.jpg" alt=""/>
           </div>
 
           <div class="home__social">
-            <a href="https://github.com/kieuhuy123" class="home__social-link"
+            <a
+              href="https://github.com/kieuhuy123"
+              target="_blank"
+              class="home__social-link"
               ><i class="bx bxl-github"></i
             ></a>
             <a
               href="https://www.instagram.com/dzzk.huy/"
+              target="_blank"
               class="home__social-link"
               ><i class="bx bxl-instagram"></i
             ></a>
-            <a href="" class="home__social-link"
+            <a href="https://fb.com/" target="_blank" class="home__social-link"
               ><i class="bx bxl-facebook-square"></i
             ></a>
           </div>
@@ -116,7 +121,8 @@
         <h2 class="section__title">About Me</h2>
 
         <div class="about__container container grid">
-          <img src="assets/img/about.jpg" alt="" class="about__img" />
+          <!-- <img src="assets/img/about.jpg" alt="" class="about__img" /> -->
+          <img src="assets/img/hdz2.JPG" alt="" class="about__img" />
 
           <div class="about__data">
             <div class="about__info">
@@ -464,63 +470,204 @@
         <h2 class="section__title">Recent Works</h2>
 
         <div class="work__filters">
-          <span class="work__item">All</span>
-          <span class="work__item">Web</span>
-          <span class="work__item">Mobile</span>
-          <span class="work__item">Design</span>
+          <span class="work__item active-work" data-filter="all">All</span>
+          <span class="work__item" data-filter=".web">Web</span>
+          <span class="work__item" data-filter=".mobile">Mobile</span>
+          <span class="work__item" data-filter=".design">Design</span>
         </div>
 
         <div class="work__container container grid">
-          <div class="work__card">
-            <img src="assets/img/work1.jpg  " alt="" class="work__img" />
+          <div class="work__card mix web">
+            <img src="assets/img/Petshop.jpg  " alt="" class="work__img" />
             <h3 class="work__title">Web design</h3>
-            <a href="#" class="work__button">
+            <a href="https://kieuhuy123.github.io/Web-responsive/Petshop/index.html" class="work__button">
               Demo <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
 
-          <div class="work__card">
-            <img src="assets/img/work2.jpg" alt="" class="work__img" />
+          <div class="work__card mix mobile">
+            <img src="assets/img/Web travel.jpg" alt="" class="work__img" />
             <h3 class="work__title">Mobile</h3>
-            <a href="#" class="work__button">
+            <a href="https://kieuhuy123.github.io/Web-responsive/WEB-23-09/index.html" class="work__button">
               Demo <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
 
-          <div class="work__card">
-            <img src="assets/img/work3.jpg" alt="" class="work__img" />
+          <div class="work__card mix design">
+            <img src="assets/img/web-responve-3.jpg" alt="" class="work__img" />
             <h3 class="work__title">Brand design</h3>
-            <a href="#" class="work__button">
+            <a href="https://kieuhuy123-github-io.vercel.app/" class="work__button">
               Demo <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
 
-          <div class="work__card">
-            <img src="assets/img/work4.jpg" alt="" class="work__img" />
+          <div class="work__card mix web">
+            <img src="assets/img/web-responsive-4.jpg" alt="" class="work__img" />
             <h3 class="work__title">Web design</h3>
-            <a href="#" class="work__button">
+            <a href="https://airbnb-demo-blond.vercel.app/" class="work__button">
               Demo <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
 
-          <div class="work__card">
-            <img src="assets/img/work5.jpg" alt="" class="work__img" />
+          <div class="work__card mix mobile">
+            <img src="assets/img/web glasses.jpg" alt="" class="work__img" />
             <h3 class="work__title">App</h3>
-            <a href="#" class="work__button">
+            <a href="https://kieuhuy123.github.io/finalproject/index.html" class="work__button">
               Demo <i class="bx bx-right-arrow-alt work__icon"></i>
             </a>
           </div>
         </div>
       </section>
 
-      <!--===== TESTIMONIALS =====-->
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <span class="section__subtitle">Get in touch</span>
+        <h2 class="section__title">Contact Me</h2>
+
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h3 class="contact__title">Talk to me</h3>
+
+            <div class="contact__info">
+              <div class="contact__card">
+                <i class="bx bx-mail-send contact__card-icon"></i>
+                <h3 class="contact__card-title">Email</h3>
+                <span class="contact__card-data"
+                  >kieuphuchuy2002@gmail.com</span
+                >
+
+                <a
+                  href="mailto:kieuphuchuy2002@gmail.com"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
+
+              <div class="contact__card">
+                <i class="bx bx-phone contact__card-icon"></i>
+                <h3 class="contact__card-title">Phone</h3>
+                <span class="contact__card-data">0865660692</span>
+
+                <a
+                  href="tel:0965660692"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
+
+              <div class="contact__card">
+                <i class="bx bxl-messenger contact__card-icon"></i>
+                <h3 class="contact__card-title">Messenger</h3>
+                <span class="contact__card-data">kieuhuy44</span>
+
+                <a
+                  href="https://m.me/kieuhuy123"
+                  target="_blank"
+                  class="contact__button"
+                >
+                  Write me
+                  <i class="bx bx-right-arrow-alt contact__button-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <h3 class="contact__title">Write me project</h3>
+
+            <form action="" class="contact__form">
+              <div class="contact__form-div">
+                <label for="" class="contact__form-tag">Names</label>
+                <input
+                  type="text"
+                  placeholder="Insert your name"
+                  class="contact__form-input"
+                />
+              </div>
+
+              <div class="contact__form-div">
+                <label for="" class="contact__form-tag">Mail</label>
+                <input
+                  type="email"
+                  placeholder="Insert your email"
+                  class="contact__form-input"
+                />
+              </div>
+
+              <div class="contact__form-div contact__form-area">
+                <label for="" class="contact__form-tag">Project</label>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                  placeholder="Write your project"
+                  class="contact__form-input"
+                ></textarea>
+              </div>
+
+              <button class="button">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!--=====  =====-->
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">Hdzz</h1>
+        <ul class="footer__list">
+          <li>
+            <a href="#about" class="footer__link">About</a>
+          </li>
 
-    <!--=====  =====-->
+          <li>
+            <a href="#work" class="footer__link">Project</a>
+          </li>
 
-    <!--=====  =====-->
+          <li>
+            <a href="#testimonial" class="footer__link">Testimonial</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social">
+          <a href="https://fb.com/" target="_blank" class="footer__social-link">
+            <i class="bx bxl-facebook"></i>
+          </a>
+
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+
+          <a
+            href="https://twitter.com/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="bx bxl-twitter"></i>
+          </a>
+        </ul>
+
+        <span class="footer__copy">&#169; Hdzz. All rights reserved</span>
+      </div>
+    </footer>
+    <!--===== SCROLLREVEAL =====-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <!--===== MIXITUP FILTER =====-->
+    <script src="assets/js/mixitup.min.js "></script>
+
+    <!--===== MAIN JS =====-->
     <script src="assets/js/main.js"></script>
   </body>
 </html>

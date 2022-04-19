@@ -777,7 +777,7 @@ section {
 }
 
 /* section 3 */
-.blog .row a:hover{
+.blog .row a:hover {
   color: black;
 }
 .blog-right {
@@ -999,7 +999,7 @@ footer ul li {
   padding: 1.6rem;
   border-radius: 2rem;
   z-index: 11;
-
+  overflow-y: hidden;
   background-color: white;
   opacity: 0;
   visibility: hidden;

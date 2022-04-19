@@ -51,6 +51,7 @@ class UI {
     );
     productDOM.innerHTML = result;
   }
+
   getButtons() {
     //   tao Array
     const buttons = [...document.querySelectorAll(".addToCart")];
@@ -159,7 +160,7 @@ class UI {
     //   this.clearCart();
     //   this.hide();
     // });
-    
+
     // Cart funtionality
     cartDOM.addEventListener("click", (e) => {
       const target = e.target.closest("span");

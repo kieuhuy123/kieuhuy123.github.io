@@ -1,0 +1,39 @@
+.table-content {
+  border-radius: 20px;
+  width: fit-content;
+  width: 100%;
+  padding: 20px;
+  line-height: 40px;
+  background-color: #f5f5f5;
+  margin: 32px auto;
+}
+.post__banner {
+  height: 400px;
+  width: 300px;
+}
+.course-link {
+  transition: 0.3s;
+  color: black;
+}
+.course-link:hover {
+  opacity: 1.5;
+  color: var(--main-color-opacity);
+}
+.post__image {
+  height: 175px;
+}
+.img-outside-box img {
+  position: relative;
+  z-index: 1;
+}
+.img-outside-box:before {
+  content: '';
+  display: block;
+  width: 47px;
+  height: 47px;
+  position: absolute;
+  z-index: 0;
+  left: -20px;
+  top: -19px;
+  background: currentColor;
+}

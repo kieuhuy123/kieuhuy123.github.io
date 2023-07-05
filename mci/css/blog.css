@@ -1,0 +1,155 @@
+:root {
+  --main-color: #f1692f;
+  --main-color-opacity: #ff8f1a;
+  --color-a: #6db7cf;
+  --second-color: #141414;
+  --third-color: #f09c43;
+  --img-coutse-padding: 10px;
+  --course-w: 360;
+}
+a {
+  color: #f75454;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+.font-italic {
+  font-style: italic !important;
+}
+.nav {
+  background-color: var(--main-color);
+}
+
+.logo {
+  border-right: 1px solid #ffffff4d;
+}
+@media (max-width: 768px) {
+  #img-logo {
+    width: 80px;
+  }
+}
+.icon-menu {
+  color: #fff;
+}
+.icon-menu__search {
+  color: #bdbdbd;
+  position: absolute;
+  z-index: 1;
+  right: 30px;
+}
+.separator {
+  border-top: 7px solid;
+  border-radius: 7px;
+}
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.dropdown-menu {
+  transition: 0.3s;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0px;
+  background-color: #f2f2f2;
+  min-width: 800px;
+}
+
+.dropdown-menu.is-one-col {
+  padding: 0px;
+  background-color: #f2f2f2;
+  min-width: 200px;
+}
+
+.nav-dropdown {
+  color: white;
+  transition: 0.3s;
+}
+.nav-dropdown:hover {
+  color: black;
+}
+
+.event__image {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px !important;
+}
+.event__icon {
+  left: 10px;
+  z-index: 2;
+}
+.event__search {
+  height: 40px;
+  border-radius: 25px !important;
+}
+.event__image {
+  height: 175px;
+  width: 350px;
+  border-radius: 10px !important;
+}
+
+.footer {
+  background-color: #323b40;
+  color: white;
+}
+.footer-wrapper {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.close {
+  margin-right: -10px;
+}
+/* Color */
+.new-color {
+  color: #f1692f !important;
+}
+
+/* Swiper */
+
+.swiper {
+  width: 100%;
+  padding-bottom: 32px;
+}
+
+.swiper-slide {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+}
+
+.swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: var(--main-color);
+}
+.swiper-button-next,
+.swiper-button-prev {
+  top: unset;
+  bottom: 0;
+
+  &::after {
+    color: #323b40;
+    font-size: 24px;
+  }
+}
+.swiper-button-next {
+  right: 20px;
+}
+.swiper-button-prev {
+  left: 20px;
+}

@@ -1,0 +1,1356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/single-blog.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
+  </head>
+  <div id="fb-root"></div>
+  <script
+    async
+    defer
+    crossorigin="anonymous"
+    src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v17.0"
+    nonce="LWt5m5kD"
+  ></script>
+  <body>
+    <header>
+      <nav class="nav d-flex flex-column">
+        <div class="nav-wrapper d-flex justify-content-between p-2">
+          <div class="nav-left d-flex align-items-center">
+            <div class="logo">
+              <a href="/blog.html">
+                <img
+                  src="/image/Logo2-03.png"
+                  id="img-logo"
+                  width="120"
+                  height="auto"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div class="dropdown nav-desktop ps-3 d-none d-lg-block">
+              <span class="nav-dropdown text-uppercase fw-bold" type="button">
+                Khóa học
+                <i class="bi bi-caret-down-fill" aria-hidden="true"></i>
+              </span>
+              <ul class="dropdown-menu is-one-col">
+                <hr style="margin: 0px; border-top: 1px solid #bdbdbd" />
+                <li>
+                  <a class="dropdown-item" href="/blog.html">
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    Lịch đào tạo
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="/blog.html">
+                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    Giảng viên
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="/blog.html">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    Học viên
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="dropdown nav-desktop ps-3 d-none d-lg-block">
+              <span class="nav-dropdown text-uppercase fw-bold" type="button">
+                Lịch đào tạo
+                <i class="bi bi-caret-down-fill" aria-hidden="true"></i>
+              </span>
+              <ul class="dropdown-menu is-one-col">
+                <hr style="margin: 0px; border-top: 1px solid #bdbdbd" />
+                <li>
+                  <a class="dropdown-item" href="/blog.html">
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    Lịch đào tạo
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="/blog.html">
+                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    Giảng viên
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="/blog.html">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    Học viên
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="dropdown nav-desktop ps-3 d-none d-lg-block">
+              <span class="nav-dropdown text-uppercase fw-bold" type="button">
+                Doanh nghiệp
+                <i class="bi bi-caret-down-fill" aria-hidden="true"></i>
+              </span>
+              <ul class="dropdown-menu is-one-col">
+                <hr style="margin: 0px; border-top: 1px solid #bdbdbd" />
+                <li>
+                  <a class="dropdown-item" href="/blog.html">
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    Lịch đào tạo
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="/blog.html">
+                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    Giảng viên
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="/student/">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    Học viên
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="dropdown nav-desktop ps-3 d-none d-lg-block">
+              <a
+                class="nav-dropdown text-uppercase fw-bold text-decoration-none"
+                type="button"
+                href="/blog.html"
+              >
+                Blog
+              </a>
+            </div>
+
+            <div class="dropdown nav-desktop ps-3 d-none d-lg-block">
+              <span class="nav-dropdown text-uppercase fw-bold" type="button">
+                Về chúng tôi
+                <i class="bi bi-caret-down-fill" aria-hidden="true"></i>
+              </span>
+              <ul class="dropdown-menu is-one-col">
+                <hr style="margin: 0px; border-top: 1px solid #bdbdbd" />
+                <li>
+                  <a class="dropdown-item" href="/blog.html">
+                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                    Lịch đào tạo
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="/blog.html">
+                    <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                    Giảng viên
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="/blog.html">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    Học viên
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="d-lg-none">
+              <span
+                class="topnav__dropdown ps-3"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#serviceModal"
+              >
+                <i class="fa-solid fa-bars fa-2xl icon-menu"></i>
+              </span>
+              <div
+                class="modal fade"
+                id="serviceModal"
+                tabindex="-1"
+                aria-labelledby="serviceModalLabel"
+                aria-modal="true"
+                role="dialog"
+              >
+                <div
+                  class="modal-dialog modal-fullscreen h-auto m-0"
+                  role="document"
+                >
+                  <div class="modal-content">
+                    <div class="modal-header border-0">
+                      <h5 class="modal-title text-white" id="serviceModalLabel">
+                        Services
+                      </h5>
+                      <button
+                        type="button"
+                        class="close btn bg-transparent"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      >
+                        <span aria-hidden="true">×</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="accordion" id="accordionService">
+                        <!-- Khoa hoc -->
+                        <div class="card border-0 mt-0">
+                          <div
+                            class="card-header mb-3"
+                            id="headingCourseModal"
+                            style="background-color: white; padding: unset"
+                          >
+                            <h6
+                              style="
+                                font-weight: bold;
+                                color: var(--main-color);
+                              "
+                              data-bs-toggle="collapse"
+                              data-bs-target="#collapseCourseModal"
+                              aria-expanded="true"
+                              aria-controls="collapseCourseModal"
+                            >
+                              KHÓA HỌC
+                              <i
+                                class="fa-solid fa-caret-down"
+                                style="float: right"
+                              ></i>
+                            </h6>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Lich dao tao -->
+                      <div class="card border-0 mt-0">
+                        <div
+                          class="card-header mb-3"
+                          id="headingSchedule"
+                          style="background-color: white; padding: unset"
+                        >
+                          <h6
+                            style="font-weight: bold; color: var(--main-color)"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseSchedule"
+                            aria-expanded="true"
+                            aria-controls="collapseSchedule"
+                          >
+                            LỊCH ĐÀO TẠO
+                            <i
+                              class="fa-solid fa-caret-down"
+                              style="float: right"
+                            ></i>
+                          </h6>
+                        </div>
+                        <div
+                          id="collapseSchedule"
+                          class="collapse"
+                          aria-labelledby="headingSchedule"
+                          data-parent="#accordionService"
+                        >
+                          <div class="card-body" style="padding: unset">
+                            <li>
+                              <a href="/blog.html">
+                                <i
+                                  class="fa fa-calendar-o"
+                                  aria-hidden="true"
+                                ></i>
+                                Lịch đào tạo
+                              </a>
+                            </li>
+                            <li>
+                              <a href="/blog.html">
+                                <i
+                                  class="fa fa-lightbulb-o"
+                                  aria-hidden="true"
+                                ></i>
+                                Giảng viên
+                              </a>
+                            </li>
+                            <li class="mb-3">
+                              <a href="/blog.html">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                Học viên
+                              </a>
+                            </li>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Bussiness -->
+                      <div class="card border-0">
+                        <div
+                          class="card-header mb-3"
+                          id="headingBusiness"
+                          style="background-color: white; padding: unset"
+                        >
+                          <h6
+                            style="font-weight: bold; color: var(--main-color)"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseBusiness"
+                            aria-expanded="true"
+                            aria-controls="collapseBusiness"
+                          >
+                            DOANH NGHIỆP
+                            <i
+                              class="fa-solid fa-caret-down"
+                              style="float: right"
+                            ></i>
+                          </h6>
+                        </div>
+                        <div
+                          id="collapseBusiness"
+                          class="collapse"
+                          aria-labelledby="headingBusiness"
+                          data-parent="#accordionService"
+                        >
+                          <div class="card-body" style="padding: unset">
+                            <li>
+                              <a href="/blog.html">
+                                <i
+                                  class="fa fa-calendar-o"
+                                  aria-hidden="true"
+                                ></i>
+                                Lịch đào tạo
+                              </a>
+                            </li>
+                            <li>
+                              <a href="/blog.html">
+                                <i
+                                  class="fa fa-lightbulb-o"
+                                  aria-hidden="true"
+                                ></i>
+                                Giảng viên
+                              </a>
+                            </li>
+                            <li class="mb-3">
+                              <a href="/blog.html">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                Học viên
+                              </a>
+                            </li>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Blog -->
+                      <div class="card border-0">
+                        <div
+                          class="card-header mb-3"
+                          style="background-color: white; padding: unset"
+                        >
+                          <a href="/blog.html">
+                            <h6
+                              style="
+                                font-weight: bold;
+                                color: var(--main-color);
+                              "
+                            >
+                              BLOG
+                            </h6>
+                          </a>
+                        </div>
+                      </div>
+
+                      <!-- About us -->
+                      <div class="card" style="border: none; margin-top: 0px">
+                        <div
+                          class="card-header"
+                          id="headingOneService"
+                          style="background-color: white; padding: unset"
+                        >
+                          <h6
+                            style="font-weight: bold; color: var(--main-color)"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseOneService"
+                            aria-expanded="true"
+                            aria-controls="collapseOneService"
+                          >
+                            VỀ CHÚNG TÔI
+                            <i
+                              class="fa-solid fa-caret-down"
+                              style="float: right"
+                            ></i>
+                          </h6>
+                        </div>
+                        <div
+                          id="collapseOneService"
+                          class="collapse"
+                          aria-labelledby="headingOneService"
+                          data-parent="#accordionService"
+                        >
+                          <div class="card-body" style="padding: unset">
+                            <li>
+                              <a href="/blog.html">
+                                <i
+                                  class="fa fa-calendar-o"
+                                  aria-hidden="true"
+                                ></i>
+                                Lịch đào tạo
+                              </a>
+                            </li>
+                            <li>
+                              <a href="/blog.html">
+                                <i
+                                  class="fa fa-lightbulb-o"
+                                  aria-hidden="true"
+                                ></i>
+                                Giảng viên
+                              </a>
+                            </li>
+                            <li class="mb-3">
+                              <a href="/blog.html">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                                Học viên
+                              </a>
+                            </li>
+                          </div>
+                          <div class="card-body" style="padding: unset">
+                            <li>
+                              <a href="/about/">
+                                <i
+                                  class="fa fa-caret-square-o-up"
+                                  aria-hidden="true"
+                                ></i>
+                                Học viện Công nghệ MCI
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="/careers/">
+                                <i
+                                  class="fa fa-street-view"
+                                  aria-hidden="true"
+                                ></i>
+                                Cơ hội nghề nghiệp
+                              </a>
+                            </li>
+
+                            <li>
+                              <a href="/event-list/">
+                                <i
+                                  class="fa fa-bullhorn"
+                                  aria-hidden="true"
+                                ></i>
+                                Sự kiện
+                              </a>
+                            </li>
+                            <li>
+                              <a href="/about/#contact-us">
+                                <i
+                                  class="fa fa-telegram"
+                                  aria-hidden="true"
+                                ></i>
+                                Liên hệ
+                              </a>
+                            </li>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-right d-flex align-items-center">
+            <div class="d-flex align-items-center position-relative">
+              <i
+                class="fa-solid fa-magnifying-glass fa-2xl icon-menu icon-menu__search"
+              ></i>
+            </div>
+            <div class="">
+              <div class="d-none d-lg-flex flex-column align-items-center">
+                <button class="btn btn-light">
+                  <a style="color: var(--main-color)">Đăng nhập</a>
+                </button>
+              </div>
+              <div class="d-flex d-lg-none flex-column align-items-center">
+                <i
+                  class="fa-solid fa-arrow-right-from-bracket fa-2xl p-3 icon-menu"
+                ></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="blog-search">
+        <div class="container pb-0 pt-4 p-md-4">
+          <form class="row my-md-3 justify-content-center px-4">
+            <div class="mb-3">
+              <div
+                class="input-group d-flex align-items-center rounded-pill position-relative"
+              >
+                <i
+                  class="fa-solid fa-magnifying-glass position-absolute event__icon"
+                ></i>
+                <input
+                  type="text"
+                  class="form-control ps-5 event__search"
+                  placeholder="Tìm kiếm bài viết ..."
+                  name="title-filter"
+                />
+              </div>
+            </div>
+            <div class="row justify-content-center text-center">
+              <div
+                class="col-6 col-md-3 col-lg-2 border-end border-1 border-secondary my-2 my-lg-3 category-item"
+              >
+                <span class="new-color fw-bolder">
+                  <a
+                    href="/single-blog.html"
+                    class="new-color text-decoration-none"
+                    >Chia sẻ kinh nghiệm</a
+                  >
+                </span>
+              </div>
+
+              <div
+                class="col-6 col-md-3 col-lg-2 border-end border-1 border-secondary my-2 my-lg-3 category-item"
+              >
+                <span class="new-color fw-bolder">
+                  <a
+                    href="/single-blog.html"
+                    class="new-color text-decoration-none"
+                    >Kiến thức chuyên môn</a
+                  >
+                </span>
+              </div>
+
+              <div
+                class="col-6 col-md-3 col-lg-2 border-end border-1 border-secondary my-2 my-lg-3 category-item"
+              >
+                <span class="new-color fw-bolder">
+                  <a
+                    href="/single-blog.html"
+                    class="new-color text-decoration-none"
+                    >MCI Careers</a
+                  >
+                </span>
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 border-end border-1 border-secondary my-2 my-lg-3 category-item"
+              >
+                <span class="new-color fw-bolder">
+                  <a
+                    href="/single-blog.html"
+                    class="new-color text-decoration-none"
+                    >Kinh nghiệm thực chiến</a
+                  >
+                </span>
+              </div>
+              <div
+                class="col-6 col-md-3 col-lg-2 border-secondary my-2 my-lg-3 category-item"
+              >
+                <span class="new-color fw-bolder">
+                  <a
+                    href="/single-blog.html"
+                    class="new-color text-decoration-none"
+                    >Lịch khai giảng</a
+                  >
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <div
+        class="d-none d-md-flex w-100 m-0 px-5 py-2 new-color fw-bolder text-truncate"
+        style="background-color: #f0f0f0"
+      >
+        <a class="text-decoration-none new-color" href="/blog.html"
+          >Trang chủ &gt;&nbsp;</a
+        >
+        <a class="text-decoration-none new-color" href="/blog.html"
+          >Blog &gt;&nbsp;</a
+        >
+        <a class="text-decoration-none new-color" href="/blog.html"
+          >Chia sẻ kinh nghiệm &gt;&nbsp;</a
+        >
+        <a
+          class="text-decoration-none new-color text-truncate"
+          href="/blog.html"
+          >Bạn Nguyễn Quang Hưng - Học Data là 1 quá trình và mình đã vượt qua
+          nó như nào
+        </a>
+      </div>
+
+      <section class="blog-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-8 col-lg-9 mt-5">
+              <div class="d-inline-block">
+                <h2
+                  class="post__title new-color fw-bolder text-justify pr-lg-4"
+                >
+                  5 mẹo giúp lập trình VBA đơn giản - Ứng dụng cực dễ trong công
+                  việc
+                </h2>
+                <hr
+                  class="w-50 new-color opacity-100"
+                  style="border-top: 3px solid"
+                />
+              </div>
+              <p class="text-justify pe-lg-4">
+                Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm
+                rất thú vị về những logic Toán học và các ngôn ngữ lập trình.
+                Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành công
+                nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em lại
+                không đủ điểm tiêu chí để được vào ngành công nghệ thông tin như
+                mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy ngành công
+                nghệ về phần mềm rất thú vị về những logic Toán học và các ngôn
+                ngữ lập trình. Sau đó, em có đăng ký nguyện vọng thi đại học vào
+                các ngành công nghệ thông tin trong các trường trên Hà Nội, tuy
+                nhiên em lại không đủ điểm tiêu chí để được vào ngành công nghệ
+                thông tin như mong muốn mà chỉ...
+              </p>
+              <div
+                class="row m-0 w-100 d-flex justify-content-center justify-content-lg-start pe-lg-4"
+              >
+                <div class="shadow table-content">
+                  <div class="new-color d-flex align-items-center">
+                    <i class="fa-solid fa-bars fa-2xl me-3"></i>
+                    <h3
+                      class="ms-3 text-start new-color"
+                      style="font-size: 16px"
+                    >
+                      Nội dung bài viết
+                    </h3>
+                  </div>
+                  <div class="mt-3">
+                    <ol>
+                      <li class="fs-4 mt-1">Nội dung bài viêt</li>
+                      <li class="fs-4 mt-1">Nội dung bài viêt</li>
+                      <li class="fs-4 mt-1">Nội dung bài viêt</li>
+                      <li class="fs-4 mt-1">Nội dung bài viêt</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <p class="text-justify">
+                  Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm
+                  rất thú vị về những logic Toán học và các ngôn ngữ lập trình.
+                  Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành
+                  công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em
+                  lại không đủ điểm tiêu chí để được vào ngành công nghệ thông
+                  tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy
+                  ngành công nghệ về phần mềm rất thú vị về những logic Toán học
+                  và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng
+                  thi đại học vào các ngành công nghệ thông tin trong các trường
+                  trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được
+                  vào ngành công nghệ thông tin như mong muốn mà chỉ...
+                </p>
+                <p class="text-justify">
+                  Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm
+                  rất thú vị về những logic Toán học và các ngôn ngữ lập trình.
+                  Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành
+                  công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em
+                  lại không đủ điểm tiêu chí để được vào ngành công nghệ thông
+                  tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy
+                  ngành công nghệ về phần mềm rất thú vị về những logic Toán học
+                  và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng
+                  thi đại học vào các ngành công nghệ thông tin trong các trường
+                  trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được
+                  vào ngành công nghệ thông tin như mong muốn mà chỉ...
+                </p>
+                <p class="text-justify">
+                  Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm
+                  rất thú vị về những logic Toán học và các ngôn ngữ lập trình.
+                  Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành
+                  công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em
+                  lại không đủ điểm tiêu chí để được vào ngành công nghệ thông
+                  tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy
+                  ngành công nghệ về phần mềm rất thú vị về những logic Toán học
+                  và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng
+                  thi đại học vào các ngành công nghệ thông tin trong các trường
+                  trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được
+                  vào ngành công nghệ thông tin như mong muốn mà chỉ...
+                </p>
+                <img
+                  src="./image/tv-anh-dai-1.jpg"
+                  alt="post-content"
+                  class="w-100 mb-3"
+                />
+                <p class="text-justify">
+                  Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm
+                  rất thú vị về những logic Toán học và các ngôn ngữ lập trình.
+                  Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành
+                  công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em
+                  lại không đủ điểm tiêu chí để được vào ngành công nghệ thông
+                  tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy
+                  ngành công nghệ về phần mềm rất thú vị về những logic Toán học
+                  và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng
+                  thi đại học vào các ngành công nghệ thông tin trong các trường
+                  trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được
+                  vào ngành công nghệ thông tin như mong muốn mà chỉ...
+                </p>
+                <p class="text-justify">
+                  Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm
+                  rất thú vị về những logic Toán học và các ngôn ngữ lập trình.
+                  Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành
+                  công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em
+                  lại không đủ điểm tiêu chí để được vào ngành công nghệ thông
+                  tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy
+                  ngành công nghệ về phần mềm rất thú vị về những logic Toán học
+                  và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng
+                  thi đại học vào các ngành công nghệ thông tin trong các trường
+                  trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được
+                  vào ngành công nghệ thông tin như mong muốn mà chỉ...
+                </p>
+                <p class="text-justify">
+                  Với sự tìm hiểu từ cấp 3, em thấy ngành công nghệ về phần mềm
+                  rất thú vị về những logic Toán học và các ngôn ngữ lập trình.
+                  Sau đó, em có đăng ký nguyện vọng thi đại học vào các ngành
+                  công nghệ thông tin trong các trường trên Hà Nội, tuy nhiên em
+                  lại không đủ điểm tiêu chí để được vào ngành công nghệ thông
+                  tin như mong muốn mà chỉ...Với sự tìm hiểu từ cấp 3, em thấy
+                  ngành công nghệ về phần mềm rất thú vị về những logic Toán học
+                  và các ngôn ngữ lập trình. Sau đó, em có đăng ký nguyện vọng
+                  thi đại học vào các ngành công nghệ thông tin trong các trường
+                  trên Hà Nội, tuy nhiên em lại không đủ điểm tiêu chí để được
+                  vào ngành công nghệ thông tin như mong muốn mà chỉ...
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3 mt-5">
+              <div class="position-sticky top-0">
+                <div class="row justify-content-start d-none d-md-flex">
+                  <img
+                    src="image/blog-banner-vuong.png"
+                    class="img-fluid object-fit-cover post__banner"
+                  />
+                </div>
+                <div class="row justify-content-start d-none d-md-flex mt-5">
+                  <div class="d-inline-block">
+                    <h5 class="fw-bolder new-color">Các khóa học</h5>
+                    <hr
+                      class="w-100 new-color opacity-100"
+                      style="border-top: 3px solid"
+                    />
+                  </div>
+                  <div class="d-inline-block">
+                    <span
+                      class="fw-bolder collapsed"
+                      data-bs-toggle="collapse"
+                      href="#collapseExample1"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      Phân tích dữ liệu
+                    </span>
+                    <hr style="border: 1px dashed #000000" class="w-100" />
+                  </div>
+                  <div class="collapse" id="collapseExample1" style="">
+                    <div>
+                      <ul class="list-unstyled">
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-python-foundation-in-data-analytics/"
+                            target="_blank"
+                            >Python Foundation in Data Analytics</a
+                          >
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-sql-for-newbies-data-analysis-for-beginners/"
+                            target="_blank"
+                            >SQL for Newbies: Data Analysis for Beginners</a
+                          >
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-database-and-sql-for-data-science/"
+                            target="_blank"
+                            >Database and SQL for Data Science</a
+                          >
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-analyzing-and-visualizing-data-on-power-bi/"
+                            target="_blank"
+                            >Analyzing and Visualizing Data on Power BI</a
+                          >
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-applying-power-bi-in-business-intelligence/"
+                            target="_blank"
+                            >Applying Power BI In Business Intelligence</a
+                          >
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-vba-basic-to-advanced/"
+                            target="_blank"
+                            >VBA Basic To Advanced</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="d-inline-block mt-4">
+                    <span
+                      class="fw-bolder collapsed"
+                      data-bs-toggle="collapse"
+                      href="#collapseExample2"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      Khoa học dữ liệu
+                    </span>
+                    <hr style="border: 1px dashed #000000" class="w-100" />
+                  </div>
+                  <div class="collapse" id="collapseExample2" style="">
+                    <div>
+                      <ul class="list-unstyled">
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-python-for-machine-learning-deep-learning/"
+                            target="_blank"
+                            >Python for Machine Learning &amp; Deep Learning</a
+                          >
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-career-coaching/"
+                            target="_blank"
+                            >Career Coaching</a
+                          >
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-data-science-track/"
+                            target="_blank"
+                            >Data Science Track</a
+                          >
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-combo-python-level-1-level-2/"
+                            target="_blank"
+                            >Combo Python Level 1 &amp; Level 2</a
+                          >
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-math-statistics-for-data-science/"
+                            target="_blank"
+                            >Math &amp; Statistics for Data Science</a
+                          >
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-deep-learning-application-in-the-real-world/"
+                            target="_blank"
+                            >Deep Learning Application in the Real World</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="d-inline-block mt-4">
+                    <span
+                      class="fw-bolder"
+                      data-bs-toggle="collapse"
+                      href="#collapseExample3"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      Kĩ sư dữ liệu
+                    </span>
+                    <hr style="border: 1px dashed #000000" class="w-100" />
+                  </div>
+                  <div class="collapse" id="collapseExample3">
+                    <div>
+                      <ul class="list-unstyled">
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-combo-data-engineering-foundations-specialization/"
+                            target="_blank"
+                          >
+                            Combo Data Engineering Foundations Specialization
+                          </a>
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-big-data-with-hadoop-and-spark/"
+                            target="_blank"
+                          >
+                            Big Data with Hadoop and Spark
+                          </a>
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-advanced-data-lakes-and-data-warehouses/"
+                            target="_blank"
+                          >
+                            Advanced Data Lakes and Data Warehouses
+                          </a>
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-aws-data-engineer-for-beginners/"
+                            target="_blank"
+                          >
+                            AWS Data Engineer for Beginners
+                          </a>
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-advanced-aws-cloud-data-engineer/"
+                            target="_blank"
+                          >
+                            Advanced AWS Cloud Data Engineer
+                          </a>
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-combo-data-engineering-professional/"
+                            target="_blank"
+                          >
+                            Combo Data Engineering Professional
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="d-inline-block mt-4">
+                    <span
+                      class="fw-bolder"
+                      data-bs-toggle="collapse"
+                      href="#collapseExample4"
+                      role="button"
+                      aria-expanded="false"
+                      aria-controls="collapseExample"
+                    >
+                      Lập trình ứng dụng
+                    </span>
+                    <hr style="border: 1px dashed #000000" class="w-100" />
+                  </div>
+                  <div class="collapse" id="collapseExample4">
+                    <div>
+                      <ul class="list-unstyled">
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-python-backend-foundation/"
+                            target="_blank"
+                          >
+                            Python Backend Foundation
+                          </a>
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-python-backend-development/"
+                            target="_blank"
+                          >
+                            Python Backend Development
+                          </a>
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-database-management-in-mysql/"
+                            target="_blank"
+                          >
+                            Database Management in MySQL
+                          </a>
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-it-business-analyst-for-beginners/"
+                            target="_blank"
+                          >
+                            IT Business Analyst for Beginners
+                          </a>
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-it-business-analyst-fast-track/"
+                            target="_blank"
+                          >
+                            IT Business Analyst Fast Track
+                          </a>
+                        </li>
+
+                        <li class="my-3 ms-3">
+                          <a
+                            class="course-link"
+                            href="/course-detail/khoa-hoc-advanced-it-business-analyst/"
+                            target="_blank"
+                          >
+                            Advanced IT Business Analyst
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="row justify-content-start d-none d-md-flex mt-5 ms-md-1 rounded"
+                  style="background-color: var(--main-color)"
+                >
+                  <h5
+                    class="text-center text-white w-100 fw-bolder text-uppercase mt-3"
+                  >
+                    Đăng ký tư vấn khóa học
+                  </h5>
+                  <div class="my-3">
+                    <label for="name" class="form-label text-white required"
+                      >Họ và tên*:</label
+                    >
+                    <input
+                      id="name"
+                      type="text"
+                      class="form-control required"
+                    />
+                    <p class="text-dark fw-bold d-none input-help-text">
+                      *Vui lòng nhập họ tên của bạn
+                    </p>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="email" class="form-label text-white required"
+                      >Email*:</label
+                    >
+                    <input
+                      id="email"
+                      type="email"
+                      class="form-control required"
+                    />
+                    <p class="text-dark fw-bold d-none input-help-text">
+                      *Vui lòng nhập họ tên của bạn
+                    </p>
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="phone" class="form-label text-white required"
+                      >Số điện thoại*:</label
+                    >
+                    <input id="phone" type="text" class="form-control" />
+                    <p class="text-dark fw-bold d-none input-help-text">
+                      *Vui lòng nhập số điện thoại của bạn
+                    </p>
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label text-white required"
+                      >Khóa học:</label
+                    >
+                    <div class="w-100 mb-3 d-flex flex-column">
+                      <select id="courseRequest" class="form-control w-100">
+                        <option value="Phân tích dữ liệu (Data analytics)">
+                          Phân tích dữ liệu (Data analytics)
+                        </option>
+                        <option value="Khoa học dữ liệu (Data science)">
+                          Khoa học dữ liệu (Data science)
+                        </option>
+                        <option value="Kỹ sư dữ liệu (Data engineering)">
+                          Kỹ sư dữ liệu (Data engineering)
+                        </option>
+                        <option value="Lập trình ứng dụng (Software, Apps)">
+                          Lập trình ứng dụng (Software, Apps)
+                        </option>
+                        <option value="Khác">Khác</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="mb-5 mt-3 px-md-4 px-lg-5">
+                    <button
+                      class="btn w-100 bg-dark text-white fw-bolder text-uppercase"
+                    >
+                      Đăng ký tư vấn
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="justify-content-center mt-3 mt-lg-5 d-none d-md-block">
+            <div class="d-inline-block mb-3">
+              <h2 class="post__title new-color fw-bolder">
+                Các bài viết liên quan
+              </h2>
+              <hr class="new-color opacity-100" style="border-top: 3px solid" />
+            </div>
+            <div class="row my-lg-5">
+              <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <div class="img-outside-box text-warning position-relative">
+                  <a href="/blog.html">
+                    <img
+                      src="https://cdn.mcivietnam.com/nhanvien/media/Blog/hoc-gi-de-lam-business-analyst-blaoman-hoc-bajpegxegwx4.jpeg"
+                      alt="Image"
+                      class="img-fluid post__image object-fit-cover"
+                    />
+                  </a>
+                </div>
+                <a href="/blog.html">
+                  <h5
+                    class="new-color fw-bold text-capitalize my-3 text-justify"
+                  >
+                    Muốn làm BA thì học ngành gì? Lộ trình để phát triển thành
+                    một Business Analyst
+                  </h5>
+                </a>
+                <p class="text-justify mb-lg-0">
+                  BA đang ngày càng trở nên phổ biến và là nghề "mơ ước" của rất
+                  nhiều bạn trẻ. Vậy BA là gì? BA là công việc như thế nào? Học
+                  gì để trở thành Business Analyst?
+                </p>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <div class="img-outside-box text-warning position-relative">
+                  <a href="/blog.html">
+                    <img
+                      src="https://cdn.mcivietnam.com/nhanvien/media/Blog/hoc-gi-de-lam-business-analyst-blaoman-hoc-bajpegxegwx4.jpeg"
+                      alt="Image"
+                      class="img-fluid post__image object-fit-cover"
+                    />
+                  </a>
+                </div>
+                <a href="/blog.html">
+                  <h5
+                    class="new-color fw-bold text-capitalize my-3 text-justify"
+                  >
+                    Muốn làm BA thì học ngành gì? Lộ trình để phát triển thành
+                    một Business Analyst
+                  </h5>
+                </a>
+                <p class="text-justify mb-lg-0">
+                  BA đang ngày càng trở nên phổ biến và là nghề "mơ ước" của rất
+                  nhiều bạn trẻ. Vậy BA là gì? BA là công việc như thế nào? Học
+                  gì để trở thành Business Analyst?
+                </p>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 mb-5 mb-lg-0">
+                <div class="img-outside-box text-warning position-relative">
+                  <a href="/blog.html">
+                    <img
+                      src="https://cdn.mcivietnam.com/nhanvien/media/Blog/hoc-gi-de-lam-business-analyst-blaoman-hoc-bajpegxegwx4.jpeg"
+                      alt="Image"
+                      class="img-fluid post__image object-fit-cover"
+                    />
+                  </a>
+                </div>
+                <a href="/blog.html">
+                  <h5
+                    class="new-color fw-bold text-capitalize my-3 text-justify"
+                  >
+                    Muốn làm BA thì học ngành gì? Lộ trình để phát triển thành
+                    một Business Analyst
+                  </h5>
+                </a>
+                <p class="text-justify mb-lg-0">
+                  BA đang ngày càng trở nên phổ biến và là nghề "mơ ước" của rất
+                  nhiều bạn trẻ. Vậy BA là gì? BA là công việc như thế nào? Học
+                  gì để trở thành Business Analyst?
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-wrapper">
+        <div class="row">
+          <div class="order-1 order-lg-0 col-6 col-lg-3">
+            <div
+              class="fb-page"
+              data-href="https://www.facebook.com/MCIVietnamOfficial/?ref=embed_page"
+              data-width="380"
+              data-hide-cover="false"
+              data-show-facepile="false"
+            ></div>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="d-inline-block">
+              <h4 class="footer-title text-uppercase">Hà Nội</h4>
+              <hr class="w-100 opacity-100 separator" />
+            </div>
+
+            <ul class="list-unstyled">
+              <li class="fw-bold">165 Thái Hà</li>
+              <li>
+                <span class="fw-bold">Hotline:</span> <span>024 7106 8368</span>
+              </li>
+              <li>
+                <span class="fw-bold">Địa chỉ: </span>
+                <span
+                  >Tầng 6, Số 5, Ngách 23, Quận Đống Đa, Thành phố Hà Nội, Việt
+                  Nam</span
+                >
+              </li>
+
+              <li class="fw-bold">30 Trung Liệt</li>
+              <li>
+                <span class="fw-bold">Hotline:</span> <span>024 7106 8368</span>
+              </li>
+              <li>
+                <span class="fw-bold">Địa chỉ: </span>
+                <span
+                  >Số 30 Trung Liệt, Phường Trung Liệt, Quận Đống Đa, Thành phố
+                  Hà Nội, Việt Nam</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="d-inline-block">
+              <h4 class="footer-title text-uppercase">Hồ Chí Minh</h4>
+              <hr class="w-100 opacity-100 separator" />
+            </div>
+
+            <ul class="list-unstyled">
+              <li class="fw-bold">HCM - 13 Cao Thắng</li>
+              <li>
+                <span class="fw-bold">Hotline:</span>
+                <span>024 7106 8368</span>
+              </li>
+              <li>
+                <span class="fw-bold">Địa chỉ: </span>
+                <span
+                  >13 Cao Thắng, Phường 2, Quận 3, Thành phố Hồ Chí Minh</span
+                >
+              </li>
+            </ul>
+
+            <ul class="mt-3 list-unstyled">
+              <li class="fw-bold">HCM - 224 Điện Biên Phủ</li>
+              <li>
+                <span class="fw-bold">Hotline:</span>
+                <span>024 7106 8368</span>
+              </li>
+              <li>
+                <span class="fw-bold">Địa chỉ: </span>
+                <span>
+                  Địa chỉ: Tầng 4 & Tầng 6, 224 Điện Biên Phủ, Phường Võ Thị
+                  Sáu, Quận 3, Thành phố Hồ Chí Minh, Việt Nam
+                </span>
+              </li>
+            </ul>
+
+            <ul class="mt-3 list-unstyled">
+              <li class="fw-bold">HCM - 677/6 Điện Biên Phủ</li>
+              <li>
+                <span class="fw-bold">Hotline:</span>
+                <span>024 7106 8368</span>
+              </li>
+              <li>
+                <span class="fw-bold">Địa chỉ: </span>
+                <span
+                  >Địa chỉ: Tầng 4, Yoko Building 677/6, Điện Biên Phủ, Phường
+                  25, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-3">
+            <div class="d-inline-block">
+              <h4 class="footer-title text-uppercase">Hotline</h4>
+              <hr class="w-100 opacity-100 separator" />
+            </div>
+
+            <ul class="list-unstyled">
+              <li class="fw-bold">Khiếu nại CEO: 0982 521 378</li>
+              <li class="fw-bold">Khiếu nại DCEO: 0916 442 368</li>
+              <li class="fw-bold">Hợp tác truyền thông: 0934 146 016</li>
+              <li class="fw-bold">Hợp tác kinh doanh: 0352 433 233</li>
+              <li class="fw-bold">Khiếu nại dịch vụ CSKH: 024 7106 8368</li>
+              <li class="fw-bold">
+                Tư vấn khóa học 1 - Ms. Khánh Ly 0352 433 233
+              </li>
+              <li class="fw-bold">
+                Tư vấn khóa học 2 - Ms. Ngọc Linh 0344 463 698
+              </li>
+              <li class="fw-bold">CSKH: cskh@mcivietnam.com</li>
+              <li class="fw-bold">Chính sách bảo mật</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/aabbedbb24.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
